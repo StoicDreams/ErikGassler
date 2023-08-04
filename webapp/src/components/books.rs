@@ -12,9 +12,12 @@ pub(crate) fn case_books(props: &CaseBooksProps) -> Html {
         <>
             <Quote color={Theme::Info} cite="May 6th, 2023">
                 <p>
-                    <span>{"Today, I am excited to announce the publishing of my first book, now available in "}</span>
+                    <span>{r#"Today, I am excited to announce the publishing of my first book "CASE: Continuous Agile Software Engineering", now available in "#}</span>
                     <Link href="https://amzn.to/3VzXW32">{"Kindle, Paperback, and Hardcover editions on Amazon"}</Link>
                     <span>{"."}</span>
+                </p>
+                <p>
+                    {"This book documents my best practices and methodologies for engineering software that has allowed me to produce high quality software and features at a rate of productivity that has consistently been 10 to 100+ times higher than that of teams and peers I have worked with who used Scrum, Sprints, and other Agile methodologies."}
                 </p>
                 {if props.link_to_blog {
                     html! {
