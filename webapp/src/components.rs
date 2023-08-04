@@ -1,5 +1,5 @@
-pub(crate) mod html_content;
+pub(crate) mod books;
 pub(crate) mod tables;
 
-pub(crate) use html_content::*;
+pub(crate) use books::*;
 pub(crate) use tables::*;

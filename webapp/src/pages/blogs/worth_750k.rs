@@ -6,6 +6,7 @@ pub(crate) fn page_blogs_worth_750k(_contexts: Contexts) -> Html {
     html! {
         <>
             <MarkdownContent href="/d/en-US/blogs/worth_750k.md" />
+            <CaseBooks />
             <NextPageButton url="/blog/case_book" />
         </>
     }

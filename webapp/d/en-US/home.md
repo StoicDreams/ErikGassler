@@ -1,11 +1,3 @@
-# Greetings, and welcome to Erik Gassler's personal website
-
-```quote "info" "May 6th, 2023"
-Today, I am excited to announce the publishing of my first book, now available in [Kindle, Paperback, and Hardcover editions on Amazon](https://amzn.to/3VzXW32).
-
-See [my accouncement blog](/blogs/book_published_for_case_continuous_agile_software_engineering) for more details.
-```
-
 ````sideimage "right" "https://cdn.myfi.ws/v/Vecteezy/business-teamwork-and-partnership-help-to-achieve-team.svg"
 Erik Gassler is a deeply passionate, self-taught software engineer with expertise in true agile development practices and continuous delivery workflows that enable developers and development teams to produce and push quality, test-proven code and features to production environments multiple times per day.
 

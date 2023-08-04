@@ -1,8 +1,3 @@
-## CASE: Continuous Agile Software Engineering
-
-```quote "info" "May 6th, 2023"
-Today, I am excited to announce the publishing of my first book, now available in [Kindle, Paperback, and Hardcover editions on Amazon](https://amzn.to/3VzXW32).
-```
 
 ```sideimage "right" "https://cdn.myfi.ws/v/Vecteezy/distance-education-online-courses-and-business-education.svg"
 Software engineering is changing rapidly, making it more important than ever to have a comprehensive framework for crafting better software. That's where CASE (Continuous Agile Software Engineering) comes in. This book provides an innovative approach to software development that can help teams work more efficiently, deliver high-quality products, and meet the demands of their customers.
