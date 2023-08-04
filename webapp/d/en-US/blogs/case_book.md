@@ -1,3 +1,6 @@
+## CASE: Continuous Agile Software Engineering
+
+!<CaseBooks>
 
 ```sideimage "right" "https://cdn.myfi.ws/v/Vecteezy/distance-education-online-courses-and-business-education.svg"
 Software engineering is changing rapidly, making it more important than ever to have a comprehensive framework for crafting better software. That's where CASE (Continuous Agile Software Engineering) comes in. This book provides an innovative approach to software development that can help teams work more efficiently, deliver high-quality products, and meet the demands of their customers.

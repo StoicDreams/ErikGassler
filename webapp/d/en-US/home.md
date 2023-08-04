@@ -1,3 +1,7 @@
+# Greetings, and welcome to Erik Gassler's personal website
+
+!<Books>
+
 ````sideimage "right" "https://cdn.myfi.ws/v/Vecteezy/business-teamwork-and-partnership-help-to-achieve-team.svg"
 Erik Gassler is a deeply passionate, self-taught software engineer with expertise in true agile development practices and continuous delivery workflows that enable developers and development teams to produce and push quality, test-proven code and features to production environments multiple times per day.
 
