@@ -43,7 +43,7 @@ pub(crate) fn case_books(props: &CaseBooksProps) -> Html {
                     html! {}
                 }}
             </Quote>
-            <Paper class="d-flex flex-row ma-2 gap-2 justify-center">
+            <Paper class="d-flex flex-row ma-2 gap-2 justify-center flex-wrap">
                 <Paper elevation={ELEVATION_STANDARD} class="pa-2">
                     <Paper class="theme-secondary text-center pa-3 mb-2">{"Kindle"}</Paper>
                     <HtmlContent html={r#"
