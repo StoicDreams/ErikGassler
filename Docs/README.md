@@ -1,6 +1,6 @@
 # Erik Gassler
 
-[WebUI Version: 0.6.56](https://github.com/StoicDreams/RustWebUI)
+[WebUI Version: 0.6.57](https://github.com/StoicDreams/RustWebUI)
 
 Online resume and bio.
 
