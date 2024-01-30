@@ -1,13 +1,15 @@
 # Greetings, and welcome to Erik Gassler's personal website
 
-!<Books>
+<Books>
 
 ````sideimage "right" "https://cdn.myfi.ws/v/Vecteezy/business-teamwork-and-partnership-help-to-achieve-team.svg"
 Erik Gassler is a deeply passionate, self-taught software engineer with expertise in true agile development practices and continuous delivery workflows that enable developers and development teams to produce and push quality, test-proven code and features to production environments multiple times per day.
 
 ```quote "info" "Erik Gassler"
 I've worked with and talked to several teams that have been under the misconception that they are doing Agile development because they are using CI/CD tools such as Azure DevOps and workflows involving Scrum and Sprints.
+
 These are tools and concepts that can be used within an agile environment, but using them does not mean you are doing Agile development.
+
 I have yet to talk to a team who uses Scrum that I do not firmly believe would see a productivity improvement by at least a factor of 10 by incorporating my [Continuous Agile Software Engineering standards](/software-engineering-standards-and-practices) - and the teams I've recently worked directly in at Microsoft, Floating Point Group, and Costco, I firmly believe the improvement would have been closer to a factor of 100.
 ```
 ````

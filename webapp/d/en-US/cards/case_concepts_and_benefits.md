@@ -258,9 +258,9 @@ Monitor and measure the performance of the software after every deployment to as
 To help further expand on the core tenets and principles defined in CASE, here are some additional best practices and workflows that I have found to be the most productive for delivering the best quality software being delivered to customers, the most maintainable software for developers to iterate and deliver new features quickly, and the best user experiences, all while simultaneously delivering at a much faster pace than any team I've seen using any type of Scrum-based workflows.
 ```
 
-````cards
+`````cards
 
-```card "Never Backlog Bugs" "700" "primary"
+````card "Never Backlog Bugs" "700" "primary"
 Anyone involved with the development of a project should include testing for bugs as a normal part of their day-to-day workflow. And when bugs are encountered document them enough that they can be reproduced easily by a developer.
 
 As soon as a bug is documented, it should be a top priority to fix. Do not backlog bugs.
@@ -272,9 +272,9 @@ Most developers and teams that struggle with this are struggling because they do
 ```quote "success"
 Getting rid of bugs as early as possible means they don't have time to grow and pollute other parts of your systems. This provides the long-term benefit of greatly reducing time spent on bugs, as well as the benefit of your users getting to enjoy a better experience that's not affected by bugs.
 ```
-```
+````
 
-```card "Limit Scheduled / Ongoing Meetings" "700" "primary"
+````card "Limit Scheduled / Ongoing Meetings" "700" "primary"
 Admin, managers, etc. should not constrain developers by frequent meetings or events. Ideally, a developer would have no more than 1 or 2 hours of dedicated meetings in a week.
 
 Larger companies that absolutely must have a lot of meetings should focus on restricting mandatory meetings to no more than 1 day per week.
@@ -288,9 +288,9 @@ More time is given to focus on productive development.
 
 Developers have fewer interruptions and breaks to their thought processing, which means less time wasted stopping to prep for a meeting, then taking time to get the mind adjusted back to the current task.
 ```
-```
+````
 
-```card "Trust Developers to Research/Test/Decide on solutions" "700" "primary"
+````card "Trust Developers to Research/Test/Decide on solutions" "700" "primary"
 ```quote "danger"
 One of the more prominent and dangerous practices in modern teams is this concept of discussing and finding a solution as a team, usually voting on a solution within a team meeting to get a "concrete" direction for a developer or project to take, without any research being done to properly evaluate the problem, nor any researching and prototyping of potential solutions. Technical decisions are in effect being driven by feelings and preferences.
 
@@ -306,9 +306,9 @@ A developer can make more decisive decisions based on their expertise, research,
 
 Confidence and trust builds for everyone within the team as everyone is making educated, data-driven decisions to solve problems, instead of virtually all solutions coming from 1 or 2 developers who happen to be the most vocal, pushy, or otherwise dictated as a decision maker.
 ```
-```
+````
 
-```card "No Scrum / No Sprints / No Time or Point estimates" "700" "primary"
+````card "No Scrum / No Sprints / No Time or Point estimates" "700" "primary"
 ```quote "danger"
 This concept is included in the tenets `Continuous Agility` and `Continuous Planning`, but I am explicitly pointing it out here for brevity.
 
@@ -330,9 +330,9 @@ Developers are not set up for failure with pressure to finish a task with a dead
 
 Time wasted ramping up new sprints and closing previous sprints is gone. Developers can jump from one task to the next without needing to wait for the next sprint because there isn't enough time in the current sprint to finish the new task.
 ```
-```
-
 ````
+
+`````
 
 ```paper "ml-a mr-a mt-5"
 Visit SoftwareStandards.dev for more [detailed information on engineering software with agile and continuous delivery systems](https://www.softwarestandards.dev).

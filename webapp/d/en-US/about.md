@@ -35,11 +35,9 @@ Within his his first few months, Erik was able to impress the team by becoming p
 
 Some of Erik's notable accomplishments while at SoftRock include:
 
-```list
-Architected, built, and maintained a role-based security framework that would eventually be deployed to most of the company websites as well as carried over to GSC projects.
-Architected, built, and maintained an agent scripting platform that guided agents through a call script with speech to callers handled through pre-recorded segments instead of agents directly speaking with callers. This system allowed agents to handle up to 2 calls at once while also performing better per call than top agents who spoke directly to callers using the same script.
-Developed and maintained several developer projects including a security framework, validation libraries, and several scripting libraries and tools used throughout front-end and back-end development.
-```
+- Architected, built, and maintained a role-based security framework that would eventually be deployed to most of the company websites as well as carried over to GSC projects.
+- Architected, built, and maintained an agent scripting platform that guided agents through a call script with speech to callers handled through pre-recorded segments instead of agents directly speaking with callers. This system allowed agents to handle up to 2 calls at once while also performing better per call than top agents who spoke directly to callers using the same script.
+- Developed and maintained several developer projects including a security framework, validation libraries, and several scripting libraries and tools used throughout front-end and back-end development.
 ````
 
 ## Principal Engineering at General Services Corp
@@ -48,15 +46,14 @@ Developed and maintained several developer projects including a security framewo
 Eventually SoftRock closed its doors, and the owner recruited a handful of developers to help start his next company, General Services Corp. Here, Erik took on a much more principal level role, working directly with the owner to take direction on problems he wanted solved, and using his expertise to architect and build solutions to those problems.
 This role played a huge part in Erik developing his expertise refining agile development and continuous delivery workflows. Incorporating standards and building tools that allowed him to push code updates confidently and safely to production multiple times per day.
 Some of Erik's notable accomplishments while at General Services Corp include:
-```list
-Developed a browser extension for Chrome, Edge, and Safari that allowed users to save and autofill information while filling out job applications.
-Architected and built a reporting website called Joe Morning, launching with role-based security framework and first few reports within the first week of development.
-Integrated into Joe Morning several dev-tools such as error tracking and management for all company websites and services.
-Integrated into Joe Morning several content management features for managing specific page content for multiple company websites.
-Integrated hundreds of reports, each with 5-8 report specific filtering, column toggles to show/hide any column, and sorting for any column.
-Adhere to development standards targeting sub 100 millisecond responses for all browser to server transactions, with anything over 300 milliseconds being considered an urgent bug.
-Was the primary developer, contributing more than 95% of the code in Joe Morning, with all work noted above done within 18 months.
-```
+
+- Developed a browser extension for Chrome, Edge, and Safari that allowed users to save and autofill information while filling out job applications.
+- Architected and built a reporting website called Joe Morning, launching with role-based security framework and first few reports within the first week of development.
+- Integrated into Joe Morning several dev-tools such as error tracking and management for all company websites and services.
+- Integrated into Joe Morning several content management features for managing specific page content for multiple company websites.
+- Integrated hundreds of reports, each with 5-8 report specific filtering, column toggles to show/hide any column, and sorting for any column.
+- Adhere to development standards targeting sub 100 millisecond responses for all browser to server transactions, with anything over 300 milliseconds being considered an urgent bug.
+- Was the primary developer, contributing more than 95% of the code in Joe Morning, with all work noted above done within 18 months.
 ````
 
 ## My 3 Years at Microsoft
@@ -66,10 +63,9 @@ After leaving General Services Corp, Erik and his wife moved to Washington state
 After 8 months Erik successfully transitioned to full-time employment at Microsoft.
 During his time there, Erik worked on a small number of teams and projects including both UI focused and backend focused projects.
 Some of Erik's notable accomplishments while at Microsoft include:
-```list
-Learning Azure Cloud services, DevOps pipelines, React/TypeScript programming, while architecting, building, and launching a greenfield project within his first 3 months as a contractor.
-Hosting a handful of training workshops to help spread knowledge about unit testing and test-driven development.
-Mentored a new software engineer fresh out of college, who following Erik's mentorship took over as lead developer for the UI work on the team, allowing Erik to them transition to take over development on a backend project.
-Erik re-architected and rebuilt a report processing solution to solve performance issues, bringing customer facing query processing times from spans of double-digit seconds to triple-digit minutes, down to spans of milliseconds to single-digit seconds.
-```
+
+- Learning Azure Cloud services, DevOps pipelines, React/TypeScript programming, while architecting, building, and launching a greenfield project within his first 3 months as a contractor.
+- Hosting a handful of training workshops to help spread knowledge about unit testing and test-driven development.
+- Mentored a new software engineer fresh out of college, who following Erik's mentorship took over as lead developer for the UI work on the team, allowing Erik to them transition to take over development on a backend project.
+- Erik re-architected and rebuilt a report processing solution to solve performance issues, bringing customer facing query processing times from spans of double-digit seconds to triple-digit minutes, down to spans of milliseconds to single-digit seconds.
 ````

@@ -20,27 +20,23 @@ I specialize in using Azure Cloud technologies along with my personally develope
 ```paper
 My most commonly provided services:
 
-```list
-Architect and build websites, API services, desktop and mobile applications.
-Rebuild existing websites into Blazor - C# compiled WebAssembly for UI processsing.
-Rebuild existing desktop or mobile apps into Maui-Blazor - C# native processing with Html-Css based UI.
-Setup CI/CD pipelines.
-Setup Hosting Services.
-```
+- Architect and build websites, API services, desktop and mobile applications.
+- Rebuild existing websites into Blazor - C# compiled WebAssembly for UI processsing.
+- Rebuild existing desktop or mobile apps into Maui-Blazor - C# native processing with Html-Css based UI.
+- Setup CI/CD pipelines.
+- Setup Hosting Services.
 ```
 ```paper
 Primary technologies I specialize in:
 
-```list
-Languages: Rust, C# (C-Sharp), HTML, CSS, JavaScript
-Frameworks: .Net Core / Blazor / Maui
-Azure Cloud Services (Storage, Front Door and CDN profiles, App Insights, Function Apps, App Services, DNS Zones, App Configuration, Key Vaults)
-SQL Server 2019
-Hyper-V Hosting
-Dedicated Hosting
-Azure DevOps
-GitHub
-```
+- Languages: Rust, C# (C-Sharp), HTML, CSS, JavaScript
+- Frameworks: .Net Core / Blazor / Maui
+- Azure Cloud Services (Storage, Front Door and CDN profiles, App Insights, Function Apps, App Services, DNS Zones, App Configuration, Key Vaults)
+- SQL Server 2019
+- Hyper-V Hosting
+- Dedicated Hosting
+- Azure DevOps
+- GitHub
 ```
 ````
 
