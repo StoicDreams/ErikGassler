@@ -1,12 +1,12 @@
 use crate::prelude::*;
 
-pub(crate) fn render_books(_contexts: Contexts) -> Html {
+pub(crate) fn render_books(_contexts: &Contexts) -> Html {
     html!(
         <CaseBooks link_to_blog={true} />
     )
 }
 
-pub(crate) fn render_case_books(_contexts: Contexts) -> Html {
+pub(crate) fn render_case_books(_contexts: &Contexts) -> Html {
     html!(
         <CaseBooks />
     )

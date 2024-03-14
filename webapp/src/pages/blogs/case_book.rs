@@ -1,7 +1,7 @@
 use crate::prelude::*;
 
 /// App home page
-pub(crate) fn page_blog_case_book(_contexts: Contexts) -> Html {
+pub(crate) fn page_blog_case_book(_contexts: &Contexts) -> Html {
     set_title("CASE: Continuous Agile Software Engineering");
     html! {
         <>

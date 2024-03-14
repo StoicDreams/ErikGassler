@@ -1,7 +1,7 @@
 use crate::prelude::*;
 
 /// App home page
-pub(crate) fn page_services_consulting(_contexts: Contexts) -> Html {
+pub(crate) fn page_services_consulting(_contexts: &Contexts) -> Html {
     set_title("Consulting Services for Agile Software Development & Continuous Delivery Workflows");
     html! {
         <>
