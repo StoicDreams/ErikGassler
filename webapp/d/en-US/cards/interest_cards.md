@@ -27,13 +27,13 @@ The projects I am currently focused on for this company are open-source projects
 Website dedicated to documenting my career developed Continuous Agile Software Engineering standards and practices that I have found to be in an estimated range of 10 to 100 times more productive for software development than the Agile/Scrum/DevOps/Sprint based frameworks I see commonly used today.
 ```
 
-```card "Agile Manifesto Principles" "580" "success" "fa-duotone fa-memo-circle-info" "https://agilemanifesto.org/principles.html" "Agile Manifesto Principles"
+```card "Agile Manifesto Principles" "580" "success" "memo-circle-info duotone" "https://agilemanifesto.org/principles.html" "Agile Manifesto Principles"
 When people ask me if I know and practice "Agile" development. That answer is a resounding yes. But this question is most frequently asked by those who don't understand what Agile development is.
 
 In fact, I have been following many agile development principals since I first started programming, long before I ever heard the term or researched what it was. To me these principals are just logical, humble, and ethical behavior.
 ```
 
-```card "Programmers Oath" "580" "success" "fa-duotone fa-chalkboard-user" "https://blog.cleancoder.com/uncle-bob/2015/11/18/TheProgrammersOath.html" "Programmers Oath for software development"
+```card "Programmers Oath" "580" "success" "chalkboard-user duotone" "https://blog.cleancoder.com/uncle-bob/2015/11/18/TheProgrammersOath.html" "Programmers Oath for software development"
 I came across this Programmers Oath from Robert C. Martin back in 2017. This oath affirmed many of my existing beliefs about programming, while adding some new ones I hadn't thought about.
 ```
 

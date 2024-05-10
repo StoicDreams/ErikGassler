@@ -3,7 +3,7 @@ use crate::prelude::*;
 pub fn nav_menu_info() -> DrawerToggleInfo {
     DrawerToggleInfo::builder(
         |_| String::from("Navigation Menu"),
-        |_| html! {<i class="fa-solid fa-bars"></i>},
+        |_| html! {FaIcon::solid("bars").to_html()},
         DynContextsHtml::new(nav_menu_render),
     )
     .set_button_class("btn toggle theme-inherit")
@@ -15,37 +15,43 @@ pub fn nav_menu_info() -> DrawerToggleInfo {
 
 pub(crate) fn get_nav_routing(_contexts: &Contexts) -> Vec<NavRoute> {
     let nav_routes = vec![
-        NavLinkInfo::link("Home", "/", "fa-duotone fa-house", roles::PUBLIC, page_home),
+        NavLinkInfo::link(
+            "Home",
+            "/",
+            &FaIcon::duotone("house"),
+            roles::PUBLIC,
+            page_home,
+        ),
         NavLinkInfo::link(
             "CASE Book",
             "/blogs/book_published_for_case_continuous_agile_software_engineering",
-            "fa-duotone fa-book-sparkles",
+            &FaIcon::duotone("book-sparkles"),
             roles::PUBLIC,
             page_blog_case_book,
         ),
         NavLinkInfo::link(
             "Software Engineering Standards & Practices",
             "/software-engineering-standards-and-practices",
-            "fa-duotone fa-book-open",
+            &FaIcon::duotone("book-open"),
             roles::PUBLIC,
             page_info_my_dev_standards,
         ),
         NavGroupInfo::link(
             "Contract Services",
-            "fa-duotone fa-bell-concierge",
+            &FaIcon::duotone("bell-concierge"),
             roles::INVALID,
             vec![
                 NavLinkInfo::link(
                     "Consulting",
                     "/how-i-can-help-improve-your-teams-software-development-productivity",
-                    "fa-duotone fa-hand-holding-seedling",
+                    &FaIcon::duotone("hand-holding-seedling"),
                     roles::PUBLIC,
                     page_services_consulting,
                 ),
                 NavLinkInfo::link(
                     "Software Development",
                     "/software-development-services",
-                    "fa-duotone fa-window",
+                    &FaIcon::duotone("window"),
                     roles::PUBLIC,
                     page_services_software_dev,
                 ),
@@ -53,12 +59,12 @@ pub(crate) fn get_nav_routing(_contexts: &Contexts) -> Vec<NavRoute> {
         ),
         NavGroupInfo::link(
             "Blogs",
-            "fa-duotone fa-blog",
+            &FaIcon::duotone("blog"),
             roles::PUBLIC,
             vec![NavLinkInfo::link(
                 "Worth $750k",
                 "/blogs/why-as-a-principal-softaware-engineer-i-am-worth-a-high-salary",
-                "fa-duotone fa-money-bill-wave",
+                &FaIcon::duotone("money-bill-wave"),
                 roles::PUBLIC,
                 page_blogs_worth_750k,
             )],
@@ -66,21 +72,21 @@ pub(crate) fn get_nav_routing(_contexts: &Contexts) -> Vec<NavRoute> {
         NavLinkInfo::link(
             "About Erik Gassler",
             "/about",
-            "fa-duotone fa-circle-info",
+            &FaIcon::duotone("circle-info"),
             roles::PUBLIC,
             page_about,
         ),
         NavLinkInfo::link(
             "Terms",
             "/terms",
-            "fa-duotone fa-handshake",
+            &FaIcon::duotone("handshake"),
             roles::PUBLIC,
             starter_page_terms,
         ),
         NavLinkInfo::link(
             "Privacy",
             "/privacy",
-            "fa-duotone fa-shield-exclamation",
+            &FaIcon::duotone("shield-exclamation"),
             roles::PUBLIC,
             starter_page_privacy,
         ),
