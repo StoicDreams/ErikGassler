@@ -30,7 +30,7 @@ pub(crate) fn get_nav_routing(_contexts: &Contexts) -> Vec<NavRoute> {
             page_blog_case_book,
         ),
         NavLinkInfo::link(
-            "Software Engineering Standards & Practices",
+            "SWE Standards & Practices",
             "/software-engineering-standards-and-practices",
             &FaIcon::duotone("book-open"),
             roles::PUBLIC,
