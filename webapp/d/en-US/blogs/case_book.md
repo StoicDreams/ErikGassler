@@ -31,5 +31,8 @@ Finally, CASE emphasizes the importance of continuously delivering updates to yo
 
 If you're looking to substantially improve your software development process, embrace a culture of innovation and empowerment, and deliver high-quality products faster, CASE is the framework for you.
 
-With its principles of simplicity, agility, and continuous delivery, CASE can help organizations and teams craft better software solutions more efficiently than ever before. Check out my new book, [CASE: Continuous Agile Software Engineering, now available in Kindle, paperback, and hardcover formats on Amazon.com](https://amzn.to/3VzXW32) to learn more about how to successfully implement CASE within your organization or team!
+With its principles of simplicity, agility, and continuous delivery, CASE can help organizations and teams craft better software solutions more efficiently than ever before. Check out my new book, [CASE: Continuous Agile Software Engineering, now available in Kindle, paperback, and hardcover formats on Amazon.com](https://amzn.to/3QuGnQy) to learn more about how to successfully implement CASE within your organization or team!
+
+> As an Amazon Associate I earn from qualifying purchases.
+
 ```

@@ -25,7 +25,7 @@ pub(crate) fn case_books(props: &CaseBooksProps) -> Html {
             <Quote color={Theme::Info} cite="May 6th, 2023">
                 <p>
                     <span>{r#"Today, I am excited to announce the publishing of my first book "CASE: Continuous Agile Software Engineering", now available in "#}</span>
-                    <Link href="https://amzn.to/3VzXW32">{"Kindle, Paperback, and Hardcover editions on Amazon"}</Link>
+                    <Link href="https://amzn.to/3QuGnQy">{"Kindle, Paperback, and Hardcover editions on Amazon"}</Link>
                     <span>{"."}</span>
                 </p>
                 <p>
@@ -46,23 +46,23 @@ pub(crate) fn case_books(props: &CaseBooksProps) -> Html {
             <Paper class="d-flex flex-column ma-2">
                 <Paper class="d-flex flex-row gap-2 justify-center flex-wrap">
                     <Paper elevation={ELEVATION_STANDARD} class="pa-2">
-                        <Link target="_blank" href="https://amzn.to/48S30VU">
+                        <Link target="_blank" href="https://amzn.to/3JNRTD7">
                             <Paper class="theme-secondary text-center pa-3">{"Kindle"}</Paper>
                         </Link>
                     </Paper>
                     <Paper elevation={ELEVATION_STANDARD} class="pa-2">
-                        <Link target="_blank" href="https://amzn.to/3Sgpyu3">
+                        <Link target="_blank" href="https://amzn.to/3QuGnQy">
                             <Paper class="theme-tertiary text-center pa-3">{"Paperback"}</Paper>
                         </Link>
                     </Paper>
                     <Paper elevation={ELEVATION_STANDARD} class="pa-2">
-                        <Link target="_blank" href="https://amzn.to/3vue8db">
+                        <Link target="_blank" href="https://amzn.to/3WqBOdX">
                             <Paper class="theme-primary text-center pa-3">{"Hardcover"}</Paper>
                         </Link>
                     </Paper>
                 </Paper>
                 <Paper class="text-center">
-                    <em>{"Paid links"}</em>
+                    <em>{"As an Amazon Associate I earn from qualifying purchases."}</em>
                 </Paper>
             </Paper>
         </Paper>

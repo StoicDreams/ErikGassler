@@ -27,5 +27,8 @@ Erik's peers have frequently shared being impressed with his abilities to debug 
 ````sideimage "right" "https://cdn.myfi.ws/v/Vecteezy/teamwork-share-opinion-team-meeting-sharing-idea-to-solve.svg"
 Erik has recognized a trend in modern companies to misunderstand what agile development is and use inferior frameworks such as Agile, Scrum, Sprints, and DevOps to produce products at a pace and quality that is exponentially worse than what is possible using true agile development and continuous delivery workflows.
 
-Recognizing this, Erik has made it his mission to share his knowledge and expertise with companies and teams to help them build and deliver products using agile development standards and continuous delivery workflows that will allow them to complete phases of projects in spans of hours to weeks versus the months to years they're currently spending. This mission hitting a major milestone in May of 2023 with the release of his first book [CASE: Continuous Agile Software Engineering](https://amzn.to/3VzXW32), available now on Amazon.
+Recognizing this, Erik has made it his mission to share his knowledge and expertise with companies and teams to help them build and deliver products using agile development standards and continuous delivery workflows that will allow them to complete phases of projects in spans of hours to weeks versus the months to years they're currently spending. This mission hitting a major milestone in May of 2023 with the release of his first book [CASE: Continuous Agile Software Engineering](https://amzn.to/3QuGnQy), available now on Amazon.
+
+> As an Amazon Associate I earn from qualifying purchases.
+
 ````
