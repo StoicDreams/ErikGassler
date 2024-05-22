@@ -25,7 +25,7 @@ pub(crate) fn case_books(props: &CaseBooksProps) -> Html {
             <Quote color={Theme::Info} cite="May 6th, 2023">
                 <p>
                     <span>{r#"Today, I am excited to announce the publishing of my first book "CASE: Continuous Agile Software Engineering", now available in "#}</span>
-                    <Link href="https://amzn.to/3QuGnQy">{"Kindle, Paperback, and Hardcover editions on Amazon"}</Link>
+                    <Link href="https://amzn.to/3wutCPc">{"Kindle, Paperback, and Hardcover editions on Amazon"}</Link>
                     <span>{"."}</span>
                 </p>
                 <p>
@@ -51,7 +51,7 @@ pub(crate) fn case_books(props: &CaseBooksProps) -> Html {
                         </Link>
                     </Paper>
                     <Paper elevation={ELEVATION_STANDARD} class="pa-2">
-                        <Link target="_blank" href="https://amzn.to/3QuGnQy">
+                        <Link target="_blank" href="https://amzn.to/3wutCPc">
                             <Paper class="theme-tertiary text-center pa-3">{"Paperback"}</Paper>
                         </Link>
                     </Paper>

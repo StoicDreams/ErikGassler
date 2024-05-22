@@ -9,7 +9,7 @@ My recent work in teams at Microsoft, Floating Point Group, and Costco, who all 
 
 And had these teams chosen to adopt CASE standards for software development, they would have been enabled to not only deliver their products to consumers much faster, but they could also raise their quality standards in their work and products while doing so.
 
-Check out my [book, CASE: Continuous Agile Software Engineering](https://amzn.to/3QuGnQy), now available in Kindle, Paperback, and Hardcover editions on Amazon, as well as my software standards focused website [SoftwareStandards.dev](https://www.SoftwareStandards.dev) for more details on these [standards and practices for agile development using continuous delivery workflows](https://www.SoftwareStandards.dev).
+Check out my [book, CASE: Continuous Agile Software Engineering](https://amzn.to/3wutCPc), now available in Kindle, Paperback, and Hardcover editions on Amazon, as well as my software standards focused website [SoftwareStandards.dev](https://www.SoftwareStandards.dev) for more details on these [standards and practices for agile development using continuous delivery workflows](https://www.SoftwareStandards.dev).
 
 > As an Amazon Associate I earn from qualifying purchases.
 
