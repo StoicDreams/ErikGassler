@@ -1309,7 +1309,7 @@ dependencies = [
 [[package]]
 name = "webui"
 version = "0.10.5"
-source = "git+https://github.com/StoicDreams/RustWebUI?branch=main#fa4b54a94973c716c5411f2ebea7a020ef86402f"
+source = "git+https://github.com/StoicDreams/RustWebUI?branch=main#f2a6b2eaf87b7d7d557a5e2c7677461eeb71b39f"
 dependencies = [
  "async-std",
  "chrono",
