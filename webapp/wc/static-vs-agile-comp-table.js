@@ -17,7 +17,9 @@
                 this[property] = newValue;
             }
         }
-        connectedCallback() { }
+        connectedCallback() {
+            this.innerHTML = "Comparison report coming soon!"
+        }
         disconnectedCallback() { }
     }
     customElements.define('app-static-vs-agile-comp-table', StaticVsAgileCompTable);
