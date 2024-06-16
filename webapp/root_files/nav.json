@@ -1,0 +1,70 @@
+[
+    {
+        "name": "Home",
+        "icon": "house",
+        "iconFamily": "duotone",
+        "url": "/"
+    },
+    {
+        "name": "CASE Book",
+        "icon": "book-sparkles",
+        "iconFamily": "duotone",
+        "url": "/blogs/book_published_for_case_continuous_agile_software_engineering"
+    },
+    {
+        "name": "SWE Standards & Practices",
+        "icon": "book-open",
+        "iconFamily": "duotone",
+        "url": "/software-engineering-standards-and-practices"
+    },
+    {
+        "name": "Contract Services",
+        "icon": "bell-concierge",
+        "iconFamily": "duotone",
+        "children": [
+            {
+                "name": "Consulting",
+                "icon": "hand-holding-seedling",
+                "iconFamily": "duotone",
+                "url": "/how-i-can-help-improve-your-teams-software-development-productivity"
+            },
+            {
+                "name": "Software Development",
+                "icon": "window",
+                "iconFamily": "duotone",
+                "url": "/software-development-services"
+            }
+        ]
+    },
+    {
+        "name": "Blogs",
+        "icon": "blog",
+        "iconFamily": "duotone",
+        "children": [
+            {
+                "name": "Worth $750k",
+                "icon": "money-bill-wave",
+                "iconFamily": "duotone",
+                "url": "/blogs/why-as-a-principal-software-engineer-i-am-worth-a-high-salary"
+            }
+        ]
+    },
+    {
+        "name": "About",
+        "icon": "circle-exclamation",
+        "iconFamily": "duotone",
+        "url": "/about"
+    },
+    {
+        "name": "Privacy",
+        "icon": "shield-exclamation",
+        "iconFamily": "duotone",
+        "url": "/privacy"
+    },
+    {
+        "name": "Terms",
+        "icon": "handshake",
+        "iconFamily": "duotone",
+        "url": "/terms"
+    }
+]
