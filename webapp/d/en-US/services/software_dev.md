@@ -33,8 +33,10 @@ I can also provide industry leading delivery times for products and features usi
 My most commonly provided services:
 
 - Architect and build websites, API services, desktop and mobile applications.
-- Rebuild existing websites into Blazor - C# compiled WebAssembly for UI processsing.
-- Rebuild existing desktop or mobile apps into Maui-Blazor - C# native processing with Html-Css based UI.
+- Rebuild existing websites into:
+  - JavaScript ([Web UI](https://webui.stoicdreams.com)) PWA front-ends with possible Rust compiled WebAssembly for UI processing of intensive tasks.
+  - Rust powered API focused backends for optimal speed, efficiency, and ease of development.
+- Rebuild existing desktop or mobile apps into Rust powered Tauri - Rust native processing with JavaScript-Html-Css based UI.
 - Setup CI/CD pipelines.
 - Setup Hosting Services.
 
@@ -44,13 +46,12 @@ My most commonly provided services:
 
 Primary technologies I specialize in:
 
-- Languages: Rust, C# (C-Sharp), HTML, CSS, JavaScript
-- Frameworks: .Net Core / Blazor / Maui
+- Languages: Rust, JavaScript, HTML, CSS
+- Frameworks: [Web UI](https://webui.stoicdreams.com) / [Tauri](https://beta.tauri.app/)
+- Dedicated Servers / VPS Hosting
 - Azure Cloud Services (Storage, Front Door and CDN profiles, App Insights, Function Apps, App Services, DNS Zones, App Configuration, Key Vaults)
-- SQL Server 2019
-- Hyper-V Hosting
+- Microsoft SQL Server
 - Dedicated Hosting
-- Azure DevOps
 - GitHub
 
 </webui-paper>
