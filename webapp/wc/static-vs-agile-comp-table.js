@@ -112,7 +112,9 @@
         connected: (t) => {
             t.setAttribute('data-subscribe', 'page-dev-salary|page-dev-count|page-months-to-launch');
             t.setAttribute('data-setter', 'key-value');
-            t.buildReport();
+            setTimeout(() => {
+                t.buildReport();
+            }, 400);
             webui.setData('page-dev-salary', devSalary);
             webui.setData('page-dev-count', myDevCount);
             webui.setData('page-months-to-launch', myMonths);
@@ -132,7 +134,7 @@
                 <webui-input-text compact data-subscribe="page-dev-count" data-set="value" data-trigger="page-dev-count" label="Developer Count"></webui-input-text>
                 <webui-input-text compact data-subscribe="page-months-to-launch" data-set="value" data-trigger="page-months-to-launch" label="Months to Launch"></webui-input-text>
             </webui-flex>
-            <webui-table columns="Project;Company;Workflow;Developers;Time to Launch;Update Frequency;Cost to Delivery;Monthly Cost;Yearly Cost" class="mt-3 mb-3" bordered data-subscribe="page-report" data-set="setData"></webui-table>
+            <webui-table theme="success" columns="Project;Company;Workflow;Developers;Time to Launch;Update Frequency;Cost to Delivery;Monthly Cost;Yearly Cost" class="mt-3 mb-3" bordered data-subscribe="page-report" data-set="setData"></webui-table>
         </webui-paper>
     </webui-flex>
     `, true);
