@@ -12,7 +12,7 @@
     </webui-flex>
     <webui-flex column gap="2">
         <webui-paper class="image mb-2" style="max-height:500px">
-            <image src="https://cdn.myfi.ws/img/case/CASE_Digital_Cover.webp" />
+            <image style="max-height:500px" src="https://cdn.myfi.ws/img/case/CASE_Digital_Cover.webp" />
         </webui-paper>
         <webui-flex gap="2" justify="center" wrap>
             <webui-paper elevation="10" class="pa-2">
