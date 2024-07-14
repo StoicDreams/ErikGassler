@@ -1,4 +1,5 @@
 <webui-data data-page-title="Why as a Principal-Level Software Engineer I am worth a $750,000 yearly salary" data-page-subtitle=""></webui-data>
+<webui-data data-page-next-page='{"name":"CASE Book","href":"/blogs/book_published_for_case_continuous_agile_software_engineering"}'></webui-data>
 
 ## And how I have proven myself to be more productive than 10 typical software engineers
 

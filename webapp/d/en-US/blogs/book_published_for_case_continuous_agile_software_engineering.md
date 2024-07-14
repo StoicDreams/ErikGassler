@@ -1,4 +1,5 @@
 <webui-data data-page-title="CASE: Continuous Agile Software Engineering" data-page-subtitle=""></webui-data>
+<webui-data data-page-next-page='{"name":"Software Engineering Standards & Practices","href":"/software-engineering-standards-and-practices"}'></webui-data>
 
 <app-books></app-books>
 

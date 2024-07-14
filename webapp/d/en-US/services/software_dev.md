@@ -1,4 +1,5 @@
 <webui-data data-page-title="Software Development for Websites, Cloud Services, Desktop, and Mobile!" data-page-subtitle=""></webui-data>
+<webui-data data-page-next-page='{"name":"CASE Book","href":"/blogs/book_published_for_case_continuous_agile_software_engineering"}'></webui-data>
 
 <webui-sideimage src="https://cdn.myfi.ws/v/Vecteezy/package-software-illustration-exclusive-design-inspiration.svg">
 

@@ -5,5 +5,3 @@
         If you have questions, comments, or any other feedback, reach out to me using my feedback form <a data-click="feedback">here</a>.
     </webui-page-segment>
 </webui-sideimage>
-
-<webui-next-page name="Home" href="/"></webui-next-page>

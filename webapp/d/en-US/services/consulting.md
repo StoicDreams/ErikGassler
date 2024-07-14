@@ -1,4 +1,5 @@
 <webui-data data-page-title="How Erik Gassler can help improve your teams software development productivity" data-page-subtitle=""></webui-data>
+<webui-data data-page-next-page='{"name":"CASE Book","href":"/blogs/book_published_for_case_continuous_agile_software_engineering"}'></webui-data>
 
 <webui-sideimage src="https://cdn.myfi.ws/v/Vecteezy/frequently-asked-questions-customer-help-how-to-user.svg">
 
