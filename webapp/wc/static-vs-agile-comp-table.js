@@ -130,11 +130,11 @@
                 The following Employer examples are approximations from real-world projects I worked on at former employers.
             </webui-quote>
             <webui-flex wrap gap="1" justify="center" align="center" class="mt-3 mb-3">
-                <webui-input-text compact data-subscribe="page-dev-salary" data-set="value" data-trigger="page-dev-salary" label="Avg Developer Salary"></webui-input-text>
-                <webui-input-text compact data-subscribe="page-dev-count" data-set="value" data-trigger="page-dev-count" label="Developer Count"></webui-input-text>
-                <webui-input-text compact data-subscribe="page-months-to-launch" data-set="value" data-trigger="page-months-to-launch" label="Months to Launch"></webui-input-text>
+                <webui-input-text compact data-subscribe="page-dev-salary:value" data-trigger="page-dev-salary" label="Avg Developer Salary"></webui-input-text>
+                <webui-input-text compact data-subscribe="page-dev-count:value" data-trigger="page-dev-count" label="Developer Count"></webui-input-text>
+                <webui-input-text compact data-subscribe="page-months-to-launch:value" data-trigger="page-months-to-launch" label="Months to Launch"></webui-input-text>
             </webui-flex>
-            <webui-table theme="success" columns="Project;Company;Workflow;Developers;Time to Launch;Update Frequency;Cost to Delivery;Monthly Cost;Yearly Cost" class="mt-3 mb-3" bordered data-subscribe="page-report" data-set="setData"></webui-table>
+            <webui-table theme="success" columns="Project;Company;Workflow;Developers;Time to Launch;Update Frequency;Cost to Delivery;Monthly Cost;Yearly Cost" class="mt-3 mb-3" bordered data-subscribe="page-report:setData"></webui-table>
         </webui-paper>
     </webui-flex>
     `, true);
