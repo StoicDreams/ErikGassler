@@ -13,7 +13,8 @@ function get_uuid() {
 }
 const currentVersion = location.host.startsWith('localhost') ? `${get_uuid()}` : 'webui_0.10.10';
 const cacheNamePrefix = 'offline-cache-';
-const cacheName = `${cacheNamePrefix}${currentVersion}`;
+const cacheWebDate = '2503231427';
+const cacheName = `${cacheNamePrefix}${currentVersion}${cacheWebDate}`;
 const offlineAssetsInclude = [/\.wasm/, /\.html/, /\.js$/, /\.json$/, /\.css$/, /\.woff$/, /\.png$/, /\.jpe?g$/, /\.gif$/, /\.ico$/];
 const offlineAssetsExclude = [/^service-worker\.js$/];
 
