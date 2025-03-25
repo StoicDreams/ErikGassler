@@ -1,27 +1,19 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>https://www.erikgassler.com"/"</loc>
-		<lastmod>2025-03-23</lastmod>
+		<loc>https://www.erikgassler.com/</loc>
+		<lastmod>2025-03-25</lastmod>
 	</url>
 	<url>
-		<loc>https://www.erikgassler.com"/blogs/book_published_for_case_continuous_agile_software_engineering"</loc>
-		<lastmod>2025-03-23</lastmod>
+		<loc>https://www.erikgassler.com/blogs/book_published_for_case_continuous_agile_software_engineering</loc>
+		<lastmod>2025-03-25</lastmod>
 	</url>
 	<url>
-		<loc>https://www.erikgassler.com"/software-engineering-standards-and-practices"</loc>
-		<lastmod>2025-03-23</lastmod>
+		<loc>https://www.erikgassler.com/software-engineering-standards-and-practices</loc>
+		<lastmod>2025-03-25</lastmod>
 	</url>
 	<url>
-		<loc>https://www.erikgassler.com"/how-i-can-help-improve-your-teams-software-development-productivity"</loc>
-		<lastmod>2025-03-23</lastmod>
-	</url>
-	<url>
-		<loc>https://www.erikgassler.com"/software-development-services"</loc>
-		<lastmod>2025-03-23</lastmod>
-	</url>
-	<url>
-		<loc>https://www.erikgassler.com"/blogs/why-as-a-principal-software-engineer-i-am-worth-a-high-salary"</loc>
-		<lastmod>2025-03-23</lastmod>
+		<loc>https://www.erikgassler.com/blogs/why-as-a-principal-software-engineer-i-am-worth-a-high-salary</loc>
+		<lastmod>2025-03-25</lastmod>
 	</url>
 </urlset>

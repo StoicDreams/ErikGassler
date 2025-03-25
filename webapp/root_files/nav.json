@@ -17,6 +17,7 @@
     {
         "name": "Contract Services",
         "icon": "bell-concierge",
+        "role": 2147483647,
         "children": [
             {
                 "name": "Consulting",
