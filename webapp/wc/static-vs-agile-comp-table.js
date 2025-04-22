@@ -110,7 +110,7 @@
             ]);
         },
         connected: (t) => {
-            t.setAttribute('data-subscribe', 'page-dev-salary|page-dev-count|page-months-to-launch');
+            t.addDataset('subscribe', 'page-dev-salary|page-dev-count|page-months-to-launch');
             t.setAttribute('data-setter', 'key-value');
             setTimeout(() => {
                 t.buildReport();
