@@ -118,7 +118,7 @@
             webui.setData('page-dev-salary', devSalary);
             webui.setData('page-dev-count', myDevCount);
             webui.setData('page-months-to-launch', myMonths);
-            t.innerHTML = webui.parseMarkdown(`
+            t.innerHTML = webui.parseWebuiMarkdown(`
     <webui-flex justify="center" align="center" column elevation="10">
         <webui-page-segment elevation="10">
             This table showcases differences in development costs by comparing development times based on real-world projects I've worked on in some capacity in the various companies I've worked for. Developer counts are an estimated average due to fluctuating team sizes during development.

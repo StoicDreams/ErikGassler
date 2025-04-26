@@ -2,7 +2,7 @@
 
 ### Erik Gassler is a professional software engineer with expertise in agile development and continuous delivery workflows
 
-<webui-sideimage src="https://cdn.erikgassler.com/img/eg/me_256.png">
+<webui-sideimage src="https://cdn.myfi.ws/img/eg/me_256.png">
 
 Erik Gassler began his software engineering career in April of 2007 when he purchased a book on developing websites using Apache servers, PHP, HTML, CSS, and MySQL, and quit his full-time day job so he could focus 100% of his efforts on learning how to program and develop websites.
 
