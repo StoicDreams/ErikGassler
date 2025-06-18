@@ -37,5 +37,10 @@ jobs:
     needs: build-and-test
     steps:
     - name: run deployment
+      env:
+        WEB_DEPLOY_METHOD: ${{ secrets.WEB_DEPLOY_METHOD }}
+        WEB_DEPLOY_API: ${{ secrets.WEB_DEPLOY_API }}
+        WEB_DEPLOY_TOKEN: ${{ secrets.WEB_DEPLOY_TOKEN }}
       run: |
-        ${{ secrets.WEB_DEPLOY_PREFIX }}erikgassler ${{ secrets.WEB_DEPLOY_POSTFIX }}
+        curl --fail-with-body -X ${WEB_DEPLOY_METHOD} "${WEB_DEPLOY_API}erikgassler" -H "Accept: */*" -H "${WEB_DEPLOY_TOKEN}"
+
