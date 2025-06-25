@@ -8,7 +8,7 @@
     And had these teams chosen to adopt CASE standards for software development, they would have been enabled to not only deliver their products to consumers much faster, but they could also raise their quality standards in their work and products while doing so.
     Check out my [book, CASE: Continuous Agile Software Engineering](https://a.co/d/3da8fQc), now available in Kindle, Paperback, and Hardcover editions on Amazon, as well as my software standards focused website [SoftwareStandards.dev](https://www.SoftwareStandards.dev) for more details on these [standards and practices for agile development using continuous delivery workflows](https://www.SoftwareStandards.dev).
 </webui-quote>
-<webui-page-segment>
+<webui-page-segment elevation="10">
     The CASE methodologies are practices and workflows that I have developed and refined over the course of my personal and professional career. And while many of the tenets and principles can be great on their own, I have found CASE works best when every tenet and core principle can be imlemented as a holistic and cohesive whole.
     Professionally, I have been able to use the entirety of these CASE methodologies while developing software at General Services Corp between 2016 and 2018, where I lead multiple greenfield projects from inception through delivery and continued maintenance. And since that time I have worked on multiple teams with several variations of Scrum-based practices and workflows, including working on similar projects between the two sets of standards, so I have gotten to see a good apples-to-apples comparison between 1 engineer building a product using CASE versus 8+ engineers building a similar product using Scrum/DevOps.
     Now, I want to be clear. I promote these standards because I value and prioritize productivity, code maintainability, security, user experiences, bug-free code, and fast delivery of updates and features. I know and accept other people will have other priorities. I have worked on many such teams, and when I do, I do my best to adapt and share my knowledge in ways that fit their priorities.
@@ -18,10 +18,10 @@
 
 ## Twelve Tenets of Continuous Agile Software Engineering
 
-<webui-page-segment>
+<webui-page-segment elevation="10">
     The CASE methodologies are broken up into twelve tenets, with each tenet containing three core principles.
 </webui-page-segment>
-<webui-page-segment>
+<webui-page-segment elevation="10">
     <webui-cards card-width="580">
         <webui-card name="Tenet 1: Keep it Simple" theme="success">
             Keeping things simple means that software development should focus on delivering value in the simplest viable way. This is achieved by minimizing complexity in code, processes, and tools.
@@ -147,7 +147,7 @@
         </webui-card>
     </webui-cards>
 </webui-page-segment>
-<webui-page-segment>
+<webui-page-segment elevation="10">
     To help further expand on the core tenets and principles defined in CASE, here are some additional best practices and workflows that I have found to be the most productive for delivering the best quality software being delivered to customers, the most maintainable software for developers to iterate and deliver new features quickly, and the best user experiences, all while simultaneously delivering at a much faster pace than any team I've seen using any type of Scrum-based workflows.
 </webui-page-segment>
 <webui-cards card-width="700">
