@@ -83,7 +83,7 @@
         </webui-paper>
     </webui-flex>
     <webui-flex column align="center" justify="center" class="readable-content">
-        <webui-paper class="mb-5 text-center"><strong class="mx-a">10 * 2 * 8 = 160</strong></webui-paper>
+        <webui-paper class="mb-5 text-center"><strong class="mx-a">10 x 2 x 8 = 160</strong></webui-paper>
         <webui-paper>
             In this comparison using my CASE methodologies were 160 times more productive than the Agile/Scrum practices and workflows incorporated by the Microsoft team, which equivalently means 160 times less costly in developer resources.
             Now my most recent salary was about $200k yearly, but let's again be super conservative and say that the average developer salary is only $100k. Times that by our multiplier, and a developer using CASE methodologies should be worth about $16,000,000 when compared to the cost of an average developer using the currently industry trending practices and workflows that focus on Scrum, DevOps, and Sprints.
