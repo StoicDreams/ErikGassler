@@ -31,5 +31,5 @@
     Recognizing this, Erik has made it his mission to share his knowledge and expertise with companies and teams to help them build and deliver products using agile development standards and continuous delivery workflows that will allow them to complete phases of projects in spans of hours to weeks versus the months to years they're currently spending. This mission hitting a major milestone in May of 2023 with the release of his first book [CASE: Continuous Agile Software Engineering](https://a.co/d/3da8fQc), available now on Amazon.
 </webui-sideimage>
 
-<webui-content height="400" src="/d/en-US/youtube/intro.md"></webui-content>
-<webui-content src="/d/en-US/cards/interest_cards.md"></webui-content>
+<webui-content cache height="400" src="/d/en-US/youtube/intro.md"></webui-content>
+<webui-content cache src="/d/en-US/cards/interest_cards.md"></webui-content>
