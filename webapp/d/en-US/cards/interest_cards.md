@@ -12,7 +12,7 @@
     <webui-card name="C.A.S.E Software Development Standards" theme="tertiary" avatar="https://www.softwarestandards.dev/Logo.svg" link="https://www.softwarestandards.dev">
         Website dedicated to documenting Continuous Agile Software Engineering standards and practices that I have developed in my career, and likewise found to be in an estimated range of 10 to 100 times more productive for software development than the Agile/Scrum/DevOps/Sprint based frameworks I see commonly used today.
     </webui-card>
-    <webui-card name="Gassler Design" theme="tertiary" avatar="https://www.gassler.design/ms-icon-310x310.png" link="https://www.gassler.design">
+    <webui-card name="Gassler Design" theme="tertiary" avatar="https://www.gassler.design/Logo.svg" link="https://www.gassler.design">
         Interior Design consulting services and inspiration, as well as 3D rendering services focused on creating immersive environments and experiences.
     </webui-card>
 </webui-cards>
