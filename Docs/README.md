@@ -1,6 +1,6 @@
 # Erik Gassler
 
-[Version: 0.1.3](https://github.com/StoicDreams/ErikGassler)
+[Version: 0.1.4](https://github.com/StoicDreams/ErikGassler)
 
 [WebUI Version: 0.11.3](https://github.com/StoicDreams/WebUI)
 
