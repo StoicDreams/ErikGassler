@@ -43,5 +43,5 @@
     </webui-page-segment>
 </webui-sideimage>
 
-<webui-content cache height="400" src="/d/en-US/youtube/intro.md"></webui-content>
-<webui-content cache src="/d/en-US/cards/interest_cards.md"></webui-content>
+<webui-content cache height="400" src="/d/youtube/intro.md"></webui-content>
+<webui-content cache src="/d/cards/interest_cards.md"></webui-content>
