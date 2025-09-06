@@ -1,8 +1,8 @@
 # Erik Gassler
 
-[Version: 0.1.4](https://github.com/StoicDreams/ErikGassler)
+[Version: 0.1.5](https://github.com/StoicDreams/ErikGassler)
 
-[WebUI Version: 0.11.3](https://github.com/StoicDreams/WebUI)
+[WebUI](https://github.com/StoicDreams/WebUI)
 
 Online resume and bio.
 
