@@ -17,7 +17,7 @@
     </webui-card>
 </webui-cards>
 
-<webui-sideimage reverse src="https://cdn.myfi.ws/img/case/CASE_Hardcover_Circle.webp">
+<webui-sideimage reverse src="https://cdn.myfi.ws/img/case/CASE_Hardcover_Circle.webp" alt="CASE book hardcover image">
     <webui-quote theme="secondary" cite="Erik Gassler">
         Curious about CASE but want a format where you can ask questions about it instead of reading the book? Then check out the [CASE GPT AI assistant](https://chat.openai.com/g/g-V2lj0ZVcU-case-gpt).
         <webui-flex justify="center" class="mt-4 mb-3">
