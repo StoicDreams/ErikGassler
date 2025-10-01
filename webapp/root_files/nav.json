@@ -5,8 +5,13 @@
         "url": "/"
     },
     {
+        "name": "Publications",
+        "icon": "book|fill|shade:tri|theme:title",
+        "url": "/publications"
+    },
+    {
         "name": "CASE Book",
-        "icon": "book-sparkles",
+        "icon": "book|fill|shade:tri|theme:secondary",
         "url": "/blogs/book_published_for_case_continuous_agile_software_engineering"
     },
     {
