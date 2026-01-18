@@ -16,6 +16,10 @@
         <img src="https://webui.stoicdreams.com/Logo.svg" style="height:80px" alt="Web UI Logo"></img>
         <webui-flex justify="center" align="center">Web UI</webui-flex>
     </a>
+    <a href="https://www.aptul.com" class="d-flex flex-column align-center justify-center">
+        <img src="https://www.aptul.com/Logo.svg" style="height:80px" alt="Ap Tul Logo"></img>
+        <webui-flex justify="center" align="center">Ap Tul</webui-flex>
+    </a>
     <a href="https://www.rust-lang.org" class="d-flex flex-column align-center justify-center">
         <img src="https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/rust/rust-original.svg" style="height:80px" alt="Rust Logo"></img>
         <webui-flex justify="center" align="center">Rust</webui-flex>
