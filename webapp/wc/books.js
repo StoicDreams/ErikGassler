@@ -30,7 +30,8 @@
 `;
     webui.define("app-books", {
         attr: ['link-to-blog'],
-        connected: (t) => {
+        connected() {
+            const t = this;
             t.innerHTML = webui.trimLinePreTabs(template.replace('{LINK_TO_BLOG}', t.isFlagged('linkToBlog') ? `
     <p>See <a href="/blogs/book_published_for_case_continuous_agile_software_engineering">my accouncement blog</a> for more details.</p>` : ''));
         }

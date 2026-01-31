@@ -10,7 +10,7 @@
         return formatDollar.format(total).split('.')[0];
     }
     webui.define("app-static-vs-agile-comp-table", {
-        setPageDevSalary: function (value) {
+        setPageDevSalary(value) {
             let salary = parseFloat(`${(value || '0')}`.replace(/[^0-9\.]+/g, ''));
             if (!salary) return;
             if (salary === devSalary) return;
@@ -18,7 +18,7 @@
             webui.setData('page-dev-salary', salary);
             this.buildReport();
         },
-        setPageDevCount: function (value) {
+        setPageDevCount(value) {
             let count = parseInt(`${(value || '0')}`.replace(/[^0-9\.]+/g, ''));
             if (!count) return;
             if (count === myDevCount) return;
@@ -26,7 +26,7 @@
             webui.setData('page-dev-count', count);
             this.buildReport();
         },
-        setPageMonthsToLaunch: function (value) {
+        setPageMonthsToLaunch(value) {
             let months = parseFloat(`${(value || '0')}`.replace(/[^0-9\.]+/g, ''));
             if (!months) return;
             if (months === myMonths) return;
@@ -34,7 +34,7 @@
             webui.setData('page-months-to-launch', months);
             this.buildReport();
         },
-        keyKeyValue: function (value, key) {
+        keyKeyValue(value, key) {
             switch (key) {
                 case 'page-dev-salary':
                     this.setDevSalary(value);
@@ -50,7 +50,7 @@
                     break;
             }
         },
-        buildReport: function () {
+        buildReport() {
             webui.setData('page-report', [
                 {
                     Project: 'Your Project',
@@ -109,7 +109,8 @@
                 }
             ]);
         },
-        connected: (t) => {
+        connected() {
+            const t = this;
             t.addDataset('subscribe', 'page-dev-salary|page-dev-count|page-months-to-launch');
             t.setAttribute('data-setter', 'key-value');
             setTimeout(() => {
