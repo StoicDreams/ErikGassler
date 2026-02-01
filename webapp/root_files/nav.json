@@ -1,48 +1,48 @@
 [
     {
         "name": "Home",
-        "icon": "home",
+        "icon": "emoji-house",
         "url": "/"
     },
     {
         "name": "Publications",
-        "icon": "book|fill|shade:tri|theme:title",
+        "icon": "emoji-books",
         "url": "/publications"
     },
     {
         "name": "CASE Book",
-        "icon": "book|fill|shade:tri|theme:secondary",
+        "icon": "emoji-ledger",
         "url": "/blogs/book_published_for_case_continuous_agile_software_engineering"
     },
     {
         "name": "SWE Standards & Practices",
-        "icon": "book-open",
+        "icon": "emoji-scroll",
         "url": "/software-engineering-standards-and-practices"
     },
     {
         "name": "Contract Services",
-        "icon": "bell-concierge",
+        "icon": "emoji-handshake",
         "role": 2147483647,
         "children": [
             {
                 "name": "Consulting",
-                "icon": "hand-holding-seedling",
+                "icon": "emoji-light_bulb",
                 "url": "/how-i-can-help-improve-your-teams-software-development-productivity"
             },
             {
                 "name": "Software Development",
-                "icon": "window",
+                "icon": "emoji-technologist",
                 "url": "/software-development-services"
             }
         ]
     },
     {
         "name": "Blogs",
-        "icon": "blog",
+        "icon": "emoji-memo",
         "children": [
             {
                 "name": "Worth $750k",
-                "icon": "money-bill-wave",
+                "icon": "emoji-money_with_wings",
                 "url": "/blogs/why-as-a-principal-software-engineer-i-am-worth-a-high-salary"
             }
         ]
