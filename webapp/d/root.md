@@ -12,6 +12,14 @@
 ## Favorite Development Tools
 
 <webui-flex justify="center" align="center" gap="20" class="my-3" wrap>
+    <a href="https://code.visualstudio.com" class="d-flex flex-column align-center justify-center">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg" style="height:80px" alt="Visual Studio Code Logo"></img>
+        <webui-flex justify="center" align="center">Visual Studio Code</webui-flex>
+    </a>
+    <a href="https://www.rust-lang.org" class="d-flex flex-column align-center justify-center">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/rust/rust-original.svg" style="height:80px" alt="Rust Logo"></img>
+        <webui-flex justify="center" align="center">Rust</webui-flex>
+    </a>
     <a href="https://webui.stoicdreams.com" class="d-flex flex-column align-center justify-center">
         <img src="https://webui.stoicdreams.com/Logo.svg" style="height:80px" alt="Web UI Logo"></img>
         <webui-flex justify="center" align="center">Web UI</webui-flex>
@@ -19,10 +27,6 @@
     <a href="https://www.aptul.com" class="d-flex flex-column align-center justify-center">
         <img src="https://www.aptul.com/Logo.svg" style="height:80px" alt="Ap Tul Logo"></img>
         <webui-flex justify="center" align="center">Ap Tul</webui-flex>
-    </a>
-    <a href="https://www.rust-lang.org" class="d-flex flex-column align-center justify-center">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/rust/rust-original.svg" style="height:80px" alt="Rust Logo"></img>
-        <webui-flex justify="center" align="center">Rust</webui-flex>
     </a>
     <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" class="d-flex flex-column align-center justify-center">
         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" style="height:80px" alt="JavaScript Logo"></img>
@@ -39,10 +43,6 @@
     <a href="https://www.postgresql.org" class="d-flex flex-column align-center justify-center">
         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg" style="height:80px" alt="PostgreSQL Logo"></img>
         <webui-flex justify="center" align="center">PostgreSQL</webui-flex>
-    </a>
-    <a href="https://code.visualstudio.com" class="d-flex flex-column align-center justify-center">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg" style="height:80px" alt="Visual Studio Code Logo"></img>
-        <webui-flex justify="center" align="center">Visual Studio Code</webui-flex>
     </a>
 </webui-flex>
 
