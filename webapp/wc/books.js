@@ -5,7 +5,7 @@
 <webui-side-by-side>
     <webui-flex column align="center" justify="center">
         <webui-quote theme="info" cite="May 6th, 2023">
-            Today, I am excited to announce the publishing of my first book "CASE: Continuous Agile Software Engineering", now available in <a href="https://a.co/d/3da8fQc">Kindle, Paperback, and Hardcover editions on Amazon</a>.
+            Today, I am excited to announce the publishing of my first book "CASE: Continuous Agile Software Engineering", now available in <a href="https://www.amazon.com/dp/B0C47LV1Y8">Kindle, Paperback, and Hardcover editions on Amazon</a>.
             This book documents my best practices and methodologies for engineering software that has allowed me to produce high quality software and features at a rate of productivity that has consistently been 10 to 100+ times higher than that of teams and peers I have worked with who used Scrum, Sprints, and other Agile methodologies.
             {LINK_TO_BLOG}
         </webui-quote>
@@ -16,13 +16,13 @@
         </webui-paper>
         <webui-flex gap="2" justify="center" wrap>
             <webui-paper elevation="10" class="pa-2">
-                <a target="_blank" href="https://a.co/d/0reKAjn" class="theme-secondary text-center pa-3">Kindle</a>
+                <a target="_blank" href="https://www.amazon.com/dp/B0C4FX1F1S" class="theme-secondary text-center pa-3">Kindle</a>
             </webui-paper>
             <webui-paper elevation="10" class="pa-2">
-                <a target="_blank" href="https://a.co/d/9Kiyse8" class="theme-tertiary text-center pa-3">Paperback</a>
+                <a target="_blank" href="https://www.amazon.com/dp/B0C47LV1Y8" class="theme-tertiary text-center pa-3">Paperback</a>
             </webui-paper>
             <webui-paper elevation="10" class="pa-2">
-                <a target="_blank" href="https://a.co/d/3da8fQc" class="theme-primary text-center pa-3">Hardcover</a>
+                <a target="_blank" href="https://www.amazon.com/dp/B0C47YGGYH" class="theme-primary text-center pa-3">Hardcover</a>
             </webui-paper>
         </webui-flex>
     </webui-flex>

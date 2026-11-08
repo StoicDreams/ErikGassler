@@ -12,7 +12,7 @@ I typically publish articles on medium.com - access my profile [here](https://me
 
 | |
 --- | --- | ---
-| [CASE: Continous Agile Software Engineering](https://a.co/d/3da8fQc) |
+| [CASE: Continuous Agile Software Engineering](https://www.amazon.com/dp/B0C47LV1Y8) |
 
 </webui-page-segment>
 

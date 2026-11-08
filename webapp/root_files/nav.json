@@ -5,6 +5,16 @@
         "url": "/"
     },
     {
+        "name": "Experience",
+        "icon": "emoji-briefcase",
+        "url": "/experience"
+    },
+    {
+        "name": "Fabric Engine",
+        "icon": "emoji-video_game",
+        "url": "/fabric-engine"
+    },
+    {
         "name": "Publications",
         "icon": "emoji-books",
         "url": "/publications"
@@ -33,17 +43,6 @@
                 "name": "Software Development",
                 "icon": "emoji-technologist",
                 "url": "/software-development-services"
-            }
-        ]
-    },
-    {
-        "name": "Blogs",
-        "icon": "emoji-memo",
-        "children": [
-            {
-                "name": "Worth $750k",
-                "icon": "emoji-money_with_wings",
-                "url": "/blogs/why-as-a-principal-software-engineer-i-am-worth-a-high-salary"
             }
         ]
     }
