@@ -15,35 +15,44 @@
         "url": "/fabric-engine"
     },
     {
-        "name": "Publications",
-        "icon": "emoji-books",
-        "url": "/publications"
+        "name": "Projects",
+        "icon": "emoji-hammer_and_wrench",
+        "url": "/projects"
     },
     {
-        "name": "CASE Book",
-        "icon": "emoji-ledger",
-        "url": "/blogs/book_published_for_case_continuous_agile_software_engineering"
-    },
-    {
-        "name": "SWE Standards & Practices",
-        "icon": "emoji-scroll",
-        "url": "/software-engineering-standards-and-practices"
-    },
-    {
-        "name": "Contract Services",
+        "name": "Services",
         "icon": "emoji-handshake",
-        "role": 2147483647,
+        "url": "/services"
+    },
+    {
+        "name": "Writing",
+        "icon": "emoji-books",
         "children": [
             {
-                "name": "Consulting",
-                "icon": "emoji-light_bulb",
-                "url": "/how-i-can-help-improve-your-teams-software-development-productivity"
+                "name": "Publications",
+                "icon": "emoji-books",
+                "url": "/publications"
             },
             {
-                "name": "Software Development",
-                "icon": "emoji-technologist",
-                "url": "/software-development-services"
+                "name": "CASE Book",
+                "icon": "emoji-ledger",
+                "url": "/blogs/book_published_for_case_continuous_agile_software_engineering"
+            },
+            {
+                "name": "SWE Standards & Practices",
+                "icon": "emoji-scroll",
+                "url": "/software-engineering-standards-and-practices"
             }
         ]
+    },
+    {
+        "name": "About",
+        "icon": "emoji-bust_in_silhouette",
+        "url": "/about"
+    },
+    {
+        "name": "Contact",
+        "icon": "emoji-envelope",
+        "url": "/contact"
     }
 ]

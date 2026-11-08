@@ -6,7 +6,7 @@
     <webui-flex column align="center" justify="center">
         <webui-quote theme="info" cite="May 6th, 2023">
             Today, I am excited to announce the publishing of my first book "CASE: Continuous Agile Software Engineering", now available in <a href="https://www.amazon.com/dp/B0C47LV1Y8">Kindle, Paperback, and Hardcover editions on Amazon</a>.
-            This book documents my best practices and methodologies for engineering software that has allowed me to produce high quality software and features at a rate of productivity that has consistently been 10 to 100+ times higher than that of teams and peers I have worked with who used Scrum, Sprints, and other Agile methodologies.
+            It documents the practices I developed over my career for building quality software in small, tested steps and delivering it to users continuously.
             {LINK_TO_BLOG}
         </webui-quote>
     </webui-flex>
@@ -33,7 +33,7 @@
         connected() {
             const t = this;
             t.innerHTML = webui.trimLinePreTabs(template.replace('{LINK_TO_BLOG}', t.isFlagged('linkToBlog') ? `
-    <p>See <a href="/blogs/book_published_for_case_continuous_agile_software_engineering">my accouncement blog</a> for more details.</p>` : ''));
+    <p>See <a href="/blogs/book_published_for_case_continuous_agile_software_engineering">my announcement</a> for more details.</p>` : ''));
         }
     });
 }

@@ -1,19 +1,14 @@
-<webui-data data-page-title="Basic Concepts & Benefits for Continuous Agile Software Engineering (CASE)" data-page-subtitle=""></webui-data>
+<webui-data data-page-title="Software Engineering Standards & Practices" data-page-subtitle="The twelve tenets of CASE"></webui-data>
 <webui-data data-page-next-page='{"name":"CASE Book","href":"/blogs/book_published_for_case_continuous_agile_software_engineering"}'></webui-data>
 
-<webui-quote theme="warning">
-    A quick note: This page is a brief introduction to a collection of standards and practices that I have dubbed Continuous Agile Software Engineering, or CASE for short.
-    CASE represents the accumulated standards from my 15+ years developing software that has so far been proven through my real-world usage to be the most efficient and effective at developing top-quality software that meets my high standards in the shortest amount of time.
-    My recent work in teams at Microsoft, Floating Point Group, and Costco, who all used various interpretations of Scrum, DevOps, and Sprint based workflows, has further proven to me that using CASE methodologies for true agile development with continuous delivery workflows were easily in the range of 10 to 100 times more productive than Scrum/DevOps standards. A team of 1 developer using these practices and workflows has been shown to deliver more in 3 to 6 months than what these teams of 8 to 12 engineers were taking 2 to 6 years to develop.
-    And had these teams chosen to adopt CASE standards for software development, they would have been enabled to not only deliver their products to consumers much faster, but they could also raise their quality standards in their work and products while doing so.
-    Check out my [book, CASE: Continuous Agile Software Engineering](https://www.amazon.com/dp/B0C47LV1Y8), now available in Kindle, Paperback, and Hardcover editions on Amazon, as well as my software standards focused website [SoftwareStandards.dev](https://www.SoftwareStandards.dev) for more details on these [standards and practices for agile development using continuous delivery workflows](https://www.SoftwareStandards.dev).
-</webui-quote>
 <webui-page-segment elevation="10">
-    The CASE methodologies are practices and workflows that I have developed and refined over the course of my personal and professional career. And while many of the tenets and principles can be great on their own, I have found CASE works best when every tenet and core principle can be imlemented as a holistic and cohesive whole.
-    Professionally, I have been able to use the entirety of these CASE methodologies while developing software at General Services Corp between 2016 and 2018, where I lead multiple greenfield projects from inception through delivery and continued maintenance. And since that time I have worked on multiple teams with several variations of Scrum-based practices and workflows, including working on similar projects between the two sets of standards, so I have gotten to see a good apples-to-apples comparison between 1 engineer building a product using CASE versus 8+ engineers building a similar product using Scrum/DevOps.
-    Now, I want to be clear. I promote these standards because I value and prioritize productivity, code maintainability, security, user experiences, bug-free code, and fast delivery of updates and features. I know and accept other people will have other priorities. I have worked on many such teams, and when I do, I do my best to adapt and share my knowledge in ways that fit their priorities.
-    And sadly, I have encountered and even worked with several people that haven't liked me because I don't have the same opinions as they do. And I've been turned down from potential roles for the sole reason that I didn't share the same priorities as the people that interviewed me or were making the hiring decision. This makes me sad that these people are so close-minded to working with people for no other reason than they disagree with their opinions and values. Especially when they don't even take the time to ask questions to understand why someone would have a different opinion, to begin with.
-    If you are interested in prioritizing delivering higher quality software with faster releases, the below standards are a good place to start. Of course, exact adherence to all of these standards requires an environment where the management trusts their software engineers to not be micromanaged, as well as software engineers that are motivated to do good work.
+
+Continuous Agile Software Engineering, or CASE, is the set of standards and practices I've developed and refined over my career for building quality software in small, tested steps and delivering it continuously. This page is a brief introduction. My book, [CASE: Continuous Agile Software Engineering](/blogs/book_published_for_case_continuous_agile_software_engineering), covers it in full, and [SoftwareStandards.dev](https://www.softwarestandards.dev) documents the standards in more depth.
+
+I was able to use all of CASE at General Services Corp from 2016 to 2018, where I led greenfield projects from inception through delivery and maintenance. There I built a reporting portal that went live in its first week and grew to hundreds of reports, while pushing to production several times a day.
+
+Many of the tenets are useful on their own, but CASE works best when they are adopted together. It also works best where management trusts engineers to own their work without micromanagement, and engineers are motivated to do it well.
+
 </webui-page-segment>
 
 ## Twelve Tenets of Continuous Agile Software Engineering
@@ -26,11 +21,11 @@
         <webui-card name="Tenet 1: Keep it Simple" theme="success">
             Keeping things simple means that software development should focus on delivering value in the simplest viable way. This is achieved by minimizing complexity in code, processes, and tools.
             Keeping things simple needs to be both a mentality and a habit, and is aimed at helping to reduce the cost of development, improve quality of both the code and software, and reduce the time to market. It also helps to keep the development process agile, as simpler code and processes are easier to change and adapt to new requirements.
-            #### 1: Minimize Complexity
+            #### Minimize Complexity
             Avoid unnecessary complexity in code, processes, and tools. This helps to reduce the cost of development, improve quality throughout, and reduce the time to market.
-            #### 2: Eliminate Waste
-            Eliminate waste in the development process by removing unnecessary tasks, documentation, and other activities that do not add value. Eliminate code that is not being used and code comments that not adding value.
-            #### 3: Prioritize Value
+            #### Eliminate Waste
+            Eliminate waste in the development process by removing unnecessary tasks, documentation, and other activities that do not add value. Eliminate code that is not being used and code comments that are not adding value.
+            #### Prioritize Value
             Prioritize value over other factors such as features, aesthetics, and performance. This helps to ensure that development efforts are focused on delivering the most key features first. But also understand value doesn't have to be monetarily based or exclusive to customers / users. Some value may be for developers, stakeholders, or others as well.
         </webui-card>
         <webui-card name="Tenet 2: Code Ownership" theme="success">
@@ -46,7 +41,7 @@
             Continuous Agility means that teams should continuously adapt to changing requirements and market needs and be able to pivot quickly when necessary.
             Continuous agility helps to ensure that teams can respond to new challenges and opportunities, and that they are always focused on delivering value to their customers.
             #### Never follow with Absolution
-            When working within principles, guidelines, best- practices, never constrain yourself to following them with absolute adherence. There is no one- size-fits-all solution that is the best solution for every situation.
+            When working within principles, guidelines, best practices, never constrain yourself to following them with absolute adherence. There is no one-size-fits-all solution that is the best solution for every situation.
             #### Be Customer-Focused
             Maintain a customer-focused mindset and continuously seek feedback to ensure that products are meeting their needs and expectations and adapt tasks based on the feedback loops.
             #### No Estimates or Time-Boxing
@@ -63,12 +58,12 @@
             Continuously iterate on the development process based on feedback to improve the product and development process.
         </webui-card>
         <webui-card name="Tenet 5: Continuous Automation" theme="success">
-            Establishing continuous automation throughout the software development process means that teams should continuously automate repetitive and time- consuming tasks, such as testing, building, and deployment.
+            Establishing continuous automation throughout the software development process means that teams should continuously automate repetitive and time-consuming tasks, such as testing, building, and deployment.
             Continuous automation helps to reduce the time and effort required for these tasks, which in turn helps to increase productivity, improve quality, and reduce the time to market.
             #### Automate Everything Possible
             Identify and automate every task that can be automated, such as testing, building, and deployment.
             #### Integrate Automation into the Development Process
-            Integrate automation tools and processes into the development process to reduce manual effort and increase efficiency. Always make this a top priority to do this as early as possible.
+            Integrate automation tools and processes into the development process to reduce manual effort and increase efficiency. Make this a top priority, and do it as early as possible.
             #### Continuously Improve Automation
             Continuously improve automation processes to ensure that they are reliable, efficient, and effective.
         </webui-card>
@@ -88,8 +83,7 @@
             #### Foster a Collaborative Culture
             Establish a collaborative culture that encourages open communication, sharing of ideas, and respect for all team members.
             #### Collaborate Throughout the Development Process
-            Collaborate with all stakeholders throughout the
-            development process, from requirements gathering to release planning.
+            Collaborate with all stakeholders throughout the development process, from requirements gathering to release planning.
             #### Use Collaborative Tools and Processes
             Use collaborative tools and processes, such as Notion and Teams, to facilitate collaboration among team members.
             Take special note that this does not require every person to handle all communication themselves. Instead, it is generally ideal to utilize a hierarchy of contacts that will pass on communications to those that need it, minimizing any developer downtime while still allowing information to be properly communicated.
@@ -148,57 +142,46 @@
     </webui-cards>
 </webui-page-segment>
 <webui-page-segment elevation="10">
-    To help further expand on the core tenets and principles defined in CASE, here are some additional best practices and workflows that I have found to be the most productive for delivering the best quality software being delivered to customers, the most maintainable software for developers to iterate and deliver new features quickly, and the best user experiences, all while simultaneously delivering at a much faster pace than any team I've seen using any type of Scrum-based workflows.
+    Beyond the tenets, these are practices I've found most effective for delivering quality software quickly, keeping code easy to change, and giving users the best experience.
 </webui-page-segment>
 <webui-cards card-width="700">
     <webui-card name="Never Backlog Bugs" theme="primary">
-        Anyone involved with the development of a project should include testing for bugs as a normal part of their day-to-day workflow. And when bugs are encountered document them enough that they can be reproduced easily by a developer.
-        As soon as a bug is documented, it should be a top priority to fix. Do not backlog bugs.
-        When researching and resolving bugs, use this time to add any additional tests that are triggered to fail by this bug. This will provide a verifiable metric to show the bug is resolved.
-        Most developers and teams that struggle with this are struggling because they don't implement good workflows and testing strategies.
+        Everyone involved in a project should test for bugs as part of their normal work, and document any bug well enough that a developer can reproduce it easily.
+        As soon as a bug is documented, make fixing it a top priority. Do not put bugs on a backlog.
+        While fixing a bug, add tests that fail because of it. Those tests prove the bug is fixed and keep it from coming back.
         <webui-quote theme="success">
-            Getting rid of bugs as early as possible means they don't have time to grow and pollute other parts of your systems. This provides the long-term benefit of greatly reducing time spent on bugs, as well as the benefit of your users getting to enjoy a better experience that's not affected by bugs.
+            Fixing bugs early means they don't have time to grow and spread into other parts of the system. Over time, the team spends far less time on bugs, and users get a better experience.
         </webui-quote>
     </webui-card>
-    <webui-card name="Limit Scheduled / Ongoing Meetings" theme="primary">
-        Admin, managers, etc. should not constrain developers by frequent meetings or events. Ideally, a developer would have no more than 1 or 2 hours of dedicated meetings in a week.
-        Larger companies that absolutely must have a lot of meetings should focus on restricting mandatory meetings to no more than 1 day per week.
-        It is generally good to have a weekly meeting day set for developers. If a developer is needed in a meeting, set that meeting on the meeting day.
-        This restrainment does not include developer organized meetings, as developers will want and need to meet with others as part of their development practices as they see is needed or desired. But these are often relatively rare occurrances, as most developers in my experience prefer exhanging information through email or chat when possible.
+    <webui-card name="Protect Focus Time" theme="primary">
+        Keep scheduled meetings for developers to a minimum. Ideally, a developer has no more than one or two hours of recurring meetings a week.
+        Organizations that need more meetings can set one meeting day a week for developers, and schedule anything that needs a developer on that day.
+        This doesn't apply to meetings developers arrange themselves when they need to work through something with others, though most developers prefer email or chat when they can use it.
         <webui-quote theme="success">
-            More time is given to focus on productive development.
-            Developers have fewer interruptions and breaks to their thought processing, which means less time wasted stopping to prep for a meeting, then taking time to get the mind adjusted back to the current task.
+            Developers get more uninterrupted time for focused work, and lose less time preparing for meetings and getting back into a task afterward.
         </webui-quote>
     </webui-card>
-    <webui-card name="Trust Developers to Research/Test/Decide on solutions" theme="primary">
-        <webui-quote theme="danger">
-            One of the more prominent and dangerous practices in modern teams is this concept of discussing and finding a solution as a team, usually voting on a solution within a team meeting to get a "concrete" direction for a developer or project to take, without any research being done to properly evaluate the problem, nor any researching and prototyping of potential solutions. Technical decisions are in effect being driven by feelings and preferences.
-            Team-based decision-making diminishes or often removes any expectation to take time to properly analyze and research the problem, theorize possible solutions, prototype and test various potential solutions, and finalize a decision based on provable metrics.
-        </webui-quote>
-        A developer should own a feature/problem, research a few proposals with pros and cons, then bring it up to the team for discussion only if they can't make an absolute decision based on data-driven results.
-        Team discussions are still encouraged if the owning developer wants different perspectives, especially if others on the team are known to be experts in the area of the problem, but any direction from other developers should be taken as suggestions or advice for a place to start, not an absolute way of doing something.
-        <webui-quote theme="success">
-            A developer can make more decisive decisions based on their expertise, research, and testing. Meaning more data-driven decisions and fewer feelings-driven decisions.
-            Confidence and trust builds for everyone within the team as everyone is making educated, data-driven decisions to solve problems, instead of virtually all solutions coming from 1 or 2 developers who happen to be the most vocal, pushy, or otherwise dictated as a decision maker.
-        </webui-quote>
-    </webui-card>
-    <webui-card name="No Scrum / No Sprints / No Time or Point estimates" theme="primary">
-        <webui-quote theme="danger">
-            This concept is included in the tenets `Continuous Agility` and `Continuous Planning`, but I am explicitly pointing it out here for brevity.
-            In every Scrum team that I have been a part of, I've noticed that developers often spend more time working on planning, documenting work to be done, and calculating estimates before starting any actual development than it would take to just develop the solution.
-            Attaching estimates or deadlines to work to be done has a cascading effect that reduces code quality and maintainability, increases bugs, reduces feature quality, reduces product quality and customer experiences, and ultimately causes new features and updates to take longer as technical debt increases and updates are harder to implement.
-        </webui-quote>
-        Focus on the present instead of wasting time trying to predict the future. No time or pointing estimates in any way, or documenting every step of work to be done ahead of time.
-        Set "goals" instead of deadlines. Product owners should set and prioritize goals as desired, but do not set or ask for any deadlines for any goal. Developers should also set their own goals and prioritize their development goals within the product owner's goals.
+    <webui-card name="Trust Developers to Research, Test, and Decide" theme="primary">
+        A developer should own a feature or problem, research a few options with their pros and cons, and test them. They bring the decision to the team only when the data doesn't settle it.
+        Team discussions are still welcome when the owner wants other perspectives, especially from teammates who are experts in the area. That input is advice and a place to start, not a mandate.
         <webui-quote theme="warning">
-            If you must have estimates, then limit long-term estimates to managers providing estimates on features, and developers only providing estimates for tasks as they start the task. Additionally, do not spend more than a few seconds coming up with an estimate. Estimates are guesses, and more time spent working on estimates means less time working on more productive work.
+            Deciding on a solution by team discussion or vote, before anyone has researched the problem or tested possible solutions, tends to produce decisions based on preference rather than evidence.
         </webui-quote>
         <webui-quote theme="success">
-            Developers are not set up for failure with pressure to finish a task with a deadline that doesn't give proper time to do proper research and testing.
-            Time wasted ramping up new sprints and closing previous sprints is gone. Developers can jump from one task to the next without needing to wait for the next sprint because there isn't enough time in the current sprint to finish the new task.
+            Decisions are based on research and measurable results. Trust grows across the team, because good solutions can come from anyone, not only the loudest voices.
+        </webui-quote>
+    </webui-card>
+    <webui-card name="Goals Instead of Deadlines and Estimates" theme="primary">
+        This practice comes from the Continuous Agility and Continuous Planning tenets.
+        Focus on the work in front of you rather than trying to predict the future. Product owners set and prioritize goals, without deadlines, and developers set and prioritize their own goals within them. Avoid detailed time or point estimates, and avoid documenting every step of work in advance.
+        <webui-quote theme="warning">
+            If you must have estimates, keep long-term estimates at the feature level with managers, and have developers estimate a task only when they start it. Spend seconds on an estimate, not hours. Estimates are guesses, and time spent on them is time not spent building.
+        </webui-quote>
+        <webui-quote theme="success">
+            Developers have the time to research and test properly instead of rushing to meet a deadline, and they move straight from one task to the next without waiting for a planning cycle.
         </webui-quote>
     </webui-card>
 </webui-cards>
 <webui-flex justify="center" class="my-5">
-    Visit SoftwareStandards.dev for more [detailed information on engineering software with agile and continuous delivery systems](https://www.softwarestandards.dev).
+    Visit SoftwareStandards.dev for more [detailed information on engineering software with agile and continuous delivery](https://www.softwarestandards.dev).
 </webui-flex>

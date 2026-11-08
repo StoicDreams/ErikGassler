@@ -1,5 +1,5 @@
 <webui-data data-page-title="Fabric Engine" data-page-subtitle="A 3D engine and world-building suite in Rust"></webui-data>
-<webui-data data-page-next-page='{"name":"Experience","href":"/experience"}'></webui-data>
+<webui-data data-page-next-page='{"name":"Projects","href":"/projects"}'></webui-data>
 
 <webui-page-segment elevation="10">
 
@@ -17,7 +17,7 @@ The first development video gives a very early look at the engine.
 
 </webui-page-segment>
 
-<webui-content cache src="/d/youtube/fabric-engine-intro.md"></webui-content>
+<webui-youtube video="Gn99fCoEPdM" label="Fabric Engine introduction video" width="960" class="my-3"></webui-youtube>
 
 ## What makes it different
 
