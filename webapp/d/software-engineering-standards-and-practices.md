@@ -1,4 +1,5 @@
 <webui-data data-page-title="Software Engineering Standards & Practices" data-page-subtitle="The twelve tenets of CASE"></webui-data>
+<webui-data data-page-description="The twelve tenets of CASE, my standards and practices for building quality software in small, tested steps and delivering it continuously."></webui-data>
 <webui-data data-page-next-page='{"name":"CASE Book","href":"/blogs/book_published_for_case_continuous_agile_software_engineering"}'></webui-data>
 
 <webui-page-segment elevation="10">

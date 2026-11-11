@@ -1,4 +1,5 @@
 <webui-data data-page-title="About Erik" data-page-subtitle="How a self-taught developer got here"></webui-data>
+<webui-data data-page-description="How a self-taught developer went from a club DJ teaching himself PHP in 2007 to a principal-level software engineer building a Rust game engine."></webui-data>
 <webui-data data-page-next-page='{"name":"Projects","href":"/projects"}'></webui-data>
 
 <webui-sideimage src="https://cdn.myfi.ws/img/eg/me_256.webp" alt="Photo of Erik Gassler">

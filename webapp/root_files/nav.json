@@ -20,6 +20,11 @@
         "url": "/projects"
     },
     {
+        "name": "How I Work",
+        "icon": "emoji-gear",
+        "url": "/how-i-work"
+    },
+    {
         "name": "Services",
         "icon": "emoji-handshake",
         "url": "/services"
@@ -32,6 +37,16 @@
                 "name": "Publications",
                 "icon": "emoji-books",
                 "url": "/publications"
+            },
+            {
+                "name": "Case Study: Web UI",
+                "icon": "emoji-building_construction",
+                "url": "/case-studies/web-ui"
+            },
+            {
+                "name": "Shapes Without Meshes",
+                "icon": "emoji-video_game",
+                "url": "/blogs/fabric-engine-shapes-without-meshes"
             },
             {
                 "name": "CASE Book",

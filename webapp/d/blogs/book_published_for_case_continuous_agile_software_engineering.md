@@ -1,4 +1,5 @@
 <webui-data data-page-title="CASE: Continuous Agile Software Engineering" data-page-subtitle="My book on shipping quality software continuously"></webui-data>
+<webui-data data-page-description="CASE: Continuous Agile Software Engineering, my book on the practices I use to build quality software and ship it continuously. Available in Kindle, paperback, and hardcover."></webui-data>
 <webui-data data-page-next-page='{"name":"Software Engineering Standards & Practices","href":"/software-engineering-standards-and-practices"}'></webui-data>
 
 <app-books></app-books>

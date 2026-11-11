@@ -1,4 +1,5 @@
 <webui-data data-page-title="Services" data-page-subtitle="Contract and consulting work"></webui-data>
+<webui-data data-page-description="Contract and consulting work in Rust, engines and tools, performance problems, web applications, and continuous delivery."></webui-data>
 <webui-data data-page-next-page='{"name":"Contact","href":"/contact"}'></webui-data>
 
 <webui-page-segment elevation="10">

@@ -1,4 +1,5 @@
 <webui-data data-page-title="Experience" data-page-subtitle="19 years of shipping production software"></webui-data>
+<webui-data data-page-description="19 years of shipping production software at Microsoft, Opyn Health, Costco, and more: roles, dates, and the results I delivered."></webui-data>
 <webui-data data-page-next-page='{"name":"Fabric Engine","href":"/fabric-engine"}'></webui-data>
 
 <webui-page-segment elevation="10">

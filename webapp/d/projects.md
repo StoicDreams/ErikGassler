@@ -1,5 +1,6 @@
 <webui-data data-page-title="Projects" data-page-subtitle="Tools, frameworks, and platforms I've built"></webui-data>
-<webui-data data-page-next-page='{"name":"Services","href":"/services"}'></webui-data>
+<webui-data data-page-description="Tools, frameworks, and platforms I've built: Fabric Engine, the Web UI framework, a platform for about two dozen websites, Task Proxy, and more."></webui-data>
+<webui-data data-page-next-page='{"name":"How I Work","href":"/how-i-work"}'></webui-data>
 
 <webui-page-segment elevation="10">
 
@@ -19,6 +20,8 @@ Alongside my day job, I build and run my own software through my companies, Stoi
         A vanilla JavaScript web component framework, with about 70 components, a data binding system, and Rust WebAssembly workers for heavy processing. Pages are written in markdown, and components load themselves on first use, so a new site starts with almost no boilerplate.
 
         **JavaScript, HTML, CSS, Rust, WebAssembly**
+
+        [Read the case study](/case-studies/web-ui)
     </webui-card>
     <webui-card name="A platform for two dozen sites" avatar="emoji-rocket" theme="primary" link="https://www.stoicdreams.com">
         About two dozen websites, including this one, run on Web UI from one shared CDN. Every push to main runs each site's Playwright tests, checking config, SEO files, links, and that every page loads without errors, and deploys only if they pass.

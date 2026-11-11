@@ -1,4 +1,5 @@
 <webui-data data-page-title="Fabric Engine" data-page-subtitle="A 3D engine and world-building suite in Rust"></webui-data>
+<webui-data data-page-description="Fabric Engine is a 3D engine and world-building suite in Rust and WGSL, drawing models as exact mathematical shapes on the GPU for a stylized 3D pixel-art look."></webui-data>
 <webui-data data-page-next-page='{"name":"Projects","href":"/projects"}'></webui-data>
 
 <webui-page-segment elevation="10">
@@ -41,9 +42,11 @@ Fabric uses deferred rendering, as a chain of GPU passes:
 
 1. **G-buffer:** draws a simple proxy cube for each node, then solves the exact intersection with the node's real shape for each pixel, writing color, normal, position, depth, and the model and node ids.
 2. **Global illumination:** traces rays against the same analytic shapes, using low-discrepancy sampling, for indirect lighting and ambient occlusion.
-3. **Screen-space voxelization:** maps each pixel to a cell in a screen-space grid. Each cell takes the node nearest the camera and the average color of its pixels.
+3. **Screen-space voxelization:** the G-buffer is drawn at the resolution of a screen-space grid, so each pixel is one cell. A compute pass turns each covered cell into a voxel at the surface point under it, sized by its distance from the camera so it covers one cell on screen.
 4. **Instanced rendering:** redraws the grid as instanced cubes.
 5. **Lighting, background, and post-processing:** lights the voxels, fills the background, runs any post-processing passes the game adds, and composites the final frame.
+
+For a deeper walk through the shape and voxel passes, read [Drawing Shapes Without Meshes](/blogs/fabric-engine-shapes-without-meshes).
 
 Large tile-map worlds take their own path: a compute pass culls tiles and builds the instance list on the GPU, then the engine draws it with indirect draw calls and a dedicated global illumination pass.
 

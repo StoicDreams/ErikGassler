@@ -1,4 +1,5 @@
 <webui-data data-page-title="Erik Gassler" data-page-subtitle="Principal Software Engineer"></webui-data>
+<webui-data data-page-description="Erik Gassler is a principal-level software engineer with 19 years of shipping production software, from Rust game engines to healthcare web platforms. Open to Principal and Staff roles and contract work."></webui-data>
 <webui-data data-page-next-page='{"name":"Experience","href":"/experience"}'></webui-data>
 
 <webui-pinned-side>

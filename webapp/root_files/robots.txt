@@ -1,7 +1,4 @@
-﻿User-agent: Googlebot
-Allow: /nogooglebot/
-
-User-agent: *
+﻿User-agent: *
 Allow: /
 
 Sitemap: https://www.erikgassler.com/sitemap.xml

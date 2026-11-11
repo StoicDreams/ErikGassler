@@ -1,4 +1,5 @@
 <webui-data data-page-title="Contact Erik Gassler" data-page-subtitle=""></webui-data>
+<webui-data data-page-description="Get in touch with Erik Gassler about Principal or Staff engineering roles, contract work, or anything on this site."></webui-data>
 
 <webui-sideimage src="https://cdn.myfi.ws/v/Vecteezy/cartoon-style-cloud-storage-data-processing-message.svg" alt="">
     <webui-page-segment elevation="10">
