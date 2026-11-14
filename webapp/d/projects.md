@@ -11,19 +11,19 @@ Alongside my day job, I build and run my own software through my companies, Stoi
 ## Featured
 
 <webui-cards card-width="340">
-    <webui-card name="Fabric Engine" avatar="emoji-video_game" theme="primary" link="/fabric-engine">
+    <webui-card name="Fabric Engine" avatar="cube" theme="primary" link="/fabric-engine">
         A 3D game engine and world-building suite in Rust and WGSL. Models are trees of mathematical shapes drawn exactly on the GPU, then snapped to a voxel grid for a stylized 3D pixel-art look. It powers Faryn, Wyrdloom Studios' first game.
 
         **Rust, WGSL, wgpu, winit**
     </webui-card>
-    <webui-card name="Web UI" avatar="emoji-building_construction" theme="primary" link="https://webui.stoicdreams.com">
+    <webui-card name="Web UI" avatar="puzzle-piece" theme="primary" link="https://webui.stoicdreams.com">
         A vanilla JavaScript web component framework, with about 70 components, a data binding system, and Rust WebAssembly workers for heavy processing. Pages are written in markdown, and components load themselves on first use, so a new site starts with almost no boilerplate.
 
         **JavaScript, HTML, CSS, Rust, WebAssembly**
 
         [Read the case study](/case-studies/web-ui)
     </webui-card>
-    <webui-card name="A platform for two dozen sites" avatar="emoji-rocket" theme="primary" link="https://www.stoicdreams.com">
+    <webui-card name="A platform for two dozen sites" avatar="layers" theme="primary" link="https://www.stoicdreams.com">
         About two dozen websites, including this one, run on Web UI from one shared CDN. Every push to main runs each site's Playwright tests, checking config, SEO files, links, and that every page loads without errors, and deploys only if they pass.
 
         **GitHub Actions, Playwright, Rust, PowerShell**
@@ -33,18 +33,18 @@ Alongside my day job, I build and run my own software through my companies, Stoi
 ## Developer tools and services
 
 <webui-cards card-width="340">
-    <webui-card name="Task Proxy" avatar="emoji-hammer_and_wrench" theme="secondary" link="https://www.taskproxy.com">
+    <webui-card name="Task Proxy" avatar="robot" theme="secondary" link="https://www.taskproxy.com">
         A lightweight, cross-platform desktop tool for managing project documentation, scripts, and automations. It keeps pages and settings in the repository so teams share them through git, runs parameterized scripts with generated inputs, and stores secrets in the operating system's credential manager.
 
         **Rust**
     </webui-card>
-    <webui-card name="My Fidelity" avatar="emoji-cloud" theme="secondary" link="https://www.myfi.ws">
+    <webui-card name="My Fidelity" avatar="cloud" theme="secondary" link="https://www.myfi.ws">
         The Backend as a Service from Stoic Dreams, providing the APIs behind its sites and apps.
     </webui-card>
-    <webui-card name="Ap Tul" avatar="emoji-laptop" theme="secondary" link="https://www.aptul.com">
+    <webui-card name="Ap Tul" avatar="toolbox" theme="secondary" link="https://www.aptul.com">
         A library of privacy-focused browser tools for developers, such as image conversion and resizing, PDF merging and splitting, and a JWT decoder. Files are processed in the browser rather than uploaded.
     </webui-card>
-    <webui-card name="StoicDreams.TestFramework" avatar="emoji-test_tube" theme="secondary">
+    <webui-card name="StoicDreams.TestFramework" avatar="test" theme="secondary">
         A testing framework for C# and .NET that standardizes Arrange, Act, Assert tests, with an extension for testing Blazor components built on bUnit.
 
         **C#, .NET, Blazor, bUnit**

@@ -69,9 +69,9 @@ The simplest thing that delivers value is usually the easiest to change later. I
 <webui-page-segment elevation="10">
 
 <webui-flex gap="2" wrap>
-    <webui-link href="/software-engineering-standards-and-practices" start-icon="emoji-scroll">The twelve tenets of CASE</webui-link>
-    <webui-link href="/blogs/book_published_for_case_continuous_agile_software_engineering" start-icon="emoji-ledger">The CASE book</webui-link>
-    <webui-link href="https://www.softwarestandards.dev" target="_blank" start-icon="emoji-globe_with_meridians">SoftwareStandards.dev</webui-link>
+    <webui-link href="/software-engineering-standards-and-practices" start-icon="scroll">The twelve tenets of CASE</webui-link>
+    <webui-link href="/blogs/book_published_for_case_continuous_agile_software_engineering" start-icon="book">The CASE book</webui-link>
+    <webui-link href="https://www.softwarestandards.dev" target="_blank" start-icon="globe">SoftwareStandards.dev</webui-link>
 </webui-flex>
 
 </webui-page-segment>

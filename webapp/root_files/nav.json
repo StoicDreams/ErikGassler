@@ -1,73 +1,73 @@
 [
     {
         "name": "Home",
-        "icon": "circle_emoji-house|theme:title|backing|inverted",
+        "icon": "circle_home|theme:title|backing|inverted",
         "url": "/"
     },
     {
         "name": "Experience",
-        "icon": "emoji-briefcase",
+        "icon": "briefcase",
         "url": "/experience"
     },
     {
         "name": "Fabric Engine",
-        "icon": "emoji-video_game",
+        "icon": "cube",
         "url": "/fabric-engine"
     },
     {
         "name": "Projects",
-        "icon": "emoji-hammer_and_wrench",
+        "icon": "toolbox",
         "url": "/projects"
     },
     {
         "name": "How I Work",
-        "icon": "emoji-gear",
+        "icon": "compass",
         "url": "/how-i-work"
     },
     {
         "name": "Services",
-        "icon": "emoji-handshake",
+        "icon": "handshake",
         "url": "/services"
     },
     {
         "name": "Writing",
-        "icon": "emoji-books",
+        "icon": "circle_feather|theme:primary|backing|inverted",
         "children": [
             {
                 "name": "Publications",
-                "icon": "emoji-books",
+                "icon": "book-open",
                 "url": "/publications"
             },
             {
                 "name": "Case Study: Web UI",
-                "icon": "emoji-building_construction",
+                "icon": "newspaper",
                 "url": "/case-studies/web-ui"
             },
             {
                 "name": "Shapes Without Meshes",
-                "icon": "emoji-video_game",
+                "icon": "stacked-squares",
                 "url": "/blogs/fabric-engine-shapes-without-meshes"
             },
             {
                 "name": "CASE Book",
-                "icon": "emoji-ledger",
+                "icon": "book",
                 "url": "/blogs/book_published_for_case_continuous_agile_software_engineering"
             },
             {
                 "name": "SWE Standards & Practices",
-                "icon": "emoji-scroll",
+                "icon": "scroll",
                 "url": "/software-engineering-standards-and-practices"
             }
         ]
     },
     {
         "name": "About",
-        "icon": "emoji-bust_in_silhouette",
+        "icon": "user",
         "url": "/about"
     },
     {
         "name": "Contact",
-        "icon": "emoji-envelope",
+        "icon": "envelope",
         "url": "/contact"
     }
 ]

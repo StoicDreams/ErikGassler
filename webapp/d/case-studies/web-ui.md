@@ -63,13 +63,13 @@ When every site loads the same framework, a mistake in the framework is a mistak
 ## Results
 
 <webui-cards card-width="300">
-    <webui-card name="About two dozen sites" avatar="emoji-building_construction" theme="primary">
+    <webui-card name="About two dozen sites" avatar="layers" theme="primary">
         Run on one framework and one CDN, including this site, [Ap Tul](https://www.aptul.com), and [Task Proxy](https://www.taskproxy.com).
     </webui-card>
-    <webui-card name="New pages in one file" avatar="emoji-memo" theme="primary">
+    <webui-card name="New pages in one file" avatar="file" theme="primary">
         A page is one markdown file. A layout used across sites becomes one component, instead of markup and CSS copied into each page.
     </webui-card>
-    <webui-card name="Every deploy tested" avatar="emoji-test_tube" theme="primary">
+    <webui-card name="Every deploy tested" avatar="test" theme="primary">
         No site deploys unless its tests pass, and the framework can't add a component or method without tests.
     </webui-card>
 </webui-cards>
@@ -85,7 +85,7 @@ When every site loads the same framework, a mistake in the framework is a mistak
 </webui-page-segment>
 
 <webui-flex gap="2" class="my-3" wrap justify="center">
-    <webui-link href="https://webui.stoicdreams.com" target="_blank" start-icon="emoji-globe_with_meridians">Web UI documentation</webui-link>
-    <webui-link href="https://github.com/StoicDreams/WebUI" target="_blank" start-icon="emoji-laptop">Web UI on GitHub</webui-link>
-    <webui-link href="/projects" start-icon="emoji-hammer_and_wrench">More projects</webui-link>
+    <webui-link href="https://webui.stoicdreams.com" target="_blank" start-icon="book">Web UI documentation</webui-link>
+    <webui-link href="https://github.com/StoicDreams/WebUI" target="_blank" start-icon="github">Web UI on GitHub</webui-link>
+    <webui-link href="/projects" start-icon="toolbox">More projects</webui-link>
 </webui-flex>

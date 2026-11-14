@@ -23,13 +23,13 @@ The first development video gives a very early look at the engine.
 ## What makes it different
 
 <webui-cards card-width="340">
-    <webui-card name="Models built from math, not meshes" avatar="emoji-crab" theme="primary">
+    <webui-card name="Models built from math, not meshes" avatar="function" theme="primary">
         Each model is a tree of nodes, and each node is a shape: a box, ellipsoid, cylinder, cone, pyramid, bowl, pipe, or hollow box. The GPU draws every node by solving the exact ray intersection with its shape for each pixel. There are no polygon meshes and no ray marching.
     </webui-card>
-    <webui-card name="A stylized 3D pixel-art look" avatar="emoji-video_game" theme="primary">
+    <webui-card name="A stylized 3D pixel-art look" avatar="cube" theme="primary">
         After the scene is drawn, the engine snaps it to a screen-space voxel grid and redraws it as instanced cubes. The result is a tilt-shift, 3D pixel-art style built for Faryn, rather than a general-purpose look.
     </webui-card>
-    <webui-card name="An editor as well as an engine" avatar="emoji-hammer_and_wrench" theme="primary">
+    <webui-card name="An editor as well as an engine" avatar="wrench" theme="primary">
         Fabric Creator is the desktop editor built on the engine, for building models, node hierarchies, scenes, tile maps, worlds, text, and characters, with on-screen handles and picking of whatever is under the cursor.
     </webui-card>
 </webui-cards>
@@ -78,9 +78,9 @@ Fabric Engine is where I do my most demanding engineering: designing a system ar
 <webui-page-segment elevation="10">
 
 <webui-flex gap="2" wrap>
-    <webui-link href="https://www.wyrdloom.com" target="_blank" start-icon="emoji-globe_with_meridians">Wyrdloom Studios</webui-link>
-    <webui-link href="https://www.youtube.com/@wyrdloom" target="_blank" start-icon="emoji-video_game">Wyrdloom on YouTube</webui-link>
-    <webui-link href="https://www.linkedin.com/in/erikgassler" target="_blank" start-icon="emoji-link">Follow me on LinkedIn</webui-link>
+    <webui-link href="https://www.wyrdloom.com" target="_blank" start-icon="globe">Wyrdloom Studios</webui-link>
+    <webui-link href="https://www.youtube.com/@wyrdloom" target="_blank" start-icon="youtube">Wyrdloom on YouTube</webui-link>
+    <webui-link href="https://www.linkedin.com/in/erikgassler" target="_blank" start-icon="linkedin">Follow me on LinkedIn</webui-link>
 </webui-flex>
 
 </webui-page-segment>

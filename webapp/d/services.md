@@ -11,22 +11,22 @@ I take on contract and consulting work alongside my full-time role. If you have 
 ## What I can help with
 
 <webui-cards card-width="340">
-    <webui-card name="Rust, engines, and tools" avatar="emoji-crab" theme="primary">
+    <webui-card name="Rust, engines, and tools" avatar="gear" theme="primary">
         Rust applications and libraries, GPU rendering with wgpu and WGSL, game engine systems, and desktop tools, drawing on my work building [Fabric Engine](/fabric-engine) and [Task Proxy](https://www.taskproxy.com).
     </webui-card>
-    <webui-card name="Performance problems" avatar="emoji-stopwatch" theme="primary">
+    <webui-card name="Performance problems" avatar="gauge" theme="primary">
         Finding and fixing what makes a system slow. At Microsoft I prototyped and partly built a re-architecture of a reporting service whose queries took from tens of seconds up to hundreds of minutes, bringing them down to between milliseconds and a few seconds.
     </webui-card>
-    <webui-card name="Web applications" avatar="emoji-globe_with_meridians" theme="primary">
+    <webui-card name="Web applications" avatar="window" theme="primary">
         New web applications or rebuilds of existing ones, in C# Blazor, React with TypeScript, or vanilla JavaScript with my [Web UI](https://webui.stoicdreams.com) framework, with Rust where heavy processing is needed.
     </webui-card>
-    <webui-card name="Continuous delivery" avatar="emoji-rocket" theme="primary">
+    <webui-card name="Continuous delivery" avatar="rocket" theme="primary">
         Getting a team to ship small, tested changes to production every day: CI/CD pipelines, automated test suites, and the working practices from my book, [CASE](/blogs/book_published_for_case_continuous_agile_software_engineering).
     </webui-card>
-    <webui-card name="Architecture reviews" avatar="emoji-light_bulb" theme="primary">
+    <webui-card name="Architecture reviews" avatar="hierarchy" theme="primary">
         A second opinion on a system's design, codebase, or delivery process, with concrete, prioritized recommendations.
     </webui-card>
-    <webui-card name="Training and mentoring" avatar="emoji-busts_in_silhouette" theme="primary">
+    <webui-card name="Training and mentoring" avatar="graduation-cap" theme="primary">
         Workshops on unit testing and test-driven development, like the sessions I ran at Microsoft, and mentoring engineers as they grow into leads.
     </webui-card>
 </webui-cards>
@@ -48,9 +48,9 @@ I take on contract and consulting work alongside my full-time role. If you have 
 Tell me about the project, what you need, and your timeline.
 
 <webui-flex gap="2" class="mt-3" wrap>
-    <webui-link href="https://www.linkedin.com/in/erikgassler" target="_blank" start-icon="emoji-link">Message me on LinkedIn</webui-link>
-    <webui-link href="/contact" start-icon="emoji-envelope">Contact me</webui-link>
-    <webui-link href="/experience" start-icon="emoji-briefcase">See my experience</webui-link>
+    <webui-link href="https://www.linkedin.com/in/erikgassler" target="_blank" start-icon="linkedin">Message me on LinkedIn</webui-link>
+    <webui-link href="/contact" start-icon="envelope">Contact me</webui-link>
+    <webui-link href="/experience" start-icon="briefcase">See my experience</webui-link>
 </webui-flex>
 
 </webui-page-segment>

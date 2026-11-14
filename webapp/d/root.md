@@ -13,9 +13,9 @@ I'm a principal-level software engineer with 19 years of shipping production sof
 I'm open to **Principal and Staff engineering roles**, and to **contract work**.
 
 <webui-flex gap="2" class="mt-3" wrap>
-    <webui-link href="https://www.linkedin.com/in/erikgassler" target="_blank" start-icon="emoji-link">LinkedIn</webui-link>
-    <webui-link href="https://github.com/StoicDreams" target="_blank" start-icon="emoji-laptop">GitHub</webui-link>
-    <webui-link href="/contact" start-icon="emoji-envelope">Contact me</webui-link>
+    <webui-link href="https://www.linkedin.com/in/erikgassler" target="_blank" start-icon="linkedin">LinkedIn</webui-link>
+    <webui-link href="https://github.com/StoicDreams" target="_blank" start-icon="github">GitHub</webui-link>
+    <webui-link href="/contact" start-icon="envelope">Contact me</webui-link>
 </webui-flex>
 
 </webui-media>
@@ -29,7 +29,7 @@ I'm open to **Principal and Staff engineering roles**, and to **contract work**.
 
 **Fabric Engine** is a 3D engine and world-building suite in Rust. Its models are trees of mathematical shapes drawn exactly on the GPU, then snapped to a voxel grid for a stylized 3D pixel-art look. It powers **Faryn**, the first game from [Wyrdloom Studios](https://www.wyrdloom.com).
 
-<webui-link href="/fabric-engine" start-icon="emoji-video_game">How Fabric Engine works</webui-link>
+<webui-link href="/fabric-engine" start-icon="cube">How Fabric Engine works</webui-link>
 
 </webui-page-segment>
 
@@ -37,22 +37,22 @@ I'm open to **Principal and Staff engineering roles**, and to **contract work**.
 ## Results I've delivered
 
 <webui-cards card-width="300">
-    <webui-card name="Minutes to milliseconds" avatar="emoji-stopwatch" theme="primary">
+    <webui-card name="Minutes to milliseconds" avatar="stopwatch" theme="primary">
         **Microsoft.** Prototyped and partly built a re-architecture of a customer-facing reporting service, bringing queries of tens of seconds to hundreds of minutes down to milliseconds to a few seconds.
     </webui-card>
-    <webui-card name="Live in its first week" avatar="emoji-bar_chart" theme="primary">
+    <webui-card name="Live in its first week" avatar="rocket" theme="primary">
         **General Services Corp.** Built a reporting portal that launched in week one and grew to hundreds of reports, held to under 100 ms per request.
     </webui-card>
-    <webui-card name="Two calls at once" avatar="emoji-telephone_receiver" theme="primary">
+    <webui-card name="Two calls at once" avatar="phone-handset" theme="primary">
         **SoftRock.** Architected a call-scripting platform that let agents handle two calls at once while outperforming top agents.
     </webui-card>
-    <webui-card name="A framework for two dozen sites" avatar="emoji-building_construction" theme="primary">
+    <webui-card name="A framework for two dozen sites" avatar="layers" theme="primary">
         **Stoic Dreams.** Created Web UI, which runs about two dozen websites, including this one, with tests that gate every deploy.
     </webui-card>
 </webui-cards>
 
 <webui-flex justify="center" class="my-3">
-    <webui-link href="/experience" start-icon="emoji-briefcase">See my full experience</webui-link>
+    <webui-link href="/experience" start-icon="briefcase">See my full experience</webui-link>
 </webui-flex>
 
 ## How I work
@@ -76,9 +76,9 @@ I ship in small, tested steps, straight to production, often several times a day
 If you're hiring for a Principal or Staff engineer, or need help with Rust, engine or tooling work, performance problems, or getting a team shipping continuously, I'd like to hear from you.
 
 <webui-flex gap="2" class="mt-3" wrap>
-    <webui-link href="https://www.linkedin.com/in/erikgassler" target="_blank" start-icon="emoji-link">Message me on LinkedIn</webui-link>
-    <webui-link href="/services" start-icon="emoji-handshake">Contract services</webui-link>
-    <webui-link href="/projects" start-icon="emoji-hammer_and_wrench">See my projects</webui-link>
+    <webui-link href="https://www.linkedin.com/in/erikgassler" target="_blank" start-icon="linkedin">Message me on LinkedIn</webui-link>
+    <webui-link href="/services" start-icon="handshake">Contract services</webui-link>
+    <webui-link href="/projects" start-icon="toolbox">See my projects</webui-link>
 </webui-flex>
 
 </webui-page-segment>
