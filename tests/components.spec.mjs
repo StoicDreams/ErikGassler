@@ -29,6 +29,25 @@ test.describe('app-books', () => {
         await expect(page.locator('webui-page-not-found')).toHaveCount(0);
     });
 
+    test('with cover it shows only the cover and editions, pinned beside the announcement', async ({ page }) => {
+        await openPage(page, announcement);
+        const books = page.locator('webui-pinned-side > [slot="side"] app-books[cover]');
+        await expect(books.locator('img')).toBeVisible();
+        await expect(books.getByRole('link', { name: 'Kindle', exact: true })).toBeVisible();
+        await expect(books.locator('webui-quote')).toHaveCount(0);
+    });
+
+    test('without cover it shows the announcement beside the cover', async ({ page }) => {
+        await openPage(page, '/publications');
+        await page.evaluate(() => {
+            const books = document.createElement('app-books');
+            document.querySelector('webui-page-segment').after(books);
+        });
+        const books = page.locator('app-books');
+        await expect(books.locator('webui-quote')).toContainText('CASE: Continuous Agile Software Engineering');
+        await expect(books.locator('img')).toHaveCount(1);
+    });
+
     test('without link-to-blog there is no link to the announcement', async ({ page }) => {
         await openPage(page, announcement);
         await expect(page.locator('app-books')).toContainText('Kindle');

@@ -2,6 +2,7 @@
 <webui-data data-page-description="How I built Web UI, the web component framework behind about two dozen websites, and why I rebuilt it from Rust rendering to vanilla JavaScript components with Rust workers."></webui-data>
 <webui-data data-page-next-page='{"name":"How I Work","href":"/how-i-work"}'></webui-data>
 
+<webui-pinned-side>
 <webui-page-segment elevation="10">
 
 Web UI is the framework I built to run my company's websites, including this one. It started in 2022 as a Rust framework that rendered the UI in WebAssembly. In 2024 I rebuilt it as vanilla JavaScript web components, with Rust kept for the heavy processing it is good at. Today about two dozen websites run on it from one shared CDN, and every deploy is gated by automated tests.
@@ -60,9 +61,11 @@ When every site loads the same framework, a mistake in the framework is a mistak
 
 </webui-page-segment>
 
-## Results
+<webui-page-segment slot="side" elevation="10">
 
-<webui-cards card-width="300">
+### Results
+
+<webui-cards card-width="340">
     <webui-card name="About two dozen sites" avatar="layers" theme="primary">
         Run on one framework and one CDN, including this site, [Ap Tul](https://www.aptul.com), and [Task Proxy](https://www.taskproxy.com).
     </webui-card>
@@ -73,6 +76,8 @@ When every site loads the same framework, a mistake in the framework is a mistak
         No site deploys unless its tests pass, and the framework can't add a component or method without tests.
     </webui-card>
 </webui-cards>
+
+</webui-page-segment>
 
 ## What I'd tell a team facing the same choice
 
@@ -89,3 +94,5 @@ When every site loads the same framework, a mistake in the framework is a mistak
     <webui-link href="https://github.com/StoicDreams/WebUI" target="_blank" start-icon="github">Web UI on GitHub</webui-link>
     <webui-link href="/projects" start-icon="toolbox">More projects</webui-link>
 </webui-flex>
+
+</webui-pinned-side>

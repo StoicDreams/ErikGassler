@@ -2,6 +2,7 @@
 <webui-data data-page-description="Fabric Engine is a 3D engine and world-building suite in Rust and WGSL, drawing models as exact mathematical shapes on the GPU for a stylized 3D pixel-art look."></webui-data>
 <webui-data data-page-next-page='{"name":"Projects","href":"/projects"}'></webui-data>
 
+<webui-pinned-side>
 <webui-page-segment elevation="10">
 
 Fabric Engine is the custom 3D game engine and world-building suite I'm building from the ground up in Rust and WGSL at my studio, [Wyrdloom Studios](https://www.wyrdloom.com). I started it in February 2026, and it is in early development.
@@ -9,16 +10,6 @@ Fabric Engine is the custom 3D game engine and world-building suite I'm building
 It powers **Faryn**, the studio's first game: an action-adventure inspired by the 8-bit and 16-bit classics, with modern graphics and controls. The game is the engine's proving ground, so every engine feature is built for, and tested against, a real product.
 
 </webui-page-segment>
-
-## See it in action
-
-<webui-page-segment elevation="10">
-
-The first development video gives a very early look at the engine.
-
-</webui-page-segment>
-
-<webui-youtube video="Gn99fCoEPdM" label="Fabric Engine introduction video" width="960" class="my-3"></webui-youtube>
 
 ## What makes it different
 
@@ -73,9 +64,15 @@ Fabric Engine is where I do my most demanding engineering: designing a system ar
 
 </webui-page-segment>
 
-## Follow the project
+<webui-page-segment slot="side" elevation="10">
 
-<webui-page-segment elevation="10">
+### See it in action
+
+The first development video gives a very early look at the engine.
+
+<webui-youtube video="Gn99fCoEPdM" label="Fabric Engine introduction video" class="my-2"></webui-youtube>
+
+### Follow the project
 
 <webui-flex gap="2" wrap>
     <webui-link href="https://www.wyrdloom.com" target="_blank" start-icon="globe">Wyrdloom Studios</webui-link>
@@ -84,3 +81,5 @@ Fabric Engine is where I do my most demanding engineering: designing a system ar
 </webui-flex>
 
 </webui-page-segment>
+
+</webui-pinned-side>

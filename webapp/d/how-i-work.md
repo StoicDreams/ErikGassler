@@ -2,6 +2,7 @@
 <webui-data data-page-description="How I build software: small changes shipped to production continuously, automated tests on every deploy, measured performance, and teams that learn as they go."></webui-data>
 <webui-data data-page-next-page='{"name":"Services","href":"/services"}'></webui-data>
 
+<webui-pinned-side>
 <webui-page-segment elevation="10">
 
 I build software in small, tested steps and ship each one to production as soon as it is ready. I've refined this way of working over my career and wrote it up as a book, [CASE: Continuous Agile Software Engineering](/blogs/book_published_for_case_continuous_agile_software_engineering). This page shows what it looks like in practice, and the results it has produced.
@@ -60,13 +61,13 @@ The simplest thing that delivers value is usually the easiest to change later. I
 
 </webui-page-segment>
 
-<webui-quote theme="tertiary" cite="Joel Ferreira, LinkedIn recommendation" class="my-5">
+<webui-page-segment slot="side" elevation="10">
+
+<webui-quote theme="tertiary" cite="Joel Ferreira, LinkedIn recommendation">
     Erik is an out of the box thinker and a great collaborator.
 </webui-quote>
 
-## Learn more
-
-<webui-page-segment elevation="10">
+### Learn more
 
 <webui-flex gap="2" wrap>
     <webui-link href="/software-engineering-standards-and-practices" start-icon="scroll">The twelve tenets of CASE</webui-link>
@@ -75,3 +76,5 @@ The simplest thing that delivers value is usually the easiest to change later. I
 </webui-flex>
 
 </webui-page-segment>
+
+</webui-pinned-side>

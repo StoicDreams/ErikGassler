@@ -2,6 +2,7 @@
 <webui-data data-page-description="Contract and consulting work in Rust, engines and tools, performance problems, web applications, and continuous delivery."></webui-data>
 <webui-data data-page-next-page='{"name":"Contact","href":"/contact"}'></webui-data>
 
+<webui-pinned-side>
 <webui-page-segment elevation="10">
 
 I take on contract and consulting work alongside my full-time role. If you have a project that needs a senior engineer who can own it from architecture to production, I'd like to hear about it. Availability depends on the project, so get in touch and we can talk it through.
@@ -41,9 +42,9 @@ I take on contract and consulting work alongside my full-time role. If you have 
 
 </webui-page-segment>
 
-## Get in touch
+<webui-page-segment slot="side" elevation="10">
 
-<webui-page-segment elevation="10">
+### Get in touch
 
 Tell me about the project, what you need, and your timeline.
 
@@ -54,3 +55,5 @@ Tell me about the project, what you need, and your timeline.
 </webui-flex>
 
 </webui-page-segment>
+
+</webui-pinned-side>

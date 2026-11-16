@@ -2,7 +2,19 @@
 <webui-data data-page-description="CASE: Continuous Agile Software Engineering, my book on the practices I use to build quality software and ship it continuously. Available in Kindle, paperback, and hardcover."></webui-data>
 <webui-data data-page-next-page='{"name":"Software Engineering Standards & Practices","href":"/software-engineering-standards-and-practices"}'></webui-data>
 
-<app-books></app-books>
+<webui-pinned-side>
+<webui-quote theme="info" cite="May 6th, 2023">
+    Today, I am excited to announce the publishing of my first book "CASE: Continuous Agile Software Engineering", now available in <a href="https://www.amazon.com/dp/B0C47LV1Y8">Kindle, Paperback, and Hardcover editions on Amazon</a>.
+    It documents the practices I developed over my career for building quality software in small, tested steps and delivering it to users continuously.
+</webui-quote>
+
+<webui-page-segment slot="side" elevation="10">
+
+### Get the book
+
+<app-books cover></app-books>
+
+</webui-page-segment>
 
 ## What the book is about
 
@@ -39,3 +51,5 @@ The book organizes these ideas into twelve tenets, each with three core principl
 The book is available in [Kindle](https://www.amazon.com/dp/B0C4FX1F1S), [paperback](https://www.amazon.com/dp/B0C47LV1Y8), and [hardcover](https://www.amazon.com/dp/B0C47YGGYH) editions on Amazon.
 
 </webui-sideimage>
+
+</webui-pinned-side>

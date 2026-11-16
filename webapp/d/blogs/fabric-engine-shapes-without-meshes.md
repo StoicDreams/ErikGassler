@@ -2,11 +2,24 @@
 <webui-data data-page-description="How Fabric Engine draws models without polygon meshes: proxy cubes, exact ray intersections solved per pixel in WGSL, and a screen-space voxel grid for a 3D pixel-art look."></webui-data>
 <webui-data data-page-next-page='{"name":"Fabric Engine","href":"/fabric-engine"}'></webui-data>
 
+<webui-pinned-side>
 <webui-page-segment elevation="10">
 
 Most 3D engines draw triangles. A model is a mesh of thousands of them, built in a modeling tool, and the GPU fills in each one. [Fabric Engine](/fabric-engine), the Rust engine I'm building for Wyrdloom Studios, draws no triangle meshes for its models. Every model is a small tree of mathematical shapes, and the GPU solves each shape's exact surface for every pixel.
 
 This article explains how that works, and why it suits the stylized 3D pixel-art look of our first game, Faryn. The engine's code is private, so this is a walk through the ideas rather than the source.
+
+</webui-page-segment>
+
+<webui-page-segment slot="side" elevation="10">
+
+### See it in action
+
+The first development video gives a very early look at Fabric Engine.
+
+<webui-youtube video="Gn99fCoEPdM" label="Fabric Engine introduction video" class="my-2"></webui-youtube>
+
+<webui-link href="/fabric-engine" start-icon="cube">How Fabric Engine works</webui-link>
 
 </webui-page-segment>
 
@@ -93,3 +106,5 @@ With most of the engine's work in WGSL shaders, a shader error is as serious as 
 You can see an early look at the engine in the [first development video](https://www.youtube.com/watch?v=Gn99fCoEPdM), and follow along on [Wyrdloom Studios' YouTube channel](https://www.youtube.com/@wyrdloom).
 
 </webui-page-segment>
+
+</webui-pinned-side>

@@ -2,6 +2,7 @@
 <webui-data data-page-description="19 years of shipping production software at Microsoft, Opyn Health, Costco, and more: roles, dates, and the results I delivered."></webui-data>
 <webui-data data-page-next-page='{"name":"Fabric Engine","href":"/fabric-engine"}'></webui-data>
 
+<webui-pinned-side>
 <webui-page-segment elevation="10">
 
 I taught myself to program in 2007 and have shipped production software ever since: web platforms, cloud services, internal tools, browser extensions, and now a Rust game engine. Most of my career has been in roles where I owned a product end to end, from architecture to deployment.
@@ -10,21 +11,19 @@ For the full record, see my [LinkedIn profile](https://www.linkedin.com/in/erikg
 
 </webui-page-segment>
 
-## At a glance
+<webui-page-segment slot="side" elevation="10">
 
-<webui-page-segment elevation="10">
+### At a glance
 
-| Role | Company | Dates |
-|---|---|---|
-| Senior Software Engineer, UI Lead | Opyn Health | 2022 to present |
-| Founder and Lead Architect | Wyrdloom Studios | 2026 to present |
-| Principal Software Engineer | Stoic Dreams | 2008 to present |
-| Senior Software Engineer | Costco Wholesale (contract) | 2022 |
-| Senior Software Engineer | Floating Point Group | 2021 to 2022 |
-| Software Engineer 2 | Microsoft | 2019 to 2021 |
-| Senior Software Engineer | General Services Corp | 2016 to 2018 |
-| Software Engineer II | SoftRock | 2011 to 2016 |
-| Website Manager | Opinions R Fun | 2007 to 2008 |
+- **Opyn Health** · 2022 to present<br>Senior Software Engineer, UI Lead
+- **Wyrdloom Studios** · 2026 to present<br>Founder and Lead Architect
+- **Stoic Dreams** · 2008 to present<br>Principal Software Engineer
+- **Costco Wholesale (contract)** · 2022<br>Senior Software Engineer
+- **Floating Point Group** · 2021 to 2022<br>Senior Software Engineer
+- **Microsoft** · 2019 to 2021<br>Software Engineer 2
+- **General Services Corp** · 2016 to 2018<br>Senior Software Engineer
+- **SoftRock** · 2011 to 2016<br>Software Engineer II
+- **Opinions R Fun** · 2007 to 2008<br>Website Manager
 
 </webui-page-segment>
 
@@ -197,3 +196,5 @@ Left a full-time job to teach myself web development with Apache, PHP, MySQL, HT
 - DevOps Foundations, LinkedIn Learning, 2019
 
 </webui-page-segment>
+
+</webui-pinned-side>

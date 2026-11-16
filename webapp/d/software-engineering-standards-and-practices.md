@@ -2,6 +2,7 @@
 <webui-data data-page-description="The twelve tenets of CASE, my standards and practices for building quality software in small, tested steps and delivering it continuously."></webui-data>
 <webui-data data-page-next-page='{"name":"CASE Book","href":"/blogs/book_published_for_case_continuous_agile_software_engineering"}'></webui-data>
 
+<webui-pinned-side>
 <webui-page-segment elevation="10">
 
 Continuous Agile Software Engineering, or CASE, is the set of standards and practices I've developed and refined over my career for building quality software in small, tested steps and delivering it continuously. This page is a brief introduction. My book, [CASE: Continuous Agile Software Engineering](/blogs/book_published_for_case_continuous_agile_software_engineering), covers it in full, and [SoftwareStandards.dev](https://www.softwarestandards.dev) documents the standards in more depth.
@@ -9,6 +10,14 @@ Continuous Agile Software Engineering, or CASE, is the set of standards and prac
 I was able to use all of CASE at General Services Corp from 2016 to 2018, where I led greenfield projects from inception through delivery and maintenance. There I built a reporting portal that went live in its first week and grew to hundreds of reports, while pushing to production several times a day.
 
 Many of the tenets are useful on their own, but CASE works best when they are adopted together. It also works best where management trusts engineers to own their work without micromanagement, and engineers are motivated to do it well.
+
+</webui-page-segment>
+
+<webui-page-segment slot="side" elevation="10">
+
+### Get the book
+
+<app-books cover></app-books>
 
 </webui-page-segment>
 
@@ -186,3 +195,5 @@ Many of the tenets are useful on their own, but CASE works best when they are ad
 <webui-flex justify="center" class="my-5">
     Visit SoftwareStandards.dev for more [detailed information on engineering software with agile and continuous delivery](https://www.softwarestandards.dev).
 </webui-flex>
+
+</webui-pinned-side>
