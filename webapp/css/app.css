@@ -1,7 +1,11 @@
 /*
- * Voxel Dusk theme (chosen 2026-11-15): dark violet, a pink-to-orange accent, Sora headings and Inter text,
+ * Voxel Dusk theme (chosen 2026-11-15), the default: dark violet, a pink-to-orange accent, Sora headings and Inter text,
  * and a faint isometric cube pattern that nods to Fabric Engine's voxel look. Theme only: build layouts as
  * components, not CSS here.
+ *
+ * Visitors can pick another theme with webui-theme-selector in index.html, which sets data-theme on <html>. Each
+ * theme below sets its own variables under :root[data-theme="name"] and overrides the Voxel Dusk styles it changes.
+ * The theme names and swatch colors in index.html must match these blocks.
  */
 :root {
 	--color-black: #101010;
@@ -37,13 +41,15 @@
 	--corners: 6px;
 	--padding: 8px;
 	--link-shadow: 0 0 6px #ff5c8a;
+	--link-color: #ffb38a;
+	--logo-accent: #b8335d;
 	/* A small three-faced cube in the accent colors, used as a mark beside section headings. */
 	--voxel-mark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2l9 5-9 5-9-5z' fill='%23ff8a3d'/%3E%3Cpath d='M3 7l9 5v10l-9-5z' fill='%23ff5c8a'/%3E%3Cpath d='M21 7l-9 5v10l9-5z' fill='%23b8335d'/%3E%3C/svg%3E");
 }
 
 /* Soft glows and a faint isometric cube pattern behind the page. The app stays fixed while its content scrolls. */
 webui-app {
-	background-color: #14111c;
+	background-color: var(--color-background);
 	background-image:
 		radial-gradient(1100px 600px at 90% -10%, rgb(255 92 138 / 16%), transparent 60%),
 		radial-gradient(900px 520px at -10% 110%, rgb(255 138 61 / 11%), transparent 60%),
@@ -77,5 +83,288 @@ webui-app h2:not(header *, webui-drawer *, webui-page-footer *)::before {
 }
 
 a {
-	color: #ffb38a;
+	color: var(--link-color);
+}
+
+/* The diamond in the middle of the logo. */
+webui-stoic-dreams-logo {
+	--color-title: var(--logo-accent);
+}
+
+/* Granite: dark carved stone, sandstone gold accents, and Cinzel headings. */
+:root[data-theme="granite"] {
+	--color-success: #2f7a3a;
+	--color-success-offset: #FFFFFF;
+	--color-warning: rgb(191, 84, 31);
+	--color-warning-offset: #FFFFFF;
+	--color-danger: rgb(183, 5, 5);
+	--color-danger-offset: #FFFFFF;
+	--color-background: #1b1c1e;
+	--color-background-offset: #e8e4dc;
+	--color-title: #232528;
+	--color-title-offset: #f1ede4;
+	--color-primary: #2e3035;
+	--color-primary-offset: #e8e4dc;
+	--color-secondary: #3a3d43;
+	--color-secondary-offset: #e8e4dc;
+	--color-tertiary: #c9a46a;
+	--color-tertiary-offset: #1b1c1e;
+	--color-info: #8fa3ad;
+	--color-info-offset: #1b1c1e;
+	--color-active: #c9a46a;
+	--color-active-offset: #1b1c1e;
+	--color-button: #c9a46a;
+	--color-button-offset: #1b1c1e;
+	--color-footer: #232528;
+	--color-footer-offset: #cfc9bd;
+	--color-focus: #e0c48f;
+	--fill-accent: linear-gradient(180deg, #e6cf9f, #a98450);
+	--typography-family: "Source Sans 3", system-ui, Arial, sans-serif;
+	--font-family-display: "Cinzel", Georgia, serif;
+	--corners: 2px;
+	--link-shadow: 0 0 5px rgb(201 164 106 / 55%);
+	--logo-accent: #c9a46a;
+	--link-color: #e0c48f;
+}
+
+:root[data-theme="granite"] webui-app {
+	background-color: var(--color-background);
+	background-image:
+		radial-gradient(1200px 700px at 50% -20%, rgb(255 240 210 / 7%), transparent 70%),
+		url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' seed='5' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.1 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url%28%23n%29'/%3E%3C/svg%3E"),
+		url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='600'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.012' numOctaves='4' seed='9' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.18 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url%28%23n%29'/%3E%3C/svg%3E");
+}
+
+:root[data-theme="granite"] webui-app :is(h2, h3):not(header *, webui-drawer *, webui-page-footer *) {
+	background-image: none;
+	color: #d9bf8c;
+	letter-spacing: 0.03em;
+	text-shadow: 0 1px 0 rgb(0 0 0 / 80%), 0 -1px 0 rgb(255 255 255 / 8%);
+}
+
+:root[data-theme="granite"] webui-app h2:not(header *, webui-drawer *, webui-page-footer *)::before {
+	width: 0.7em;
+	height: 0.7em;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2l10 10-10 10L2 12z' fill='%238a6c3e'/%3E%3Cpath d='M12 2l10 10H2z' fill='%23d9bf8c'/%3E%3C/svg%3E");
+}
+
+:root[data-theme="granite"] webui-page-segment {
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='2' seed='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.06 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url%28%23n%29'/%3E%3C/svg%3E");
+	box-shadow: inset 0 1px 0 rgb(255 255 255 / 6%), 0 2px 6px rgb(0 0 0 / 50%);
+}
+
+/* Limestone: light, warm stone, terracotta accents, and Marcellus headings. */
+:root[data-theme="limestone"] {
+	--color-success: #2f7a3a;
+	--color-success-offset: #FFFFFF;
+	--color-warning: rgb(191, 84, 31);
+	--color-warning-offset: #FFFFFF;
+	--color-danger: rgb(183, 5, 5);
+	--color-danger-offset: #FFFFFF;
+	--color-background: #e6e1d6;
+	--color-background-offset: #2a2824;
+	--color-title: #3b3a36;
+	--color-title-offset: #f3efe6;
+	--color-primary: #d8d1c3;
+	--color-primary-offset: #2a2824;
+	--color-secondary: #cbc2b1;
+	--color-secondary-offset: #2a2824;
+	--color-tertiary: #8a4b2f;
+	--color-tertiary-offset: #FFFFFF;
+	--color-info: #44606f;
+	--color-info-offset: #FFFFFF;
+	--color-active: #8a4b2f;
+	--color-active-offset: #FFFFFF;
+	--color-button: #8a4b2f;
+	--color-button-offset: #FFFFFF;
+	--color-footer: #3b3a36;
+	--color-footer-offset: #e6e1d6;
+	--color-focus: #8a4b2f;
+	--fill-accent: linear-gradient(180deg, #a35a36, #6e3a22);
+	--typography-family: "Source Sans 3", system-ui, Arial, sans-serif;
+	--font-family-display: "Marcellus", Georgia, serif;
+	--corners: 2px;
+	--link-shadow: 0 0 4px rgb(138 75 47 / 30%);
+	--logo-accent: #8a4b2f;
+	--link-color: #7a3f25;
+}
+
+:root[data-theme="limestone"] webui-app {
+	background-color: var(--color-background);
+	background-image:
+		url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' seed='4' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.2 0 0 0 0 0.17 0 0 0 0 0.12 0 0 0 0.09 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url%28%23n%29'/%3E%3C/svg%3E"),
+		url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='700' height='700'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.01' numOctaves='4' seed='11' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.35 0 0 0 0 0.3 0 0 0 0 0.22 0 0 0 0.12 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url%28%23n%29'/%3E%3C/svg%3E");
+}
+
+:root[data-theme="limestone"] webui-app :is(h2, h3):not(header *, webui-drawer *, webui-page-footer *) {
+	background-image: none;
+	color: #6b3a24;
+	letter-spacing: 0.02em;
+	text-shadow: 0 1px 0 rgb(255 255 255 / 60%);
+}
+
+:root[data-theme="limestone"] webui-app h2:not(header *, webui-drawer *, webui-page-footer *)::before {
+	width: 0.7em;
+	height: 0.7em;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2l10 10-10 10L2 12z' fill='%236e3a22'/%3E%3Cpath d='M12 2l10 10H2z' fill='%23b06a3e'/%3E%3C/svg%3E");
+}
+
+:root[data-theme="limestone"] webui-page-segment {
+	background-color: #efebe2;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' seed='6' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.2 0 0 0 0 0.17 0 0 0 0 0.12 0 0 0 0.05 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url%28%23n%29'/%3E%3C/svg%3E");
+	box-shadow: 0 1px 2px rgb(60 50 35 / 25%);
+}
+
+/* Graphite: pencil on paper, blue and red pencil accents, hand-drawn panels, and Caveat headings. */
+:root[data-theme="graphite"] {
+	--color-success: #2f7a3a;
+	--color-success-offset: #FFFFFF;
+	--color-warning: rgb(191, 84, 31);
+	--color-warning-offset: #FFFFFF;
+	--color-danger: rgb(183, 5, 5);
+	--color-danger-offset: #FFFFFF;
+	--color-background: #f4f1e9;
+	--color-background-offset: #2b2b2b;
+	--color-title: #e8e4d9;
+	--color-title-offset: #2b2b2b;
+	--color-primary: #e4dfd2;
+	--color-primary-offset: #2b2b2b;
+	--color-secondary: #d7d1c2;
+	--color-secondary-offset: #2b2b2b;
+	--color-tertiary: #2f5d8a;
+	--color-tertiary-offset: #FFFFFF;
+	--color-info: #2f5d8a;
+	--color-info-offset: #FFFFFF;
+	--color-active: #b23a2e;
+	--color-active-offset: #FFFFFF;
+	--color-button: #3a3a3a;
+	--color-button-offset: #f4f1e9;
+	--color-footer: #e8e4d9;
+	--color-footer-offset: #2b2b2b;
+	--color-focus: #2f5d8a;
+	--fill-accent: linear-gradient(90deg, #2b2b2b, #6e6e6e);
+	--typography-family: "Inter", system-ui, Arial, sans-serif;
+	--font-family-display: "Caveat", "Comic Sans MS", cursive;
+	--corners: 4px;
+	--link-shadow: 0 0 3px rgb(47 93 138 / 30%);
+	--logo-accent: #2f5d8a;
+	--link-color: #2f5d8a;
+}
+
+:root[data-theme="graphite"] webui-app {
+	background-color: var(--color-background);
+	background-image:
+		url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='3' seed='7' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.15 0 0 0 0 0.15 0 0 0 0 0.15 0 0 0 0.07 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url%28%23n%29'/%3E%3C/svg%3E"),
+		url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7' height='7'%3E%3Cpath d='M-1 8 L8 -1' stroke='%232b2b2b' stroke-opacity='0.045' stroke-width='0.7'/%3E%3C/svg%3E");
+}
+
+:root[data-theme="graphite"] h1,
+:root[data-theme="graphite"] h2,
+:root[data-theme="graphite"] h3,
+:root[data-theme="graphite"] h4 {
+	font-weight: 700;
+}
+
+:root[data-theme="graphite"] header h1,
+:root[data-theme="graphite"] header h2 {
+	font-family: var(--typography-family);
+	font-weight: 600;
+}
+
+:root[data-theme="graphite"] webui-app :is(h2, h3):not(header *, webui-drawer *, webui-page-footer *) {
+	background-image: none;
+	color: #2b2b2b;
+	font-size: 2.1em;
+}
+
+:root[data-theme="graphite"] webui-app h2:not(header *, webui-drawer *, webui-page-footer *)::before {
+	width: 0.9em;
+	height: 0.9em;
+	margin-top: 0.1em;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M3 13c3-1 6-2 9-1s5 3 9 1M4 9c4 0 7-1 10 0s4 2 6 1M5 17c3-1 6-1 9 0s4 1 6-1' fill='none' stroke='%232f5d8a' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+}
+
+:root[data-theme="graphite"] webui-page-segment {
+	background-color: rgb(255 255 255 / 55%);
+	border: 1.6px solid #3a3a3a;
+	border-radius: 255px 12px 225px 12px / 12px 225px 12px 255px;
+	box-shadow: 2px 3px 0 -1px rgb(40 40 40 / 35%);
+}
+
+/* Charcoal: chalky graphite on dark paper, amber accents, hand-drawn panels, and Caveat headings. */
+:root[data-theme="charcoal"] {
+	--color-success: #2f7a3a;
+	--color-success-offset: #FFFFFF;
+	--color-warning: rgb(191, 84, 31);
+	--color-warning-offset: #FFFFFF;
+	--color-danger: rgb(183, 5, 5);
+	--color-danger-offset: #FFFFFF;
+	--color-background: #232220;
+	--color-background-offset: #e6e2d8;
+	--color-title: #1b1a18;
+	--color-title-offset: #efebe1;
+	--color-primary: #2e2d2a;
+	--color-primary-offset: #e6e2d8;
+	--color-secondary: #3a3834;
+	--color-secondary-offset: #e6e2d8;
+	--color-tertiary: #e6e2d8;
+	--color-tertiary-offset: #232220;
+	--color-info: #9fb6c9;
+	--color-info-offset: #232220;
+	--color-active: #e0a458;
+	--color-active-offset: #232220;
+	--color-button: #e6e2d8;
+	--color-button-offset: #232220;
+	--color-footer: #1b1a18;
+	--color-footer-offset: #cfcabe;
+	--color-focus: #f0e6c8;
+	--fill-accent: linear-gradient(90deg, #f6f3ec, #a9a59c);
+	--typography-family: "Inter", system-ui, Arial, sans-serif;
+	--font-family-display: "Caveat", "Comic Sans MS", cursive;
+	--corners: 4px;
+	--link-shadow: 0 0 5px rgb(224 164 88 / 45%);
+	--logo-accent: #e0a458;
+	--link-color: #e0a458;
+}
+
+:root[data-theme="charcoal"] webui-app {
+	background-color: var(--color-background);
+	background-image:
+		radial-gradient(900px 600px at 80% 0%, rgb(255 255 255 / 5%), transparent 70%),
+		url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' seed='8' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.12 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url%28%23n%29'/%3E%3C/svg%3E"),
+		url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M-1 9 L9 -1' stroke='%23ffffff' stroke-opacity='0.03' stroke-width='0.7'/%3E%3C/svg%3E"),
+		url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='600'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.015' numOctaves='3' seed='12' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url%28%23n%29'/%3E%3C/svg%3E");
+}
+
+:root[data-theme="charcoal"] h1,
+:root[data-theme="charcoal"] h2,
+:root[data-theme="charcoal"] h3,
+:root[data-theme="charcoal"] h4 {
+	font-weight: 700;
+}
+
+:root[data-theme="charcoal"] header h1,
+:root[data-theme="charcoal"] header h2 {
+	font-family: var(--typography-family);
+	font-weight: 600;
+}
+
+:root[data-theme="charcoal"] webui-app :is(h2, h3):not(header *, webui-drawer *, webui-page-footer *) {
+	background-image: none;
+	color: #f2eee6;
+	font-size: 2.1em;
+	text-shadow: 0 0 1px rgb(255 255 255 / 40%);
+}
+
+:root[data-theme="charcoal"] webui-app h2:not(header *, webui-drawer *, webui-page-footer *)::before {
+	width: 0.9em;
+	height: 0.9em;
+	margin-top: 0.1em;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M3 13c3-1 6-2 9-1s5 3 9 1M4 9c4 0 7-1 10 0s4 2 6 1M5 17c3-1 6-1 9 0s4 1 6-1' fill='none' stroke='%23e0a458' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+}
+
+:root[data-theme="charcoal"] webui-page-segment {
+	background-color: rgb(255 255 255 / 3%);
+	border: 1.6px solid rgb(230 226 216 / 55%);
+	border-radius: 255px 12px 225px 12px / 12px 225px 12px 255px;
 }
