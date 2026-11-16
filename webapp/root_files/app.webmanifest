@@ -3,8 +3,8 @@
   "short_name": "Erik Gassler",
   "start_url": "./",
   "display": "standalone",
-  "background_color": "#000000",
-  "theme_color": "#FF2E46",
+  "background_color": "#14111c",
+  "theme_color": "#14111c",
   "prefer_related_applications": false,
   "icons": [
     {

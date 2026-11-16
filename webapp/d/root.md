@@ -36,20 +36,20 @@ I'm open to **Principal and Staff engineering roles**, and to **contract work**.
 
 ## Results I've delivered
 
-<webui-cards card-width="300">
-    <webui-card name="Minutes to milliseconds" avatar="stopwatch" theme="primary">
-        **Microsoft.** Prototyped and partly built a re-architecture of a customer-facing reporting service, bringing queries of tens of seconds to hundreds of minutes down to milliseconds to a few seconds.
-    </webui-card>
-    <webui-card name="Live in its first week" avatar="rocket" theme="primary">
-        **General Services Corp.** Built a reporting portal that launched in week one and grew to hundreds of reports, held to under 100 ms per request.
-    </webui-card>
-    <webui-card name="Two calls at once" avatar="phone-handset" theme="primary">
-        **SoftRock.** Architected a call-scripting platform that let agents handle two calls at once while outperforming top agents.
-    </webui-card>
-    <webui-card name="A framework for two dozen sites" avatar="layers" theme="primary">
-        **Stoic Dreams.** Created Web UI, which runs about two dozen websites, including this one, with tests that gate every deploy.
-    </webui-card>
-</webui-cards>
+<webui-flex wrap gap="16">
+    <webui-stat width="300" value="Minutes → ms" label="Microsoft" theme="primary">
+        Prototyped and partly built a re-architecture of a customer-facing reporting service, bringing queries of tens of seconds to hundreds of minutes down to milliseconds to a few seconds.
+    </webui-stat>
+    <webui-stat width="300" value="< 100 ms" label="General Services Corp" theme="primary">
+        Built a reporting portal that launched in its first week and grew to hundreds of reports, with every request held under 100 ms.
+    </webui-stat>
+    <webui-stat width="300" value="2 calls" label="SoftRock" theme="primary">
+        Architected a call-scripting platform that let each agent handle two calls at once while outperforming top agents.
+    </webui-stat>
+    <webui-stat width="300" value="2 dozen" label="Stoic Dreams" theme="primary">
+        Created Web UI, the framework that runs about two dozen websites, including this one, with tests that gate every deploy.
+    </webui-stat>
+</webui-flex>
 
 <webui-flex justify="center" class="my-3">
     <webui-link href="/experience" start-icon="briefcase">See my full experience</webui-link>
