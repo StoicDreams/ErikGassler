@@ -5,7 +5,7 @@
     const cover = `
     <webui-flex column gap="2">
         <webui-paper class="image mb-2" style="max-height:500px">
-            <img style="max-height:500px" src="https://cdn.myfi.ws/img/case/CASE_Digital_Cover.webp" alt="CASE book digital cover" />
+            <img style="max-height:500px" src="${webui.cdnRoot || 'https://cdn.myfi.ws/'}img/case/CASE_Digital_Cover.webp" alt="CASE book digital cover" />
         </webui-paper>
         <webui-flex gap="2" justify="center" wrap>
             <webui-paper elevation="10" class="pa-2">

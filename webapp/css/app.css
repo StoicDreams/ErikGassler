@@ -12,8 +12,11 @@
 	--color-white: #FFFFFF;
 	--color-background: #14111c;
 	--color-background-offset: #ece6f7;
-	--color-title: #1e1830;
+	--color-title: #b8335d;
 	--color-title-offset: #FFFFFF;
+	/* The title color is the rose of the logo, and the header blends it deep into the page. */
+	--color-header: color-mix(in srgb, var(--color-title) 30%, var(--color-background));
+	--color-header-offset: #FFFFFF;
 	--color-primary: #2a2140;
 	--color-primary-offset: #ece6f7;
 	--color-secondary: #33264f;
@@ -101,8 +104,10 @@ webui-stoic-dreams-logo {
 	--color-danger-offset: #FFFFFF;
 	--color-background: #1b1c1e;
 	--color-background-offset: #e8e4dc;
-	--color-title: #232528;
-	--color-title-offset: #f1ede4;
+	--color-title: #c9a46a;
+	--color-title-offset: #1b1c1e;
+	--color-header: color-mix(in srgb, var(--color-title) 22%, var(--color-background));
+	--color-header-offset: #f1ede4;
 	--color-primary: #2e3035;
 	--color-primary-offset: #e8e4dc;
 	--color-secondary: #3a3d43;
@@ -163,8 +168,10 @@ webui-stoic-dreams-logo {
 	--color-danger-offset: #FFFFFF;
 	--color-background: #e6e1d6;
 	--color-background-offset: #2a2824;
-	--color-title: #3b3a36;
+	--color-title: #8a4b2f;
 	--color-title-offset: #f3efe6;
+	--color-header: color-mix(in srgb, var(--color-title) 55%, var(--color-background-offset));
+	--color-header-offset: #f3efe6;
 	--color-primary: #d8d1c3;
 	--color-primary-offset: #2a2824;
 	--color-secondary: #cbc2b1;
@@ -225,8 +232,11 @@ webui-stoic-dreams-logo {
 	--color-danger-offset: #FFFFFF;
 	--color-background: #f4f1e9;
 	--color-background-offset: #2b2b2b;
-	--color-title: #e8e4d9;
-	--color-title-offset: #2b2b2b;
+	--color-title: #2f5d8a;
+	--color-title-offset: #f4f1e9;
+	/* A light header, the paper with a hint of the blue ink. */
+	--color-header: color-mix(in srgb, var(--color-title) 14%, var(--color-background));
+	--color-header-offset: #2b2b2b;
 	--color-primary: #e4dfd2;
 	--color-primary-offset: #2b2b2b;
 	--color-secondary: #d7d1c2;
@@ -301,8 +311,10 @@ webui-stoic-dreams-logo {
 	--color-danger-offset: #FFFFFF;
 	--color-background: #232220;
 	--color-background-offset: #e6e2d8;
-	--color-title: #1b1a18;
-	--color-title-offset: #efebe1;
+	--color-title: #e0a458;
+	--color-title-offset: #1b1a18;
+	--color-header: color-mix(in srgb, var(--color-title) 20%, var(--color-background));
+	--color-header-offset: #efebe1;
 	--color-primary: #2e2d2a;
 	--color-primary-offset: #e6e2d8;
 	--color-secondary: #3a3834;
