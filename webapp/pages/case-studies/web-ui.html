@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-LQEBP3P6LD"></script>
+	<script>
+		if (location.hostname !== 'localhost') {
+			window.dataLayer = window.dataLayer || [];
+			function gtag() { dataLayer.push(arguments); }
+			gtag('js', new Date());
+			gtag('config', 'G-LQEBP3P6LD');
+		}
+	</script>
+	<title>Case Study: Web UI: Rebuilding a framework around what each language does best</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="index, follow">
+	<base href="/" />
+	<script type="text/javascript">
+		navigator.serviceWorker.register('service-worker.min.js');
+	</script>
+
+	<link rel="dns-prefetch" href="https://cdn.myfi.ws" />
+	<link rel="dns-prefetch" href="https://api.myfi.ws" />
+	<link rel="preconnect" href="https://cdn.myfi.ws">
+	<link rel="preconnect" href="https://api.myfi.ws">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700&family=Cinzel:wght@500;600;700&family=Marcellus&family=Source+Sans+3:wght@400;600&family=Caveat:wght@600;700&display=swap" rel="stylesheet" />
+
+	<link href="Logo.svg?v=82bc0f4dd5" rel="icon" type="image/svg+xml" sizes="any" />
+	<link rel="manifest" href="app.webmanifest?v=45d36fe574">
+
+	<script>
+		// Web UI loads from the local MyFiCDN server (MyFiCDN/PowerShell/RunLocal.ps1) when the site runs on localhost,
+		// so framework changes show before they are published, and from cdn.myfi.ws everywhere else.
+		window.webuiCdn = /^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname) ? 'http://localhost:3180/' : 'https://cdn.myfi.ws/';
+		document.write('<link href="' + webuiCdn + 'css/webui.min.css" rel="stylesheet" />');
+	</script>
+	<link href="css/app.min.css?v=2b5a850300" rel="stylesheet" />
+	<script>document.write('<script src="' + webuiCdn + 'webui/loader.min.js"></' + 'script>');</script>
+
+	<!-- Prerendered pages from webapp_post_build prerender. Release builds copy them to the site root. -->
+
+	<!--Web Worker-->
+	<script type="module" src="main.js?v=cea15cbf4f"></script>
+	<!--End Web Worker-->
+
+	<meta name="theme-color" content="#14111c" />
+
+	<meta name="author" content="Erik Gassler">
+	<meta name="description" content="How I built Web UI, the web component framework behind about two dozen sites, and why I rebuilt it around vanilla JavaScript with Rust workers.">
+
+	<meta property="og:image" content="https://cdn.myfi.ws/img/eg/me_512.png">
+	<meta property="og:title" content="Case Study: Web UI: Rebuilding a framework around what each language does best">
+	<meta property="og:url" content="https://www.erikgassler.com/case-studies/web-ui">
+	<meta property="og:description" content="How I built Web UI, the web component framework behind about two dozen sites, and why I rebuilt it around vanilla JavaScript with Rust workers.">
+
+	<meta name="twitter:title" content="Case Study: Web UI: Rebuilding a framework around what each language does best">
+	<meta name="twitter:url" content="https://www.erikgassler.com/case-studies/web-ui">
+	<meta name="twitter:site" content="@stoicdreamsllc">
+	<meta name="twitter:description" content="How I built Web UI, the web component framework behind about two dozen sites, and why I rebuilt it around vanilla JavaScript with Rust workers.">
+	<meta name="twitter:image" content="https://cdn.myfi.ws/img/eg/me_512.png">
+
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Person",
+		"name": "Erik Gassler",
+		"url": "https://www.erikgassler.com/",
+		"image": "https://cdn.myfi.ws/img/eg/me_512.png",
+		"jobTitle": "Principal Software Engineer",
+		"description": "Principal-level software engineer with 19 years of shipping production software, from Rust game engines to healthcare web platforms.",
+		"knowsAbout": ["Rust", "WebGPU", "wgpu", "WebAssembly", "Game engine development", "C#", "Blazor", "JavaScript", "TypeScript", "Azure", "Continuous delivery", "Performance optimization"],
+		"sameAs": [
+			"https://www.linkedin.com/in/erikgassler",
+			"https://github.com/StoicDreams",
+			"https://medium.erikgassler.com"
+		]
+	}
+	</script>
+	<link rel="canonical" href="https://www.erikgassler.com/case-studies/web-ui" />
+	<link rel="modulepreload" href="https://cdn.myfi.ws/js/mdparse.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/alerts.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/app.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/app-config.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/card.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/cards.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/data.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/drawer.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/feedback.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/flex.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/icon.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/link.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/myfi-info.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/nav.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/next-page.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/page-footer.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/page-segment.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/pinned-side.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/stoic-dreams-logo.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/stoic-social-links.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/theme-selector.min.js" crossorigin="anonymous" />
+	<meta name="webui-prerender" content="d9e0aefa7a">
+</head>
+
+<body>
+	<webui-app-config src="appConfig.json"></webui-app-config>
+	<webui-app data-removeclass=".nav|open;.shared|open">
+		<div data-prerendered>
+<p>Web UI is the framework I built to run my company's websites, including this one. It started in 2022 as a Rust framework that rendered the UI in WebAssembly. In 2024 I rebuilt it as vanilla JavaScript web components, with Rust kept for the heavy processing it is good at. Today about two dozen websites run on it from one shared CDN, and every deploy is gated by automated tests.</p>
+<p>This page covers the problem, the decision to rebuild, the design, and how it is kept reliable.</p>
+
+<h2>The problem</h2>
+
+<p>I run about two dozen websites through Stoic Dreams. Each one needs the same things: navigation, drawers, a header and footer, page routing, forms, data binding, and accessibility. Rebuilding that on every site, or copying it between sites, multiplies the code I have to maintain by the number of sites.</p>
+<p>I wanted a new site to start with almost no boilerplate, and a fix in shared code to reach every site at once.</p>
+
+<h2>Version one: Rust in the browser</h2>
+
+<p>The first version, started in September 2022, was a Rust library built on the Yew framework, compiled to WebAssembly. Within the first two weeks I replaced Yew's router with my own navigation system, and the library grew to cover the shared layout and components for my sites.</p>
+<p>It worked, but it had Rust building HTML. The rebuild followed a different principle: Rust should not build or manage the UI. It belongs in a worker thread doing long-running or processing-heavy work, while the UI stays in HTML, CSS, and JavaScript, the languages the browser was built around.</p>
+
+<h2>The rebuild</h2>
+
+<p>In May 2024 I began a vanilla JavaScript loader for web components, and in June 2024 I moved the framework over to it and retired the Rust rendering.</p>
+<p>The design that came out of the rebuild:</p>
+<ul>
+<li><strong>Components that load themselves.</strong> A page uses a tag such as <code>&lt;webui-cards&gt;</code>, and the loader fetches that component's script the first time the tag appears. Sites don't import or bundle anything. A site adds its own components with an <code>app-</code> prefix, and they load the same way from the site.</li>
+<li><strong>Pages written in markdown.</strong> Each page is a markdown file that can contain components, so adding a page is writing one file.</li>
+<li><strong>Data binding in attributes.</strong> Elements subscribe to and update shared data with <code>data-subscribe</code>, <code>data-trigger</code>, and <code>data-bind</code>, so most interactive pages need no page-specific JavaScript.</li>
+<li><strong>Rust where it earns its place.</strong> Each site can run Rust compiled to WebAssembly in a worker, called from JavaScript with <code>webui.worker</code>. The browser tools on <a href="https://www.aptul.com">Ap Tul</a> use this to process files on the device instead of uploading them.</li>
+<li><strong>One CDN for every site.</strong> The framework is served from one CDN, so a fix or a new component reaches every site without changing them.</li>
+</ul>
+<p>The framework now has about 70 components, from layout pieces like drawers and tabs to forms, tables, and dialogs.</p>
+
+<h2>Keeping two dozen sites safe</h2>
+
+<p>When every site loads the same framework, a mistake in the framework is a mistake on every site. That makes testing the core of the design, not an extra:</p>
+<ul>
+<li><strong>A framework test suite of over 700 Playwright tests</strong>, which runs against both the source files and the minified files the sites load. A coverage test fails if any component or public <code>webui</code> method has no tests, so new code can't skip them.</li>
+<li><strong>Tests on every site's deploy.</strong> Every push to main runs that site's own Playwright tests first: config and SEO files, links between pages, and that every page loads with a title, without errors, and with all its components. A failing test stops the deploy.</li>
+<li><strong>Pages for search engines and link previews.</strong> The build writes a static HTML file for each page, with its own title, description, and text, so crawlers and link previews that don't run JavaScript still see the real page.</li>
+</ul>
+
+
+<h3>Results</h3>
+
+
+<p>Run on one framework and one CDN, including this site, <a href="https://www.aptul.com">Ap Tul</a>, and <a href="https://www.taskproxy.com">Task Proxy</a>.</p>
+
+
+<p>A page is one markdown file. A layout used across sites becomes one component, instead of markup and CSS copied into each page.</p>
+
+
+<p>No site deploys unless its tests pass, and the framework can't add a component or method without tests.</p>
+
+
+
+<h2>What I'd tell a team facing the same choice</h2>
+
+<ul>
+<li><strong>Put each language where it is strongest.</strong> Moving Rust out of the UI and into workers made both halves simpler.</li>
+<li><strong>Share through components, not copies.</strong> A layout that two pages need is one component, so a fix lands everywhere at once.</li>
+<li><strong>Make the shared code the most tested code.</strong> The more places depend on something, the more its tests are worth.</li>
+</ul>
+
+
+<p>Web UI documentation
+Web UI on GitHub
+More projects</p>
+		</div>
+		<webui-drawer slot="left" class="nav elevation-20" docked="true" data-state="slot|docked" data-moveable data-dockable>
+			<webui-flex justify="center" slot="header">
+				<webui-stoic-dreams-logo title="Erik Gassler Website Logo" text="Erik" text2="Gassler"></webui-stoic-dreams-logo>
+			</webui-flex>
+			<webui-nav routes="/nav.json" data-subscribe="app-nav-routes:setNavRoutes"></webui-nav>
+		</webui-drawer>
+		<webui-drawer slot="right" class="shared elevation-20" data-stopclick data-moveable data-state="slot">
+		</webui-drawer>
+		<header slot="header">
+			<button aria-label="open navigation menu" data-toggleclass=".nav|open" class="elevation-10 pa-1 mx-1">
+				<webui-icon icon="hamburger"></webui-icon>
+			</button>
+			<h1 data-subscribe="page-title:innerHTML">Case Study: Web UI</h1>
+			<h2 data-subscribe="page-subtitle:innerHTML">Rebuilding a framework around what each language does best</h2>
+			<webui-flex grow></webui-flex>
+			<webui-theme-selector title="Choose a theme" data-title="Theme" data-toggleclass=".shared|open">
+				<option value="" data-colors="#14111c #ff5c8a #ff8a3d">Voxel Dusk</option>
+				<option value="granite" data-colors="#1b1c1e #c9a46a #e8e4dc">Granite</option>
+				<option value="limestone" data-colors="#e6e1d6 #8a4b2f #44606f">Limestone</option>
+				<option value="graphite" data-colors="#f4f1e9 #2b2b2b #2f5d8a">Graphite</option>
+				<option value="charcoal" data-colors="#232220 #e6e2d8 #e0a458">Charcoal</option>
+			</webui-theme-selector>
+			<webui-feedback title="Provide us your feedback" data-post="https://api.myfi.ws/feedback/new" data-json-name="message">
+				<p>You can also come <a href="https://discord.gg/5X4YSDFdHD">chat with us on the Stoic Dreams discord server.</a></p>
+			</webui-feedback>
+			<webui-alerts title="View your notifications" data-title="My Alerts" data-toggleclass=".shared|open"></webui-alerts>
+			<webui-myfi-info sign-in-label="Sign In">
+				<template slot="panel-content">
+					<webui-alert show variant="info">Example Account Panel</webui-alert>
+				</template>
+			</webui-myfi-info>
+		</header>
+		<noscript>Javascript is required to view this site</noscript>
+		<webui-page-footer copyright="2013" company="Stoic Dreams">
+			<webui-next-page theme="tertiary" data-subscribe="page-next-page"></webui-next-page>
+			<webui-flex class="my-3" justify="center" wrap>
+				<webui-link href="/about" icon="circle_exclamation|backing|bordered">About Erik Gassler</webui-link>
+				<webui-link href="/contact" icon="messages|fill|shade:tri">Contact Erik Gassler</webui-link>
+				<webui-link href="/privacy" icon="shield_exclamation|backing|bordered">Privacy</webui-link>
+				<webui-link href="/terms" icon="handshake|fill|shade:tri">Terms & Conditions</webui-link>
+			</webui-flex>
+			<webui-stoic-social-links class="mb-2"></webui-stoic-social-links>
+		</webui-page-footer>
+	</webui-app>
+</body>
+
+</html>

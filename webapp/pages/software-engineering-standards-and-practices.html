@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-LQEBP3P6LD"></script>
+	<script>
+		if (location.hostname !== 'localhost') {
+			window.dataLayer = window.dataLayer || [];
+			function gtag() { dataLayer.push(arguments); }
+			gtag('js', new Date());
+			gtag('config', 'G-LQEBP3P6LD');
+		}
+	</script>
+	<title>Software Engineering Standards &amp; Practices: The twelve tenets of CASE</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="index, follow">
+	<base href="/" />
+	<script type="text/javascript">
+		navigator.serviceWorker.register('service-worker.min.js');
+	</script>
+
+	<link rel="dns-prefetch" href="https://cdn.myfi.ws" />
+	<link rel="dns-prefetch" href="https://api.myfi.ws" />
+	<link rel="preconnect" href="https://cdn.myfi.ws">
+	<link rel="preconnect" href="https://api.myfi.ws">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700&family=Cinzel:wght@500;600;700&family=Marcellus&family=Source+Sans+3:wght@400;600&family=Caveat:wght@600;700&display=swap" rel="stylesheet" />
+
+	<link href="Logo.svg?v=82bc0f4dd5" rel="icon" type="image/svg+xml" sizes="any" />
+	<link rel="manifest" href="app.webmanifest?v=45d36fe574">
+
+	<script>
+		// Web UI loads from the local MyFiCDN server (MyFiCDN/PowerShell/RunLocal.ps1) when the site runs on localhost,
+		// so framework changes show before they are published, and from cdn.myfi.ws everywhere else.
+		window.webuiCdn = /^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname) ? 'http://localhost:3180/' : 'https://cdn.myfi.ws/';
+		document.write('<link href="' + webuiCdn + 'css/webui.min.css" rel="stylesheet" />');
+	</script>
+	<link href="css/app.min.css?v=2b5a850300" rel="stylesheet" />
+	<script>document.write('<script src="' + webuiCdn + 'webui/loader.min.js"></' + 'script>');</script>
+
+	<!-- Prerendered pages from webapp_post_build prerender. Release builds copy them to the site root. -->
+
+	<!--Web Worker-->
+	<script type="module" src="main.js?v=cea15cbf4f"></script>
+	<!--End Web Worker-->
+
+	<meta name="theme-color" content="#14111c" />
+
+	<meta name="author" content="Erik Gassler">
+	<meta name="description" content="The twelve tenets of CASE, my standards and practices for building quality software in small, tested steps and delivering it continuously.">
+
+	<meta property="og:image" content="https://cdn.myfi.ws/img/eg/me_512.png">
+	<meta property="og:title" content="Software Engineering Standards &amp; Practices: The twelve tenets of CASE">
+	<meta property="og:url" content="https://www.erikgassler.com/software-engineering-standards-and-practices">
+	<meta property="og:description" content="The twelve tenets of CASE, my standards and practices for building quality software in small, tested steps and delivering it continuously.">
+
+	<meta name="twitter:title" content="Software Engineering Standards &amp; Practices: The twelve tenets of CASE">
+	<meta name="twitter:url" content="https://www.erikgassler.com/software-engineering-standards-and-practices">
+	<meta name="twitter:site" content="@stoicdreamsllc">
+	<meta name="twitter:description" content="The twelve tenets of CASE, my standards and practices for building quality software in small, tested steps and delivering it continuously.">
+	<meta name="twitter:image" content="https://cdn.myfi.ws/img/eg/me_512.png">
+
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Person",
+		"name": "Erik Gassler",
+		"url": "https://www.erikgassler.com/",
+		"image": "https://cdn.myfi.ws/img/eg/me_512.png",
+		"jobTitle": "Principal Software Engineer",
+		"description": "Principal-level software engineer with 19 years of shipping production software, from Rust game engines to healthcare web platforms.",
+		"knowsAbout": ["Rust", "WebGPU", "wgpu", "WebAssembly", "Game engine development", "C#", "Blazor", "JavaScript", "TypeScript", "Azure", "Continuous delivery", "Performance optimization"],
+		"sameAs": [
+			"https://www.linkedin.com/in/erikgassler",
+			"https://github.com/StoicDreams",
+			"https://medium.erikgassler.com"
+		]
+	}
+	</script>
+	<link rel="canonical" href="https://www.erikgassler.com/software-engineering-standards-and-practices" />
+	<link rel="modulepreload" href="https://cdn.myfi.ws/js/mdparse.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="/wc/books.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/alerts.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/app.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/app-config.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/card.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/cards.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/data.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/drawer.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/feedback.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/flex.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/icon.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/link.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/myfi-info.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/nav.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/next-page.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/page-footer.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/page-segment.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/paper.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/pinned-side.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/quote.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/side-by-side.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/stoic-dreams-logo.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/stoic-social-links.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/theme-selector.min.js" crossorigin="anonymous" />
+	<meta name="webui-prerender" content="d1026646ca">
+</head>
+
+<body>
+	<webui-app-config src="appConfig.json"></webui-app-config>
+	<webui-app data-removeclass=".nav|open;.shared|open">
+		<div data-prerendered>
+<p>Continuous Agile Software Engineering, or CASE, is the set of standards and practices I've developed and refined over my career for building quality software in small, tested steps and delivering it continuously. This page is a brief introduction. My book, <a href="/blogs/book_published_for_case_continuous_agile_software_engineering">CASE: Continuous Agile Software Engineering</a>, covers it in full, and <a href="https://www.softwarestandards.dev">SoftwareStandards.dev</a> documents the standards in more depth.</p>
+<p>I was able to use all of CASE at General Services Corp from 2016 to 2018, where I led greenfield projects from inception through delivery and maintenance. There I built a reporting portal that went live in its first week and grew to hundreds of reports, while pushing to production several times a day.</p>
+<p>Many of the tenets are useful on their own, but CASE works best when they are adopted together. It also works best where management trusts engineers to own their work without micromanagement, and engineers are motivated to do it well.</p>
+
+
+<h3>Get the book</h3>
+<h2>Twelve Tenets of Continuous Agile Software Engineering</h2>
+
+<p>The CASE methodologies are broken up into twelve tenets, with each tenet containing three core principles.</p>
+
+
+
+
+<p>Keeping things simple means that software development should focus on delivering value in the simplest viable way. This is achieved by minimizing complexity in code, processes, and tools.
+Keeping things simple needs to be both a mentality and a habit, and is aimed at helping to reduce the cost of development, improve quality of both the code and software, and reduce the time to market. It also helps to keep the development process agile, as simpler code and processes are easier to change and adapt to new requirements.</p>
+<h4>Minimize Complexity</h4>
+<p>Avoid unnecessary complexity in code, processes, and tools. This helps to reduce the cost of development, improve quality throughout, and reduce the time to market.</p>
+<h4>Eliminate Waste</h4>
+<p>Eliminate waste in the development process by removing unnecessary tasks, documentation, and other activities that do not add value. Eliminate code that is not being used and code comments that are not adding value.</p>
+<h4>Prioritize Value</h4>
+<p>Prioritize value over other factors such as features, aesthetics, and performance. This helps to ensure that development efforts are focused on delivering the most key features first. But also understand value doesn't have to be monetarily based or exclusive to customers / users. Some value may be for developers, stakeholders, or others as well.</p>
+
+
+<p>Code Ownership is the concept that each repository within a team should have a designated owner responsible for its maintenance and improvement over time. The following are three core principles that can guide the implementation of Code Ownership:</p>
+<h4>Assign Ownership of Code</h4>
+<p>Each code repository should have a designated owner responsible for its overall quality, maintenance, and improvement over time. This owner should be the primary point of contact for all matters related to the code within that repository and have the authority to make decisions about its evolution, including code formatting and organization.</p>
+<h4>Foster Collaboration Among Owners</h4>
+<p>Ownership does not mean isolation. Code owners should collaborate with each other to share ideas and concepts and learn from each other's different perspectives and opinions. They should communicate frequently and openly to avoid redundancy, minimize conflicts, and make sure everyone is aligned with the business and team goals.</p>
+<h4>Rotate Ownership Over Time</h4>
+<p>Code ownership is not a lifelong appointment. As projects evolve, so do the skills, interests, and availability of team members. To ensure that code remains fresh and up-to-date, and owners do not grow stagnant, ownership should rotate periodically. This approach fosters a sense of shared responsibility and prevents bottlenecks that can occur when a single person is responsible for too much code.</p>
+
+
+<p>Continuous Agility means that teams should continuously adapt to changing requirements and market needs and be able to pivot quickly when necessary.
+Continuous agility helps to ensure that teams can respond to new challenges and opportunities, and that they are always focused on delivering value to their customers.</p>
+<h4>Never follow with Absolution</h4>
+<p>When working within principles, guidelines, best practices, never constrain yourself to following them with absolute adherence. There is no one-size-fits-all solution that is the best solution for every situation.</p>
+<h4>Be Customer-Focused</h4>
+<p>Maintain a customer-focused mindset and continuously seek feedback to ensure that products are meeting their needs and expectations and adapt tasks based on the feedback loops.</p>
+<h4>No Estimates or Time-Boxing</h4>
+<p>Break down projects and features into manageable tasks, but no task, feature, or project should be given deadlines or require developer estimates prior to or during active development.</p>
+
+
+<p>Establishing continuous feedback loops throughout the software development process means that developers and teams should continuously gather feedback from their IDEs, compilers, analytics, stakeholders, customers, and team members, and use that feedback to refine the development process and features being delivered.
+Continuous feedback loops help teams and developers to stay focused on delivering value to customers, and to identify and address issues as early as possible in the development process. This helps to reduce the cost of development, improve quality, and increase customer satisfaction.</p>
+<h4>Gather Feedback</h4>
+<p>Continuously gather feedback from their tools, analytics, stakeholders, customers, and team members throughout the development process.</p>
+<h4>Use Feedback to Inform Decisions</h4>
+<p>Use feedback to inform decisions about features, design, and other aspects of the development process.</p>
+<h4>Iterate Based on Feedback</h4>
+<p>Continuously iterate on the development process based on feedback to improve the product and development process.</p>
+
+
+<p>Establishing continuous automation throughout the software development process means that teams should continuously automate repetitive and time-consuming tasks, such as testing, building, and deployment.
+Continuous automation helps to reduce the time and effort required for these tasks, which in turn helps to increase productivity, improve quality, and reduce the time to market.</p>
+<h4>Automate Everything Possible</h4>
+<p>Identify and automate every task that can be automated, such as testing, building, and deployment.</p>
+<h4>Integrate Automation into the Development Process</h4>
+<p>Integrate automation tools and processes into the development process to reduce manual effort and increase efficiency. Make this a top priority, and do it as early as possible.</p>
+<h4>Continuously Improve Automation</h4>
+<p>Continuously improve automation processes to ensure that they are reliable, efficient, and effective.</p>
+
+
+<p>Establishing continuous planning throughout the software development process means that teams should continuously plan and adjust the development process based on feedback and changing requirements. This also means that teams should spend minimal time planning development or features that are not being immediately worked on.
+Continuous planning helps teams to stay aligned with customer needs and market trends, and to make timely adjustments to the development process as needed. This helps to reduce the risk of developing products that do not meet customer needs or fail in the market.</p>
+<h4>Emphasize Continuous Planning</h4>
+<p>Prioritize planning throughout the development process, from initial requirements gathering to release planning.</p>
+<h4>Use Data-Driven Approaches</h4>
+<p>Use data-driven approaches, such as user feedback, A-B testing, and market trends, to inform planning decisions and adjust the development process.</p>
+<h4>Continuously Refine Plans</h4>
+<p>Continuously refine plans based on feedback, discoveries made during development, and changing requirements, and communicate updated plans to all stakeholders as they occur.</p>
+
+
+<p>Establishing continuous collaboration throughout the software development process means that teams should continuously collaborate with all stakeholders, including customers, product owners, developers, and testers.
+Continuous collaboration helps to ensure that everyone is aligned with the project goals and objectives, and that everyone has a shared understanding of the product requirements and features.</p>
+<h4>Foster a Collaborative Culture</h4>
+<p>Establish a collaborative culture that encourages open communication, sharing of ideas, and respect for all team members.</p>
+<h4>Collaborate Throughout the Development Process</h4>
+<p>Collaborate with all stakeholders throughout the development process, from requirements gathering to release planning.</p>
+<h4>Use Collaborative Tools and Processes</h4>
+<p>Use collaborative tools and processes, such as Notion and Teams, to facilitate collaboration among team members.
+Take special note that this does not require every person to handle all communication themselves. Instead, it is generally ideal to utilize a hierarchy of contacts that will pass on communications to those that need it, minimizing any developer downtime while still allowing information to be properly communicated.
+For example, a software engineer is making a change to the plan, so they communicate that change to the project manager. The project manager in turn will communicate that change to other engineers that are directly affected as well as key stakeholders. Those key stakeholders may then communicate that change to other stakeholders, and so on.</p>
+
+
+<p>Continuous learning means that developers and teams should be continuously learning to help improve their skills, processes, workflows, and products.
+Continuous learning helps to ensure that teams stay up to date with the latest technologies, methodologies, and practices, and that they continuously improve the quality of their products and the efficiency of their development process.</p>
+<h4>Emphasize Continuous Learning</h4>
+<p>Prioritize learning throughout the development process, from initial requirements gathering to post-release evaluations.</p>
+<h4>Encourage Experimentation</h4>
+<p>Encourage team members to experiment with new ideas, technologies, methodologies, and practices to continuously improve the development process and products.</p>
+<h4>Foster a Culture of Learning</h4>
+<p>Foster a culture of learning that encourages sharing of knowledge and experiences, both positive and negative, among team members and provides opportunities for learning and growth.</p>
+
+
+<p>Establishing continuous testing throughout the software development process means that teams should continuously test their products throughout the development process, from requirements gathering to release, utilizing automated testing as much as possible.
+Continuous testing helps to ensure that teams catch and fix defects as early as possible in the development process, which then helps to reduce time resolving those defects.</p>
+<h4>Establish a Test-Driven Development (TDD) approach</h4>
+<p>Apply a TDD approach, where testing is integrated into the development process, and tests are written before the code is developed.</p>
+<h4>Automate Testing</h4>
+<p>Automate testing as much as possible, to increase efficiency and consistency. If a tool isn't available to apply the type of testing you need, then take the time to build the tool so you can apply your tests.</p>
+<h4>Test Continuously</h4>
+<p>Test continuously throughout the development process, including unit tests, integration tests, and end-to-end tests.</p>
+
+
+<p>Establishing continuous iterations throughout the software development process means that teams should continuously iterate on their products and processes to improve their quality and efficiency.
+Continuous iterations help to ensure that teams are always improving their products and processes, and that they are continuously adapting to changing requirements and market needs.</p>
+<h4>Emphasize Continuous Improvement</h4>
+<p>Prioritize continuous improvement throughout the development process, from initial requirements gathering to post-release evaluations.</p>
+<h4>Conduct Regular Retrospectives</h4>
+<p>Conduct regular retrospectives to review the development process and identify areas for improvement.</p>
+<h4>Adapt Quickly</h4>
+<p>Adapt quickly to changing requirements and market needs by iterating on products and processes.</p>
+
+
+<p>Establishing continuous integrations throughout the software development process means that teams should continuously integrate their code changes into a single source of truth, such as a shared repository while only using a single main branch and test their changes as frequently as possible.
+Continuous integrations help to ensure that teams are always working with the latest version of the codebase and that any issues are identified and resolved as quickly as possible.</p>
+<h4>Single Branch Version Control</h4>
+<p>Use a version control system to manage code changes and ensure that all team members are working with the latest version of the codebase. Ensure all development is done directly in a single main branch.</p>
+<h4>Automate Integration Testing</h4>
+<p>Automate integration testing to ensure that code changes are tested thoroughly and that any issues are identified and resolved as quickly as possible.</p>
+<h4>Integrate Frequently</h4>
+<p>Integrate code changes into the shared repository as frequently as possible, to ensure that team members are always working with the latest version of the codebase.</p>
+
+
+<p>Establishing continuous delivery throughout the software development process means that teams should aim to deploy their code changes to production as frequently as possible through completely automated processes.
+Continuous delivery helps to ensure that teams can deliver new features and improvements to their users quickly and efficiently. It also helps to reduce the risk associated with deploying code changes to production by automating the deployment process and ensuring that code changes have been thoroughly tested before deployment.</p>
+<h4>Automate Production Deployment</h4>
+<p>Automate the deployment process from the moment code is pushed up from the developer's machine all the way through production, only stopping from deploying if an automated test fails.</p>
+<h4>Automate Development Deployments</h4>
+<p>Keep tooling, documentation, and scripts available and easily accessible so any developer working on a project can quickly and easily setup local development environments with a focus on making the process as self-service as possible.</p>
+<h4>Monitor and Measure</h4>
+<p>Monitor and measure the performance of the software after every deployment to assure quality standards are met and performance never degrades unexpectedly. Again, this should be largely automated, but still apply manual checks as needed.</p>
+
+
+
+
+<p>Beyond the tenets, these are practices I've found most effective for delivering quality software quickly, keeping code easy to change, and giving users the best experience.</p>
+
+
+
+<p>Everyone involved in a project should test for bugs as part of their normal work, and document any bug well enough that a developer can reproduce it easily.
+As soon as a bug is documented, make fixing it a top priority. Do not put bugs on a backlog.
+While fixing a bug, add tests that fail because of it. Those tests prove the bug is fixed and keep it from coming back.</p>
+
+<p>Fixing bugs early means they don't have time to grow and spread into other parts of the system. Over time, the team spends far less time on bugs, and users get a better experience.</p>
+
+
+
+<p>Keep scheduled meetings for developers to a minimum. Ideally, a developer has no more than one or two hours of recurring meetings a week.
+Organizations that need more meetings can set one meeting day a week for developers, and schedule anything that needs a developer on that day.
+This doesn't apply to meetings developers arrange themselves when they need to work through something with others, though most developers prefer email or chat when they can use it.</p>
+
+<p>Developers get more uninterrupted time for focused work, and lose less time preparing for meetings and getting back into a task afterward.</p>
+
+
+
+<p>A developer should own a feature or problem, research a few options with their pros and cons, and test them. They bring the decision to the team only when the data doesn't settle it.
+Team discussions are still welcome when the owner wants other perspectives, especially from teammates who are experts in the area. That input is advice and a place to start, not a mandate.</p>
+
+<p>Deciding on a solution by team discussion or vote, before anyone has researched the problem or tested possible solutions, tends to produce decisions based on preference rather than evidence.</p>
+
+
+<p>Decisions are based on research and measurable results. Trust grows across the team, because good solutions can come from anyone, not only the loudest voices.</p>
+
+
+
+<p>This practice comes from the Continuous Agility and Continuous Planning tenets.
+Focus on the work in front of you rather than trying to predict the future. Product owners set and prioritize goals, without deadlines, and developers set and prioritize their own goals within them. Avoid detailed time or point estimates, and avoid documenting every step of work in advance.</p>
+
+<p>If you must have estimates, keep long-term estimates at the feature level with managers, and have developers estimate a task only when they start it. Spend seconds on an estimate, not hours. Estimates are guesses, and time spent on them is time not spent building.</p>
+
+
+<p>Developers have the time to research and test properly instead of rushing to meet a deadline, and they move straight from one task to the next without waiting for a planning cycle.</p>
+
+
+
+
+<p>Visit SoftwareStandards.dev for more <a href="https://www.softwarestandards.dev">detailed information on engineering software with agile and continuous delivery</a>.</p>
+		</div>
+		<webui-drawer slot="left" class="nav elevation-20" docked="true" data-state="slot|docked" data-moveable data-dockable>
+			<webui-flex justify="center" slot="header">
+				<webui-stoic-dreams-logo title="Erik Gassler Website Logo" text="Erik" text2="Gassler"></webui-stoic-dreams-logo>
+			</webui-flex>
+			<webui-nav routes="/nav.json" data-subscribe="app-nav-routes:setNavRoutes"></webui-nav>
+		</webui-drawer>
+		<webui-drawer slot="right" class="shared elevation-20" data-stopclick data-moveable data-state="slot">
+		</webui-drawer>
+		<header slot="header">
+			<button aria-label="open navigation menu" data-toggleclass=".nav|open" class="elevation-10 pa-1 mx-1">
+				<webui-icon icon="hamburger"></webui-icon>
+			</button>
+			<h1 data-subscribe="page-title:innerHTML">Software Engineering Standards &amp; Practices</h1>
+			<h2 data-subscribe="page-subtitle:innerHTML">The twelve tenets of CASE</h2>
+			<webui-flex grow></webui-flex>
+			<webui-theme-selector title="Choose a theme" data-title="Theme" data-toggleclass=".shared|open">
+				<option value="" data-colors="#14111c #ff5c8a #ff8a3d">Voxel Dusk</option>
+				<option value="granite" data-colors="#1b1c1e #c9a46a #e8e4dc">Granite</option>
+				<option value="limestone" data-colors="#e6e1d6 #8a4b2f #44606f">Limestone</option>
+				<option value="graphite" data-colors="#f4f1e9 #2b2b2b #2f5d8a">Graphite</option>
+				<option value="charcoal" data-colors="#232220 #e6e2d8 #e0a458">Charcoal</option>
+			</webui-theme-selector>
+			<webui-feedback title="Provide us your feedback" data-post="https://api.myfi.ws/feedback/new" data-json-name="message">
+				<p>You can also come <a href="https://discord.gg/5X4YSDFdHD">chat with us on the Stoic Dreams discord server.</a></p>
+			</webui-feedback>
+			<webui-alerts title="View your notifications" data-title="My Alerts" data-toggleclass=".shared|open"></webui-alerts>
+			<webui-myfi-info sign-in-label="Sign In">
+				<template slot="panel-content">
+					<webui-alert show variant="info">Example Account Panel</webui-alert>
+				</template>
+			</webui-myfi-info>
+		</header>
+		<noscript>Javascript is required to view this site</noscript>
+		<webui-page-footer copyright="2013" company="Stoic Dreams">
+			<webui-next-page theme="tertiary" data-subscribe="page-next-page"></webui-next-page>
+			<webui-flex class="my-3" justify="center" wrap>
+				<webui-link href="/about" icon="circle_exclamation|backing|bordered">About Erik Gassler</webui-link>
+				<webui-link href="/contact" icon="messages|fill|shade:tri">Contact Erik Gassler</webui-link>
+				<webui-link href="/privacy" icon="shield_exclamation|backing|bordered">Privacy</webui-link>
+				<webui-link href="/terms" icon="handshake|fill|shade:tri">Terms & Conditions</webui-link>
+			</webui-flex>
+			<webui-stoic-social-links class="mb-2"></webui-stoic-social-links>
+		</webui-page-footer>
+	</webui-app>
+</body>
+
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-LQEBP3P6LD"></script>
+	<script>
+		if (location.hostname !== 'localhost') {
+			window.dataLayer = window.dataLayer || [];
+			function gtag() { dataLayer.push(arguments); }
+			gtag('js', new Date());
+			gtag('config', 'G-LQEBP3P6LD');
+		}
+	</script>
+	<title>Erik Gassler - Principal Software Engineer, Rust and Web Platforms</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="index, follow">
+	<base href="/" />
+	<script type="text/javascript">
+		navigator.serviceWorker.register('service-worker.min.js');
+	</script>
+
+	<link rel="dns-prefetch" href="https://cdn.myfi.ws" />
+	<link rel="dns-prefetch" href="https://api.myfi.ws" />
+	<link rel="preconnect" href="https://cdn.myfi.ws">
+	<link rel="preconnect" href="https://api.myfi.ws">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700&family=Cinzel:wght@500;600;700&family=Marcellus&family=Source+Sans+3:wght@400;600&family=Caveat:wght@600;700&display=swap" rel="stylesheet" />
+
+	<link href="Logo.svg?v=82bc0f4dd5" rel="icon" type="image/svg+xml" sizes="any" />
+	<link rel="manifest" href="app.webmanifest?v=45d36fe574">
+
+	<script>
+		// Web UI loads from the local MyFiCDN server (MyFiCDN/PowerShell/RunLocal.ps1) when the site runs on localhost,
+		// so framework changes show before they are published, and from cdn.myfi.ws everywhere else.
+		window.webuiCdn = /^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname) ? 'http://localhost:3180/' : 'https://cdn.myfi.ws/';
+		document.write('<link href="' + webuiCdn + 'css/webui.min.css" rel="stylesheet" />');
+	</script>
+	<link href="css/app.min.css?v=2b5a850300" rel="stylesheet" />
+	<script>document.write('<script src="' + webuiCdn + 'webui/loader.min.js"></' + 'script>');</script>
+
+	<!-- Prerendered pages from webapp_post_build prerender. Release builds copy them to the site root. -->
+
+	<!--Web Worker-->
+	<script type="module" src="main.js?v=cea15cbf4f"></script>
+	<!--End Web Worker-->
+
+	<meta name="theme-color" content="#14111c" />
+
+	<meta name="author" content="Erik Gassler">
+	<meta name="description" content="Erik Gassler, principal software engineer with 19 years shipping production software, from Rust game engines to healthcare web. Open to Principal roles.">
+
+	<meta property="og:image" content="https://cdn.myfi.ws/img/eg/me_512.png">
+	<meta property="og:title" content="Erik Gassler - Principal Software Engineer, Rust and Web Platforms">
+	<meta property="og:url" content="https://www.erikgassler.com/">
+	<meta property="og:description" content="Erik Gassler, principal software engineer with 19 years shipping production software, from Rust game engines to healthcare web. Open to Principal roles.">
+
+	<meta name="twitter:title" content="Erik Gassler - Principal Software Engineer, Rust and Web Platforms">
+	<meta name="twitter:url" content="https://www.erikgassler.com/">
+	<meta name="twitter:site" content="@stoicdreamsllc">
+	<meta name="twitter:description" content="Erik Gassler, principal software engineer with 19 years shipping production software, from Rust game engines to healthcare web. Open to Principal roles.">
+	<meta name="twitter:image" content="https://cdn.myfi.ws/img/eg/me_512.png">
+
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Person",
+		"name": "Erik Gassler",
+		"url": "https://www.erikgassler.com/",
+		"image": "https://cdn.myfi.ws/img/eg/me_512.png",
+		"jobTitle": "Principal Software Engineer",
+		"description": "Principal-level software engineer with 19 years of shipping production software, from Rust game engines to healthcare web platforms.",
+		"knowsAbout": ["Rust", "WebGPU", "wgpu", "WebAssembly", "Game engine development", "C#", "Blazor", "JavaScript", "TypeScript", "Azure", "Continuous delivery", "Performance optimization"],
+		"sameAs": [
+			"https://www.linkedin.com/in/erikgassler",
+			"https://github.com/StoicDreams",
+			"https://medium.erikgassler.com"
+		]
+	}
+	</script>
+	<link rel="modulepreload" href="https://cdn.myfi.ws/js/mdparse.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/alerts.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/app.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/app-config.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/data.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/drawer.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/feedback.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/flex.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/icon.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/link.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/media.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/myfi-info.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/nav.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/next-page.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/page-footer.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/page-segment.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/pinned-side.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/quote.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/stat.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/stoic-dreams-logo.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/stoic-social-links.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/theme-selector.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/youtube.min.js" crossorigin="anonymous" />
+	<meta name="webui-prerender" content="0305d90e58">
+</head>
+
+<body>
+	<webui-app-config src="appConfig.json"></webui-app-config>
+	<webui-app data-removeclass=".nav|open;.shared|open">
+		<div data-prerendered>
+<h2>I build fast, reliable software, from Rust engines to production web platforms</h2>
+<p>I'm a principal-level software engineer with 19 years of shipping production software. I lead UI work on healthcare web applications at Opyn Health, and I'm building <strong>Fabric Engine</strong>, a 3D engine written in Rust, at my studio, Wyrdloom Studios.</p>
+<p>I'm open to <strong>Principal and Staff engineering roles</strong>, and to <strong>contract work</strong>.</p>
+
+<p>LinkedIn
+GitHub
+Contact me</p>
+
+
+
+
+<h3>What I'm building now</h3>
+<p><strong>Fabric Engine</strong> is a 3D engine and world-building suite in Rust. Its models are trees of mathematical shapes drawn exactly on the GPU, then snapped to a voxel grid for a stylized 3D pixel-art look. It powers <strong>Faryn</strong>, the first game from <a href="https://www.wyrdloom.com">Wyrdloom Studios</a>.</p>
+<p>How Fabric Engine works</p>
+
+<h2>Results I've delivered</h2>
+
+
+<p>Prototyped and partly built a re-architecture of a customer-facing reporting service, bringing queries of tens of seconds to hundreds of minutes down to milliseconds to a few seconds.</p>
+
+
+<p>Built a reporting portal that launched in its first week and grew to hundreds of reports, with every request held under 100 ms.</p>
+
+
+<p>Architected a call-scripting platform that let each agent handle two calls at once while outperforming top agents.</p>
+
+
+<p>Created Web UI, the framework that runs about two dozen websites, including this one, with tests that gate every deploy.</p>
+
+
+
+<p>See my full experience</p>
+
+<h2>How I work</h2>
+
+<p>I ship in small, tested steps, straight to production, often several times a day. Every change is covered by automated tests, every deploy is automated, and problems are measured and fixed rather than debated. I wrote these practices up in my book, <a href="/blogs/book_published_for_case_continuous_agile_software_engineering">CASE: Continuous Agile Software Engineering</a>.</p>
+<p><strong>Skills:</strong> Rust, wgpu, WebAssembly, C# Blazor, JavaScript, TypeScript, React, Azure, AWS, CI/CD, Playwright, SQL Server, PostgreSQL</p>
+
+
+<p>Erik is an out of the box thinker and a great collaborator.</p>
+
+<h2>Let's work together</h2>
+
+<p>If you're hiring for a Principal or Staff engineer, or need help with Rust, engine or tooling work, performance problems, or getting a team shipping continuously, I'd like to hear from you.</p>
+
+<p>Message me on LinkedIn
+Contract services
+See my projects</p>
+		</div>
+		<webui-drawer slot="left" class="nav elevation-20" docked="true" data-state="slot|docked" data-moveable data-dockable>
+			<webui-flex justify="center" slot="header">
+				<webui-stoic-dreams-logo title="Erik Gassler Website Logo" text="Erik" text2="Gassler"></webui-stoic-dreams-logo>
+			</webui-flex>
+			<webui-nav routes="/nav.json" data-subscribe="app-nav-routes:setNavRoutes"></webui-nav>
+		</webui-drawer>
+		<webui-drawer slot="right" class="shared elevation-20" data-stopclick data-moveable data-state="slot">
+		</webui-drawer>
+		<header slot="header">
+			<button aria-label="open navigation menu" data-toggleclass=".nav|open" class="elevation-10 pa-1 mx-1">
+				<webui-icon icon="hamburger"></webui-icon>
+			</button>
+			<h1 data-subscribe="page-title:innerHTML">Erik Gassler</h1>
+			<h2 data-subscribe="page-subtitle:innerHTML">Principal Software Engineer</h2>
+			<webui-flex grow></webui-flex>
+			<webui-theme-selector title="Choose a theme" data-title="Theme" data-toggleclass=".shared|open">
+				<option value="" data-colors="#14111c #ff5c8a #ff8a3d">Voxel Dusk</option>
+				<option value="granite" data-colors="#1b1c1e #c9a46a #e8e4dc">Granite</option>
+				<option value="limestone" data-colors="#e6e1d6 #8a4b2f #44606f">Limestone</option>
+				<option value="graphite" data-colors="#f4f1e9 #2b2b2b #2f5d8a">Graphite</option>
+				<option value="charcoal" data-colors="#232220 #e6e2d8 #e0a458">Charcoal</option>
+			</webui-theme-selector>
+			<webui-feedback title="Provide us your feedback" data-post="https://api.myfi.ws/feedback/new" data-json-name="message">
+				<p>You can also come <a href="https://discord.gg/5X4YSDFdHD">chat with us on the Stoic Dreams discord server.</a></p>
+			</webui-feedback>
+			<webui-alerts title="View your notifications" data-title="My Alerts" data-toggleclass=".shared|open"></webui-alerts>
+			<webui-myfi-info sign-in-label="Sign In">
+				<template slot="panel-content">
+					<webui-alert show variant="info">Example Account Panel</webui-alert>
+				</template>
+			</webui-myfi-info>
+		</header>
+		<noscript>Javascript is required to view this site</noscript>
+		<webui-page-footer copyright="2013" company="Stoic Dreams">
+			<webui-next-page theme="tertiary" data-subscribe="page-next-page"></webui-next-page>
+			<webui-flex class="my-3" justify="center" wrap>
+				<webui-link href="/about" icon="circle_exclamation|backing|bordered">About Erik Gassler</webui-link>
+				<webui-link href="/contact" icon="messages|fill|shade:tri">Contact Erik Gassler</webui-link>
+				<webui-link href="/privacy" icon="shield_exclamation|backing|bordered">Privacy</webui-link>
+				<webui-link href="/terms" icon="handshake|fill|shade:tri">Terms & Conditions</webui-link>
+			</webui-flex>
+			<webui-stoic-social-links class="mb-2"></webui-stoic-social-links>
+		</webui-page-footer>
+	</webui-app>
+</body>
+
+</html>

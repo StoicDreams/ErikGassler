@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-LQEBP3P6LD"></script>
+	<script>
+		if (location.hostname !== 'localhost') {
+			window.dataLayer = window.dataLayer || [];
+			function gtag() { dataLayer.push(arguments); }
+			gtag('js', new Date());
+			gtag('config', 'G-LQEBP3P6LD');
+		}
+	</script>
+	<title>Projects: Tools, frameworks, and platforms I've built</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="index, follow">
+	<base href="/" />
+	<script type="text/javascript">
+		navigator.serviceWorker.register('service-worker.min.js');
+	</script>
+
+	<link rel="dns-prefetch" href="https://cdn.myfi.ws" />
+	<link rel="dns-prefetch" href="https://api.myfi.ws" />
+	<link rel="preconnect" href="https://cdn.myfi.ws">
+	<link rel="preconnect" href="https://api.myfi.ws">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700&family=Cinzel:wght@500;600;700&family=Marcellus&family=Source+Sans+3:wght@400;600&family=Caveat:wght@600;700&display=swap" rel="stylesheet" />
+
+	<link href="Logo.svg?v=82bc0f4dd5" rel="icon" type="image/svg+xml" sizes="any" />
+	<link rel="manifest" href="app.webmanifest?v=45d36fe574">
+
+	<script>
+		// Web UI loads from the local MyFiCDN server (MyFiCDN/PowerShell/RunLocal.ps1) when the site runs on localhost,
+		// so framework changes show before they are published, and from cdn.myfi.ws everywhere else.
+		window.webuiCdn = /^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname) ? 'http://localhost:3180/' : 'https://cdn.myfi.ws/';
+		document.write('<link href="' + webuiCdn + 'css/webui.min.css" rel="stylesheet" />');
+	</script>
+	<link href="css/app.min.css?v=2b5a850300" rel="stylesheet" />
+	<script>document.write('<script src="' + webuiCdn + 'webui/loader.min.js"></' + 'script>');</script>
+
+	<!-- Prerendered pages from webapp_post_build prerender. Release builds copy them to the site root. -->
+
+	<!--Web Worker-->
+	<script type="module" src="main.js?v=cea15cbf4f"></script>
+	<!--End Web Worker-->
+
+	<meta name="theme-color" content="#14111c" />
+
+	<meta name="author" content="Erik Gassler">
+	<meta name="description" content="Screenshots and clips of software I build: Fabric Engine, Task Proxy, Task Story, Blue Cherub, Vocal Bin, Ap Tul, and the Web UI framework.">
+
+	<meta property="og:image" content="https://cdn.myfi.ws/img/eg/me_512.png">
+	<meta property="og:title" content="Projects: Tools, frameworks, and platforms I've built">
+	<meta property="og:url" content="https://www.erikgassler.com/projects">
+	<meta property="og:description" content="Screenshots and clips of software I build: Fabric Engine, Task Proxy, Task Story, Blue Cherub, Vocal Bin, Ap Tul, and the Web UI framework.">
+
+	<meta name="twitter:title" content="Projects: Tools, frameworks, and platforms I've built">
+	<meta name="twitter:url" content="https://www.erikgassler.com/projects">
+	<meta name="twitter:site" content="@stoicdreamsllc">
+	<meta name="twitter:description" content="Screenshots and clips of software I build: Fabric Engine, Task Proxy, Task Story, Blue Cherub, Vocal Bin, Ap Tul, and the Web UI framework.">
+	<meta name="twitter:image" content="https://cdn.myfi.ws/img/eg/me_512.png">
+
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Person",
+		"name": "Erik Gassler",
+		"url": "https://www.erikgassler.com/",
+		"image": "https://cdn.myfi.ws/img/eg/me_512.png",
+		"jobTitle": "Principal Software Engineer",
+		"description": "Principal-level software engineer with 19 years of shipping production software, from Rust game engines to healthcare web platforms.",
+		"knowsAbout": ["Rust", "WebGPU", "wgpu", "WebAssembly", "Game engine development", "C#", "Blazor", "JavaScript", "TypeScript", "Azure", "Continuous delivery", "Performance optimization"],
+		"sameAs": [
+			"https://www.linkedin.com/in/erikgassler",
+			"https://github.com/StoicDreams",
+			"https://medium.erikgassler.com"
+		]
+	}
+	</script>
+	<link rel="canonical" href="https://www.erikgassler.com/projects" />
+	<link rel="modulepreload" href="https://cdn.myfi.ws/js/mdparse.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/alerts.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/app.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/app-config.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/card.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/cards.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/data.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/drawer.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/feature.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/feedback.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/flex.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/icon.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/link.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/loop-video.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/myfi-info.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/nav.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/next-page.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/page-footer.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/page-segment.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/stoic-dreams-logo.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/stoic-social-links.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/theme-selector.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/youtube.min.js" crossorigin="anonymous" />
+	<meta name="webui-prerender" content="da3b639295">
+</head>
+
+<body>
+	<webui-app-config src="appConfig.json"></webui-app-config>
+	<webui-app data-removeclass=".nav|open;.shared|open">
+		<div data-prerendered>
+<p>Alongside my day job, I build and run my own software through my companies, Stoic Dreams and Wyrdloom Studios. These projects are where I set my own standards: small, tested changes that deploy automatically, and tools that remove friction for the people using them.</p>
+<p>The screenshots and clips below load straight from each live site, which captures them from its real interface when it releases, so they show each site as it is today.</p>
+
+<h2>Fabric Engine</h2>
+
+<p>A 3D game engine and world-building suite in Rust and WGSL. Models are trees of mathematical shapes drawn exactly on the GPU, then snapped to a voxel grid for a stylized 3D pixel-art look. It powers Faryn, Wyrdloom Studios' first game.</p>
+<p><strong>Rust, WGSL, wgpu, winit</strong></p>
+
+<p>How it works
+Drawing shapes without meshes</p>
+
+
+<h2>Task Proxy</h2>
+
+<p>A lightweight, cross-platform desktop tool for project documentation, scripts, and automations, for Windows, Mac, and Linux. It keeps pages and settings in the repository so teams share them through git, runs parameterized scripts with generated inputs, and stores secrets in the operating system's credential manager. Its Git Controller reviews, commits, and syncs changes from the same window.</p>
+<p><strong>Rust</strong></p>
+
+<p>taskproxy.com
+Source on GitHub</p>
+
+
+
+
+<p>Finds dev servers and tools left running, and stops them.</p>
+
+
+<p>Onboarding guides and runbooks with a run button on every step.</p>
+
+
+<p>Plugins add features such as Jira issue tracking.</p>
+
+
+<h2>Blue Cherub</h2>
+
+<p>A free animation studio in the browser. Rig any SVG drawing by giving its parts pivots and parents, then pose it and animate it on a keyframe timeline. Scenes are evaluated in Rust compiled to WebAssembly, and exported as MP4 video, encoded in the browser with WebCodecs, or as PNG frames.</p>
+<p><strong>JavaScript, Rust, WebAssembly, SVG, WebCodecs</strong></p>
+<p>bluecherub.com</p>
+
+<h2>Vocal Bin</h2>
+
+<p>A speech synthesizer I'm writing from scratch, with no recordings and no AI. Type English and hear it read aloud, shape the voice with sliders, and save WAV files. It is a classic formant synthesizer, a voice source feeding filters that shape each sound, written in Rust and run in the browser as WebAssembly in an AudioWorklet.</p>
+<p><strong>Rust, WebAssembly, Web Audio</strong></p>
+<p>vocalbin.com</p>
+
+<h2>Task Story</h2>
+
+<p>Project management for software teams that ship in short, continuous iterations. Teams define the problem first, try more than one solution, and track the tasks behind each one, the workflow from my book, <a href="/blogs/book_published_for_case_continuous_agile_software_engineering">CASE</a>. I'm rebuilding it on Web UI, replacing the earlier Blazor app.</p>
+<p><strong>JavaScript, Web UI</strong></p>
+<p>taskstory.com</p>
+
+<h2>Ap Tul</h2>
+
+<p>A library of over 30 privacy-focused browser tools: image conversion and resizing, PDF merging and splitting, a JWT decoder, a regex tester, and more. Files are processed on the device, much of it in Rust compiled to WebAssembly, rather than uploaded to a server.</p>
+<p><strong>JavaScript, Rust, WebAssembly</strong></p>
+<p>aptul.com</p>
+
+<h2>The platform behind them</h2>
+
+
+<p>A vanilla JavaScript web component framework, with about 70 components, a data binding system, and Rust WebAssembly workers for heavy processing. Pages are written in markdown, and components load themselves on first use, so a new site starts with almost no boilerplate.</p>
+<p><strong>JavaScript, HTML, CSS, Rust, WebAssembly</strong></p>
+<p><a href="/case-studies/web-ui">Read the case study</a></p>
+
+
+<p>About two dozen websites, including this one, run on Web UI from one shared CDN. Every push to main runs each site's Playwright tests, checking config, SEO files, links, and that every page loads without errors, and deploys only if they pass. Each release also captures a fresh screenshot of every page, like the ones on this page.</p>
+<p><strong>GitHub Actions, Playwright, Rust, PowerShell</strong></p>
+
+
+<p>The Backend as a Service from Stoic Dreams, providing the APIs behind its sites and apps.</p>
+
+
+<p>A testing framework for C# and .NET that standardizes Arrange, Act, Assert tests, with an extension for testing Blazor components built on bUnit.</p>
+<p><strong>C#, .NET, Blazor, bUnit</strong></p>
+
+
+<h2>Writing</h2>
+
+<ul>
+<li><strong><a href="/blogs/book_published_for_case_continuous_agile_software_engineering">CASE: Continuous Agile Software Engineering</a></strong>, my book on the practices I use to ship continuously, and its <a href="/software-engineering-standards-and-practices">twelve tenets</a>.</li>
+<li><a href="https://www.softwarestandards.dev">SoftwareStandards.dev</a>, a site documenting those standards and practices in more depth.</li>
+<li>More articles on my <a href="/publications">publications</a> page.</li>
+</ul>
+		</div>
+		<webui-drawer slot="left" class="nav elevation-20" docked="true" data-state="slot|docked" data-moveable data-dockable>
+			<webui-flex justify="center" slot="header">
+				<webui-stoic-dreams-logo title="Erik Gassler Website Logo" text="Erik" text2="Gassler"></webui-stoic-dreams-logo>
+			</webui-flex>
+			<webui-nav routes="/nav.json" data-subscribe="app-nav-routes:setNavRoutes"></webui-nav>
+		</webui-drawer>
+		<webui-drawer slot="right" class="shared elevation-20" data-stopclick data-moveable data-state="slot">
+		</webui-drawer>
+		<header slot="header">
+			<button aria-label="open navigation menu" data-toggleclass=".nav|open" class="elevation-10 pa-1 mx-1">
+				<webui-icon icon="hamburger"></webui-icon>
+			</button>
+			<h1 data-subscribe="page-title:innerHTML">Projects</h1>
+			<h2 data-subscribe="page-subtitle:innerHTML">Tools, frameworks, and platforms I've built</h2>
+			<webui-flex grow></webui-flex>
+			<webui-theme-selector title="Choose a theme" data-title="Theme" data-toggleclass=".shared|open">
+				<option value="" data-colors="#14111c #ff5c8a #ff8a3d">Voxel Dusk</option>
+				<option value="granite" data-colors="#1b1c1e #c9a46a #e8e4dc">Granite</option>
+				<option value="limestone" data-colors="#e6e1d6 #8a4b2f #44606f">Limestone</option>
+				<option value="graphite" data-colors="#f4f1e9 #2b2b2b #2f5d8a">Graphite</option>
+				<option value="charcoal" data-colors="#232220 #e6e2d8 #e0a458">Charcoal</option>
+			</webui-theme-selector>
+			<webui-feedback title="Provide us your feedback" data-post="https://api.myfi.ws/feedback/new" data-json-name="message">
+				<p>You can also come <a href="https://discord.gg/5X4YSDFdHD">chat with us on the Stoic Dreams discord server.</a></p>
+			</webui-feedback>
+			<webui-alerts title="View your notifications" data-title="My Alerts" data-toggleclass=".shared|open"></webui-alerts>
+			<webui-myfi-info sign-in-label="Sign In">
+				<template slot="panel-content">
+					<webui-alert show variant="info">Example Account Panel</webui-alert>
+				</template>
+			</webui-myfi-info>
+		</header>
+		<noscript>Javascript is required to view this site</noscript>
+		<webui-page-footer copyright="2013" company="Stoic Dreams">
+			<webui-next-page theme="tertiary" data-subscribe="page-next-page"></webui-next-page>
+			<webui-flex class="my-3" justify="center" wrap>
+				<webui-link href="/about" icon="circle_exclamation|backing|bordered">About Erik Gassler</webui-link>
+				<webui-link href="/contact" icon="messages|fill|shade:tri">Contact Erik Gassler</webui-link>
+				<webui-link href="/privacy" icon="shield_exclamation|backing|bordered">Privacy</webui-link>
+				<webui-link href="/terms" icon="handshake|fill|shade:tri">Terms & Conditions</webui-link>
+			</webui-flex>
+			<webui-stoic-social-links class="mb-2"></webui-stoic-social-links>
+		</webui-page-footer>
+	</webui-app>
+</body>
+
+</html>

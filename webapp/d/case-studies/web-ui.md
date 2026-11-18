@@ -1,5 +1,5 @@
 <webui-data data-page-title="Case Study: Web UI" data-page-subtitle="Rebuilding a framework around what each language does best"></webui-data>
-<webui-data data-page-description="How I built Web UI, the web component framework behind about two dozen websites, and why I rebuilt it from Rust rendering to vanilla JavaScript components with Rust workers."></webui-data>
+<webui-data data-page-description="How I built Web UI, the web component framework behind about two dozen sites, and why I rebuilt it around vanilla JavaScript with Rust workers."></webui-data>
 <webui-data data-page-next-page='{"name":"How I Work","href":"/how-i-work"}'></webui-data>
 
 <webui-pinned-side>

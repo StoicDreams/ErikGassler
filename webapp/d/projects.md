@@ -1,5 +1,5 @@
 <webui-data data-page-title="Projects" data-page-subtitle="Tools, frameworks, and platforms I've built"></webui-data>
-<webui-data data-page-description="Screenshots and clips of the software I build: Fabric Engine, Task Proxy, Task Story, Blue Cherub, Vocal Bin, Ap Tul, and the Web UI framework behind about two dozen websites."></webui-data>
+<webui-data data-page-description="Screenshots and clips of software I build: Fabric Engine, Task Proxy, Task Story, Blue Cherub, Vocal Bin, Ap Tul, and the Web UI framework."></webui-data>
 <webui-data data-page-next-page='{"name":"How I Work","href":"/how-i-work"}'></webui-data>
 
 <webui-page-segment elevation="10">

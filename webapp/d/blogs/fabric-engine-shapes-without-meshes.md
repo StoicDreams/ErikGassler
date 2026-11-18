@@ -1,5 +1,5 @@
 <webui-data data-page-title="Drawing Shapes Without Meshes" data-page-subtitle="How Fabric Engine renders exact shapes on the GPU"></webui-data>
-<webui-data data-page-description="How Fabric Engine draws models without polygon meshes: proxy cubes, exact ray intersections solved per pixel in WGSL, and a screen-space voxel grid for a 3D pixel-art look."></webui-data>
+<webui-data data-page-description="How Fabric Engine draws models without polygon meshes: proxy cubes, exact ray hits solved per pixel in WGSL, and a voxel grid for 3D pixel art."></webui-data>
 <webui-data data-page-next-page='{"name":"Fabric Engine","href":"/fabric-engine"}'></webui-data>
 
 <webui-pinned-side>

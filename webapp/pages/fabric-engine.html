@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-LQEBP3P6LD"></script>
+	<script>
+		if (location.hostname !== 'localhost') {
+			window.dataLayer = window.dataLayer || [];
+			function gtag() { dataLayer.push(arguments); }
+			gtag('js', new Date());
+			gtag('config', 'G-LQEBP3P6LD');
+		}
+	</script>
+	<title>Fabric Engine: A 3D engine and world-building suite in Rust</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="index, follow">
+	<base href="/" />
+	<script type="text/javascript">
+		navigator.serviceWorker.register('service-worker.min.js');
+	</script>
+
+	<link rel="dns-prefetch" href="https://cdn.myfi.ws" />
+	<link rel="dns-prefetch" href="https://api.myfi.ws" />
+	<link rel="preconnect" href="https://cdn.myfi.ws">
+	<link rel="preconnect" href="https://api.myfi.ws">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700&family=Cinzel:wght@500;600;700&family=Marcellus&family=Source+Sans+3:wght@400;600&family=Caveat:wght@600;700&display=swap" rel="stylesheet" />
+
+	<link href="Logo.svg?v=82bc0f4dd5" rel="icon" type="image/svg+xml" sizes="any" />
+	<link rel="manifest" href="app.webmanifest?v=45d36fe574">
+
+	<script>
+		// Web UI loads from the local MyFiCDN server (MyFiCDN/PowerShell/RunLocal.ps1) when the site runs on localhost,
+		// so framework changes show before they are published, and from cdn.myfi.ws everywhere else.
+		window.webuiCdn = /^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname) ? 'http://localhost:3180/' : 'https://cdn.myfi.ws/';
+		document.write('<link href="' + webuiCdn + 'css/webui.min.css" rel="stylesheet" />');
+	</script>
+	<link href="css/app.min.css?v=2b5a850300" rel="stylesheet" />
+	<script>document.write('<script src="' + webuiCdn + 'webui/loader.min.js"></' + 'script>');</script>
+
+	<!-- Prerendered pages from webapp_post_build prerender. Release builds copy them to the site root. -->
+
+	<!--Web Worker-->
+	<script type="module" src="main.js?v=cea15cbf4f"></script>
+	<!--End Web Worker-->
+
+	<meta name="theme-color" content="#14111c" />
+
+	<meta name="author" content="Erik Gassler">
+	<meta name="description" content="Fabric Engine is a 3D engine and world-building suite in Rust and WGSL, drawing models as exact mathematical shapes on the GPU for a stylized 3D pixel-art look.">
+
+	<meta property="og:image" content="https://cdn.myfi.ws/img/eg/me_512.png">
+	<meta property="og:title" content="Fabric Engine: A 3D engine and world-building suite in Rust">
+	<meta property="og:url" content="https://www.erikgassler.com/fabric-engine">
+	<meta property="og:description" content="Fabric Engine is a 3D engine and world-building suite in Rust and WGSL, drawing models as exact mathematical shapes on the GPU for a stylized 3D pixel-art look.">
+
+	<meta name="twitter:title" content="Fabric Engine: A 3D engine and world-building suite in Rust">
+	<meta name="twitter:url" content="https://www.erikgassler.com/fabric-engine">
+	<meta name="twitter:site" content="@stoicdreamsllc">
+	<meta name="twitter:description" content="Fabric Engine is a 3D engine and world-building suite in Rust and WGSL, drawing models as exact mathematical shapes on the GPU for a stylized 3D pixel-art look.">
+	<meta name="twitter:image" content="https://cdn.myfi.ws/img/eg/me_512.png">
+
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Person",
+		"name": "Erik Gassler",
+		"url": "https://www.erikgassler.com/",
+		"image": "https://cdn.myfi.ws/img/eg/me_512.png",
+		"jobTitle": "Principal Software Engineer",
+		"description": "Principal-level software engineer with 19 years of shipping production software, from Rust game engines to healthcare web platforms.",
+		"knowsAbout": ["Rust", "WebGPU", "wgpu", "WebAssembly", "Game engine development", "C#", "Blazor", "JavaScript", "TypeScript", "Azure", "Continuous delivery", "Performance optimization"],
+		"sameAs": [
+			"https://www.linkedin.com/in/erikgassler",
+			"https://github.com/StoicDreams",
+			"https://medium.erikgassler.com"
+		]
+	}
+	</script>
+	<link rel="canonical" href="https://www.erikgassler.com/fabric-engine" />
+	<link rel="modulepreload" href="https://cdn.myfi.ws/js/mdparse.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/alerts.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/app.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/app-config.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/card.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/cards.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/data.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/drawer.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/feedback.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/flex.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/icon.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/link.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/myfi-info.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/nav.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/next-page.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/page-footer.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/page-segment.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/pinned-side.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/stoic-dreams-logo.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/stoic-social-links.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/theme-selector.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/youtube.min.js" crossorigin="anonymous" />
+	<meta name="webui-prerender" content="22cc7456fa">
+</head>
+
+<body>
+	<webui-app-config src="appConfig.json"></webui-app-config>
+	<webui-app data-removeclass=".nav|open;.shared|open">
+		<div data-prerendered>
+<p>Fabric Engine is the custom 3D game engine and world-building suite I'm building from the ground up in Rust and WGSL at my studio, <a href="https://www.wyrdloom.com">Wyrdloom Studios</a>. I started it in February 2026, and it is in early development.</p>
+<p>It powers <strong>Faryn</strong>, the studio's first game: an action-adventure inspired by the 8-bit and 16-bit classics, with modern graphics and controls. The game is the engine's proving ground, so every engine feature is built for, and tested against, a real product.</p>
+
+<h2>What makes it different</h2>
+
+
+<p>Each model is a tree of nodes, and each node is a shape: a box, ellipsoid, cylinder, cone, pyramid, bowl, pipe, or hollow box. The GPU draws every node by solving the exact ray intersection with its shape for each pixel. There are no polygon meshes and no ray marching.</p>
+
+
+<p>After the scene is drawn, the engine snaps it to a screen-space voxel grid and redraws it as instanced cubes. The result is a tilt-shift, 3D pixel-art style built for Faryn, rather than a general-purpose look.</p>
+
+
+<p>Fabric Creator is the desktop editor built on the engine, for building models, node hierarchies, scenes, tile maps, worlds, text, and characters, with on-screen handles and picking of whatever is under the cursor.</p>
+
+
+<h2>How a frame is rendered</h2>
+
+<p>Fabric uses deferred rendering, as a chain of GPU passes:</p>
+<ol>
+<li><strong>G-buffer:</strong> draws a simple proxy cube for each node, then solves the exact intersection with the node's real shape for each pixel, writing color, normal, position, depth, and the model and node ids.</li>
+<li><strong>Global illumination:</strong> traces rays against the same analytic shapes, using low-discrepancy sampling, for indirect lighting and ambient occlusion.</li>
+<li><strong>Screen-space voxelization:</strong> the G-buffer is drawn at the resolution of a screen-space grid, so each pixel is one cell. A compute pass turns each covered cell into a voxel at the surface point under it, sized by its distance from the camera so it covers one cell on screen.</li>
+<li><strong>Instanced rendering:</strong> redraws the grid as instanced cubes.</li>
+<li><strong>Lighting, background, and post-processing:</strong> lights the voxels, fills the background, runs any post-processing passes the game adds, and composites the final frame.</li>
+</ol>
+<p>For a deeper walk through the shape and voxel passes, read <a href="/blogs/fabric-engine-shapes-without-meshes">Drawing Shapes Without Meshes</a>.</p>
+<p>Large tile-map worlds take their own path: a compute pass culls tiles and builds the instance list on the GPU, then the engine draws it with indirect draw calls and a dedicated global illumination pass.</p>
+
+<h2>Engineering highlights</h2>
+
+<ul>
+<li><strong>Materials per node:</strong> color, roughness, metalness, index of refraction, subsurface scattering, emission, and animated procedural noise, with parent-relative transforms and animation limits on every node.</li>
+<li><strong>Rendering on its own thread:</strong> the render loop runs separately from the window's event loop, paced to 60 frames per second or unlocked.</li>
+<li><strong>Modular design:</strong> seven Rust crates, for core types, events, GPU pipelines, shaders, backgrounds, the engine runtime, and the Creator editor.</li>
+<li><strong>Shaders tested like code:</strong> every WGSL shader is parsed and validated with naga in <code>cargo test</code>, so a shader error fails the build instead of the running game.</li>
+<li><strong>Built on</strong> wgpu for GPU access and winit for windows and input.</li>
+<li>Developed in small, tested steps, using the continuous delivery practices from my book, <a href="/blogs/book_published_for_case_continuous_agile_software_engineering">CASE</a>.</li>
+</ul>
+
+<h2>Why it matters for my work</h2>
+
+<p>Fabric Engine is where I do my most demanding engineering: designing a system architecture from scratch, working directly with the GPU, and keeping performance high as features grow. It is the same approach I've brought to the companies I've worked for, from re-architecting a slow reporting service at Microsoft to building a reporting portal held to under 100 ms per request. See my <a href="/experience">experience</a> for the full record.</p>
+
+
+<h3>See it in action</h3>
+<p>The first development video gives a very early look at the engine.</p>
+<h3>Follow the project</h3>
+
+<p>Wyrdloom Studios
+Wyrdloom on YouTube
+Follow me on LinkedIn</p>
+		</div>
+		<webui-drawer slot="left" class="nav elevation-20" docked="true" data-state="slot|docked" data-moveable data-dockable>
+			<webui-flex justify="center" slot="header">
+				<webui-stoic-dreams-logo title="Erik Gassler Website Logo" text="Erik" text2="Gassler"></webui-stoic-dreams-logo>
+			</webui-flex>
+			<webui-nav routes="/nav.json" data-subscribe="app-nav-routes:setNavRoutes"></webui-nav>
+		</webui-drawer>
+		<webui-drawer slot="right" class="shared elevation-20" data-stopclick data-moveable data-state="slot">
+		</webui-drawer>
+		<header slot="header">
+			<button aria-label="open navigation menu" data-toggleclass=".nav|open" class="elevation-10 pa-1 mx-1">
+				<webui-icon icon="hamburger"></webui-icon>
+			</button>
+			<h1 data-subscribe="page-title:innerHTML">Fabric Engine</h1>
+			<h2 data-subscribe="page-subtitle:innerHTML">A 3D engine and world-building suite in Rust</h2>
+			<webui-flex grow></webui-flex>
+			<webui-theme-selector title="Choose a theme" data-title="Theme" data-toggleclass=".shared|open">
+				<option value="" data-colors="#14111c #ff5c8a #ff8a3d">Voxel Dusk</option>
+				<option value="granite" data-colors="#1b1c1e #c9a46a #e8e4dc">Granite</option>
+				<option value="limestone" data-colors="#e6e1d6 #8a4b2f #44606f">Limestone</option>
+				<option value="graphite" data-colors="#f4f1e9 #2b2b2b #2f5d8a">Graphite</option>
+				<option value="charcoal" data-colors="#232220 #e6e2d8 #e0a458">Charcoal</option>
+			</webui-theme-selector>
+			<webui-feedback title="Provide us your feedback" data-post="https://api.myfi.ws/feedback/new" data-json-name="message">
+				<p>You can also come <a href="https://discord.gg/5X4YSDFdHD">chat with us on the Stoic Dreams discord server.</a></p>
+			</webui-feedback>
+			<webui-alerts title="View your notifications" data-title="My Alerts" data-toggleclass=".shared|open"></webui-alerts>
+			<webui-myfi-info sign-in-label="Sign In">
+				<template slot="panel-content">
+					<webui-alert show variant="info">Example Account Panel</webui-alert>
+				</template>
+			</webui-myfi-info>
+		</header>
+		<noscript>Javascript is required to view this site</noscript>
+		<webui-page-footer copyright="2013" company="Stoic Dreams">
+			<webui-next-page theme="tertiary" data-subscribe="page-next-page"></webui-next-page>
+			<webui-flex class="my-3" justify="center" wrap>
+				<webui-link href="/about" icon="circle_exclamation|backing|bordered">About Erik Gassler</webui-link>
+				<webui-link href="/contact" icon="messages|fill|shade:tri">Contact Erik Gassler</webui-link>
+				<webui-link href="/privacy" icon="shield_exclamation|backing|bordered">Privacy</webui-link>
+				<webui-link href="/terms" icon="handshake|fill|shade:tri">Terms & Conditions</webui-link>
+			</webui-flex>
+			<webui-stoic-social-links class="mb-2"></webui-stoic-social-links>
+		</webui-page-footer>
+	</webui-app>
+</body>
+
+</html>
