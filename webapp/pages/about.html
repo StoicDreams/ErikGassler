@@ -30,9 +30,6 @@
 	<link rel="dns-prefetch" href="https://api.myfi.ws" />
 	<link rel="preconnect" href="https://cdn.myfi.ws">
 	<link rel="preconnect" href="https://api.myfi.ws">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700&family=Cinzel:wght@500;600;700&family=Marcellus&family=Source+Sans+3:wght@400;600&family=Caveat:wght@600;700&display=swap" rel="stylesheet" />
 
 	<link href="Logo.svg?v=bb917c5388" rel="icon" type="image/svg+xml" sizes="any" />
 	<link rel="manifest" href="app.webmanifest?v=45d36fe574">
@@ -43,6 +40,12 @@
 		// so framework changes show before they are published, and from cdn.myfi.ws everywhere else.
 		window.webuiCdn = /^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname) ? 'http://localhost:3180/' : webuiLocal ? '/webui-cdn/' : 'https://cdn.myfi.ws/';
 		document.write('<link href="' + webuiCdn + 'css/webui.min.css" rel="stylesheet" />');
+		document.write('<link href="' + webuiCdn + 'fonts/inter.min.css" rel="stylesheet" />');
+		document.write('<link href="' + webuiCdn + 'fonts/sora.min.css" rel="stylesheet" />');
+		document.write('<link href="' + webuiCdn + 'fonts/cinzel.min.css" rel="stylesheet" />');
+		document.write('<link href="' + webuiCdn + 'fonts/marcellus.min.css" rel="stylesheet" />');
+		document.write('<link href="' + webuiCdn + 'fonts/source-sans-3.min.css" rel="stylesheet" />');
+		document.write('<link href="' + webuiCdn + 'fonts/caveat.min.css" rel="stylesheet" />');
 	</script>
 	<link href="css/app.min.css?v=2b5a850300" rel="stylesheet" />
 	<script>document.write('<script src="' + webuiCdn + 'webui/loader.min.js"></' + 'script>');</script>
@@ -106,7 +109,7 @@
 	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/stoic-dreams-logo.min.js" crossorigin="anonymous" />
 	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/stoic-social-links.min.js" crossorigin="anonymous" />
 	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/theme-selector.min.js" crossorigin="anonymous" />
-	<meta name="webui-prerender" content="bbf60db590">
+	<meta name="webui-prerender" content="4d9091e815">
 </head>
 
 <body>
